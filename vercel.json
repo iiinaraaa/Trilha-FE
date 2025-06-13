@@ -1,7 +1,7 @@
 {
   "rewrites": [
     { "source": "/ex1", "destination": "/modulo1html-css/ex1" },
-    { "source": "/ex2", "destination": "/modulo1html-css/ex2" },
+    { "source": "/ex2", "destination": "/modulo1html-css/ex2/index2.html" },
     { "source": "/ex3", "destination": "/modulo1html-css/ex3" },
     { "source": "/ex4", "destination": "/modulo1html-css/ex4" },
     { "source": "/ex5", "destination": "/modulo1html-css/ex5" },
