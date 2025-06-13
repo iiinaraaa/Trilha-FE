@@ -1,16 +1,16 @@
 {
   "rewrites": [
-    { "source": "/ex1", "destination": "/modulo1html-css/ex1/index.html" },
-    { "source": "/ex2", "destination": "/modulo1html-css/ex2/index.html" },
-    { "source": "/ex3", "destination": "/modulo1html-css/ex3/index.html" },
-    { "source": "/ex4", "destination": "/modulo1html-css/ex4/index.html" },
-    { "source": "/ex5", "destination": "/modulo1html-css/ex5/index.html" },
-    { "source": "/ex6", "destination": "/modulo1html-css/ex6/index.html" },
-    { "source": "/ex7", "destination": "/modulo1html-css/ex7/index.html" },
-    { "source": "/ex8", "destination": "/modulo1html-css/ex8/index.html" },
-    { "source": "/ex8b", "destination": "/modulo1html-css/ex8b/index.html" },
-    { "source": "/ex9", "destination": "/modulo1html-css/ex9/index.html" },
-    { "source": "/ex10", "destination": "/modulo1html-css/ex10/index.html" },
+    { "source": "/ex1", "destination": "/modulo1html-css/ex1" },
+    { "source": "/ex2", "destination": "/modulo1html-css/ex2" },
+    { "source": "/ex3", "destination": "/modulo1html-css/ex3" },
+    { "source": "/ex4", "destination": "/modulo1html-css/ex4" },
+    { "source": "/ex5", "destination": "/modulo1html-css/ex5" },
+    { "source": "/ex6", "destination": "/modulo1html-css/ex6" },
+    { "source": "/ex7", "destination": "/modulo1html-css/ex7" },
+    { "source": "/ex8", "destination": "/modulo1html-css/ex8" },
+    { "source": "/ex8b", "destination": "/modulo1html-css/ex8b" },
+    { "source": "/ex9", "destination": "/modulo1html-css/ex9" },
+    { "source": "/ex10", "destination": "/modulo1html-css/ex10" },
     { "source": "/ex10", "destination": "/modulo1html-css/ex10/finalboss exercicio/ex1.html" },
     { "source": "/ex10", "destination": "/modulo1html-css/ex10/finalboss exercicio/ex2.html" }
   ]
