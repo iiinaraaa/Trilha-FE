@@ -12,6 +12,7 @@
     { "source": "/ex9", "destination": "/modulo1html-css/ex9" },
     { "source": "/ex10", "destination": "/modulo1html-css/ex10" },
     { "source": "/ex10", "destination": "/modulo1html-css/ex10/finalboss exercicio/ex1.html" },
-    { "source": "/ex10", "destination": "/modulo1html-css/ex10/finalboss exercicio/ex2.html" }
+    { "source": "/ex10", "destination": "/modulo1html-css/ex10/finalboss exercicio/ex2.html" },
+    { "source": "/ex1", "destination": "/modulo2html-css/ex1" }
   ]
 }

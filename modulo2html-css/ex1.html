@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSSt</title>
+    <style>
+        * {
+            height: 100%;
+        }
+        
+        body {
+            background-image: linear-gradient(to top, #BDE0FE 0,2%, #ffffff, #ffffff);
+            background-attachment: fixed; /* Isso faz com que o fundo fique fixo e não se mova com o scroll */
+            /* tambem da pra angular o degrade assim: 
+            background-image: linear gradient(45deg, #fffff.... add as cores pro degrade)
+            ou ali no lugar do 45deg por circle, que fica um circulo na tela */
+        }
+
+        #titulo-principal {
+            color: #f65691;
+        }
+    </style>
+</head>
+<body>
+    <!--<h1 style="color: #f65691;">Testando Gradiente</h1> isso poderia ser uma forma tambem de por o style-->
+    <h1 id="titulo-principal">Testando Gradientes</h1>
+</body>
+</html>
