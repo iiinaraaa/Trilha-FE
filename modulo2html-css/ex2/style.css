@@ -1,0 +1,36 @@
+@charset "UTF-8"; /* perguntei pro felps disso aq */
+
+/*
+cores usadas:
+#60435F
+#D67AB1
+#E2A3C7
+#FDF7FA
+#A8DCD9
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 10px 2px 40px #60435fcb;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    color: #60435F;
+}
+
+h2 {
+    color: #60435F;
+}
+
+body {
+    background-image: linear-gradient(to top, #D67AB1 30%, #E2A3C7);
+    background-attachment: fixed;
+}
