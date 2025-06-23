@@ -24,6 +24,8 @@ main {
 
 h1 {
     color: #60435F;
+    text-align: center;
+    text-shadow: 1px 1px 2px #2d202de1;
 }
 
 h2 {
