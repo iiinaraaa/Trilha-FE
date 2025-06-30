@@ -18,6 +18,6 @@
     { "source": "/ex3", "destination": "/modulo2html-css/ex3" },
     { "source": "/ex4", "destination": "/modulo2html-css/ex4" },
     { "source": "/ex5", "destination": "/modulo2html-css/ex5/fonte1.html" },
-    { "source": "/desafio3", "destination": "/desafio3/index.html" }
+    { "source": "/desafio2", "destination": "/desafio2"}
   ]
 }

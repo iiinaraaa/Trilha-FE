@@ -1,38 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentacao pessoal</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Aprensentacao Pessoal - basic css</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Apresentação Pessoal</h1>
+    <header class="header">
+        <h1 class="name">Apresentação Pessoal</h1>
 
-        <h2>INDICE</h2>
-        <ul>
-            <li><a href="#sobre-mim">Sobre mim</a></li>
-            <li><a href="#minhas-paixoes">Minhas paixões</a></li>
-            <li><a href="#minhas-habilidades">Minhas habilidades</a></li>
-            <li><a href="#primeiro-codigo">Meu primeiro código</a></li>
-            <li><a href="#contatos">Contatos</a></li> 
-        </ul>
         
-        <h2><marquee behavior="alternate" direction="right">Oi, eu sou a Inara!</marquee></h2> <!--marquee nao se usa em projeto serio-->
 
-        <figure>
-            <img src="assets/ina foto perfil.JPG" alt="foto inara" width="200" height="210">
-            <figcaption>Essa sou eu :)</figcaption>
-        </figure>
+        <div>
+            <ul class="index">
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#minhas-paixoes">Minhas paixões</a></li>
+                <li><a href="#minhas-habilidades">Minhas habilidades</a></li>
+                <li><a href="#primeiro-codigo">Meu primeiro código</a></li>
+                <li><a href="#contatos">Contatos</a></li> 
+            </ul>
+        </div>
+        
+        <div class="linha"></div> <!-- a "bordinha separadora" -->
+        
+        <h2>Oi, eu sou a Inara!</h2>
 
-        <h3 id="sobre-mim"><mark>Sobre mim</mark></h3> <!--queria mudar a cor para rosa, mas seria usar css inline e o foco seria fzr algo so com html-->
+        
+        <img class="profile-image" src="assets/ina foto perfil.JPG" alt="foto inara">
+            
+        
+
+        <h3 id="sobre-mim">Oi, eu sou a Inara!</h2>
+        >Sobre mim</h3> 
+        
         <p>Sou programadora. Tenho 21 anos, estudo Ciencia da computacao e adoro jogar, ler, Lorem ipsum dolor  Lorem ipsum dolor sit amet consectetur adipiscing elit. Placerat in id cursus mi pretium tellus duis. Urna tempor pulvinar vivamus fringilla lacus nec metus. Integer nunc posuere ut hendrerit semper vel class. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Mus donec rhoncus eros lobortis nulla molestie mattis. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Sodales consequat magna ante condimentum neque at luctus. Ligula congue sollicitudin erat viverra ac tincidunt nam. Lectus commodo augue arcu dignissim velit aliquam imperdiet. Cras eleifend turpis fames primis vulputate ornare sagittis. Libero feugiat tristique accumsan maecenas potenti ultricies habitant. Cubilia curae hac habitasse platea dictumst lorem ipsum. Faucibus ex sapien vitae pellentesque sem placerat in. Tempus leo eu aenean sed diam urna tempor.sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.</p>
     </header>
 
     <main>
-        <!--section: tem um tema proprio.          div: container generico.-->
+        
         <section id="minhas-paixoes">
             <h2>minhas paixoes:</h2>
             <ul>
@@ -80,8 +87,7 @@
         </section>
 
         <section id="primeiro-codigo">
-            <details>
-                <summary><strong>meu primeiro codigo:</strong></summary>
+                <p></p><strong>meu primeiro codigo:</strong></p>
                 <pre>
                 <code>
                     function helloWorld() {
@@ -89,7 +95,6 @@
                     }
                 </code>
                 </pre>
-            </details>
         </section>
         
     </main>
@@ -97,15 +102,17 @@
     <footer>
         <h2>Obrigado por visitar minha página! Espero que tenha gostado de conhecer um pouco mais sobre mim.</h2>
         
-        <h3 id="contatos"><mark>Você pode me encontrar nas redes sociais:</mark></h3>
+        <h3 id="contatos">Você pode me encontrar nas redes sociais:</h3>
 
-        <ul>
-            <li><a href="https://br.linkedin.com/in/inara-bagatoli-811494213?trk=public_post_feed-actor-name" target="_blank">Meu linkedin</a></li>
-            <li><a href="link" target="_blank">Meu github</a></li>
-            <li><a href="https:" target="_blank">Meu instagram</a></li>
-        </ul>
+        <div>
+            <ul class="link-contato">
+                <li><a href="https://br.linkedin.com/in/inara-bagatoli-811494213?trk=public_post_feed-actor-name" target="_blank">Meu linkedin</a></li>
+                <li><a href="link" target="_blank">Meu github</a></li>
+                <li><a href="https:" target="_blank">Meu instagram</a></li>
+            </ul>
+        </div>
 
-        <img src="assets/footer.png" alt="footer image" width="500" height="200">
+        <img src="assets/footer.png" alt="footer image">
     </footer>
 </body>
 </html>

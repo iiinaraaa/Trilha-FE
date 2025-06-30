@@ -1,0 +1,58 @@
+/* -por pelo menos duas fontes, uma delas tenho que usar dois font weights diferentes.
+   -usar pelo menos algum componente com cor diferente.
+   -estilos globais: aplicar classe pro body e todo mundo vai ter aquilo, em alguns casos sobescrever.
+   -estilizar todos os titulos, links e paragrafos, botao, listas.
+   -por o details dnv e estilizar ele. EXTRA!!! <<<<
+   -estilizar foto (por borda ou box shadow enfim)
+   -botao precisa ter box shadow, foto so se ficar bom
+   -botar uma parte do site colorido background
+  - botao tem que ter uma border, um contorno.*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap'); 
+/* fonte para o nome */
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* fonte para titulo:700px fonte para normal: 300px */
+
+body {
+    font-family: "Spectral", serif;
+    font-weight: 200;
+    font-style: normal;
+    background-image: linear-gradient(to top, #e2f3ff 0,1%, #ffffff);
+}
+
+.name {
+    font-family: "Pattaya", cursive;
+    font-weight: 400;
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    list-style: none; /* isso aqui tira as bolinhas */
+}
+
+a {
+  text-decoration: none; /* isso aqui tira o sublinhado */
+  background-color: #c7e4ff; 
+  color: rgb(0, 0, 0);              
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.14);
+  transition: background-color 0.3s ease;
+}
+
+.linha {
+    border-bottom: 1px solid #ccc;
+    margin-top: 50px;
+}
+
+.profile-image {
+    width: 200px;
+    border-radius: 400px;
+    
+}
