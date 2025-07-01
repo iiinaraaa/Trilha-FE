@@ -11,8 +11,6 @@
     <header class="header">
         <h1 class="name">Apresentação Pessoal</h1>
 
-        
-
         <div>
             <ul class="index">
                 <li><a href="#sobre-mim">Sobre mim</a></li>
@@ -25,17 +23,22 @@
         
         <div class="linha"></div> <!-- a "bordinha separadora" -->
         
-        <h2>Oi, eu sou a Inara!</h2>
-
         
-        <img class="profile-image" src="assets/ina foto perfil.JPG" alt="foto inara">
+        <div class="profile">
+            <h2>Oi, eu sou a Inara!</h2>
+
             
-        
+            <img class="profile-image" src="assets/ina foto perfil.JPG" alt="foto inara">
+        </div>
 
-        <h3 id="sobre-mim">Oi, eu sou a Inara!</h2>
-        >Sobre mim</h3> 
+        <div class="linha"></div> <!-- a "bordinha separadora" -->
+
         
-        <p>Sou programadora. Tenho 21 anos, estudo Ciencia da computacao e adoro jogar, ler, Lorem ipsum dolor  Lorem ipsum dolor sit amet consectetur adipiscing elit. Placerat in id cursus mi pretium tellus duis. Urna tempor pulvinar vivamus fringilla lacus nec metus. Integer nunc posuere ut hendrerit semper vel class. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Mus donec rhoncus eros lobortis nulla molestie mattis. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Sodales consequat magna ante condimentum neque at luctus. Ligula congue sollicitudin erat viverra ac tincidunt nam. Lectus commodo augue arcu dignissim velit aliquam imperdiet. Cras eleifend turpis fames primis vulputate ornare sagittis. Libero feugiat tristique accumsan maecenas potenti ultricies habitant. Cubilia curae hac habitasse platea dictumst lorem ipsum. Faucibus ex sapien vitae pellentesque sem placerat in. Tempus leo eu aenean sed diam urna tempor.sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.</p>
+        <div class="about-me">
+            <h3 id="sobre-mim">Sobre mim</h3> 
+            
+            <p>Sou programadora. Tenho 21 anos, estudo Ciencia da computacao e adoro jogar, ler, Lorem ipsum dolor  Lorem ipsum dolor sit amet consectetur adipiscing elit. Placerat in id cursus mi pretium tellus duis. Urna tempor pulvinar vivamus fringilla lacus nec metus. Integer nunc posuere ut hendrerit semper vel class. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Mus donec rhoncus eros lobortis nulla molestie mattis. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Sodales consequat magna ante condimentum neque at luctus. Ligula congue sollicitudin erat viverra ac tincidunt nam. Lectus commodo augue arcu dignissim velit aliquam imperdiet. Cras eleifend turpis fames primis vulputate ornare sagittis. Libero feugiat tristique accumsan maecenas potenti ultricies habitant. Cubilia curae hac habitasse platea dictumst lorem ipsum. Faucibus ex sapien vitae pellentesque sem placerat in. Tempus leo eu aenean sed diam urna tempor.sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.</p>
+        </div>
     </header>
 
     <main>
@@ -44,7 +47,7 @@
             <h2>minhas paixoes:</h2>
             <ul>
                 <li>
-                    <details>
+                    <details class="details">
                         <summary>Gatos</summary>
                         <p>Gosto muito de gatos, adoro ir no gato cafe, e passear com meus nenecos</p>
                         <img src="assets/catgif.gif" alt="cat git" width="200" height="200">
@@ -52,7 +55,7 @@
                 </li>
                 
                 <li>
-                    <details>
+                    <details class="details">
                         <summary>jogos</summary>
                         <p>Gosto de stardew valley, fields of mistria, sillent hill, undertale...</p>
                         <img src="assets/stardew valley.png" alt="stardew valley" width="200" height="200">
@@ -60,7 +63,7 @@
                 </li>
                 
                 <li>
-                    <details>
+                    <details class="details">
                         <summary>comidas</summary>
                         <p>macarrao, bolo de morango com suspiro, subway... sou vegetariana!</p>
                         <img src="assets/morango.png" alt="morango" width="300" height="200">
@@ -68,7 +71,7 @@
                 </li>
                 
                 <li>
-                    <details>
+                    <details class="details">
                         <summary>passeios</summary>
                         <p>gato cafe, casa da raissa, praia, piquenique, cinema, restaurantes legais, blablabla</p>
                         <img src="assets/piquenique2.png" alt="piquenique" width="210" height="210">
@@ -80,14 +83,14 @@
         <section id="minhas-habilidades">
             <h2>Minhas habilidades:</h2>
             <ul>
-                <li><abbr title="HyperText Markup Language">HTML</abbr></li>
-                <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
-                <li><abbr title="Linguagem de Programacao">JavaScript</abbr></li>
+                <li class="list"><abbr title="HyperText Markup Language">HTML</abbr></li>
+                <li class="list"><abbr title="Cascading Style Sheets">CSS</abbr></li>
+                <li class="list"><abbr title="Linguagem de Programacao">JavaScript</abbr></li>
             </ul>
         </section>
 
         <section id="primeiro-codigo">
-                <p></p><strong>meu primeiro codigo:</strong></p>
+                <p class="subtitulo-primeiro-codigo">Meu primeiro codigo:</p> <!-- o strong aq dentro n funcionou -->
                 <pre>
                 <code>
                     function helloWorld() {
@@ -99,8 +102,10 @@
         
     </main>
 
+    <div class="linha"></div> <!-- a "bordinha separadora" -->
+
     <footer>
-        <h2>Obrigado por visitar minha página! Espero que tenha gostado de conhecer um pouco mais sobre mim.</h2>
+        <h2 class="thanks">Obrigado por visitar minha página! Espero que tenha gostado de conhecer um pouco mais sobre mim.</h2>
         
         <h3 id="contatos">Você pode me encontrar nas redes sociais:</h3>
 
@@ -112,7 +117,7 @@
             </ul>
         </div>
 
-        <img src="assets/footer.png" alt="footer image">
+        <img class="footer-image" src="assets/footer.png" alt="footer image">
     </footer>
 </body>
 </html>
