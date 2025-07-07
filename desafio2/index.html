@@ -13,29 +13,29 @@
 
         <div>
             <ul class="index">
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#minhas-paixoes">Minhas paixões</a></li>
-                <li><a href="#minhas-habilidades">Minhas habilidades</a></li>
-                <li><a href="#primeiro-codigo">Meu primeiro código</a></li>
-                <li><a href="#contatos">Contatos</a></li> 
+                <li><a href="#about-me-go-section">Sobre mim</a></li>
+                <li><a href="#my-passions">Minhas paixões</a></li>
+                <li><a href="#skills">Minhas habilidades</a></li>
+                <li><a href="#first-code">Meu primeiro código</a></li>
+                <li><a href="#contacts">Contatos</a></li> 
             </ul>
         </div>
         
-        <div class="linha"></div> <!-- a "bordinha separadora" -->
+        <div class="line"></div> <!-- a "bordinha separadora" -->
         
         
         <div class="profile">
             <h2>Oi, eu sou a Inara!</h2>
 
             
-            <img class="profile-image" src="assets/ina foto perfil.JPG" alt="foto inara">
+            <img class="profile-image" src="assets/profile-ina.JPG" alt="Inara's profile picture">
         </div>
 
-        <div class="linha"></div> <!-- a "bordinha separadora" -->
+        <div class="line"></div> <!-- a "bordinha separadora" -->
 
         
-        <div class="about-me">
-            <h3 id="sobre-mim">Sobre mim</h3> 
+        <div id="about-me-go-section" class="about-me">
+            <h3>Sobre mim</h3> 
             
             <p>Sou programadora. Tenho 21 anos, estudo Ciencia da computacao e adoro jogar, ler, Lorem ipsum dolor  Lorem ipsum dolor sit amet consectetur adipiscing elit. Placerat in id cursus mi pretium tellus duis. Urna tempor pulvinar vivamus fringilla lacus nec metus. Integer nunc posuere ut hendrerit semper vel class. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Mus donec rhoncus eros lobortis nulla molestie mattis. Purus est efficitur laoreet mauris pharetra vestibulum fusce. Sodales consequat magna ante condimentum neque at luctus. Ligula congue sollicitudin erat viverra ac tincidunt nam. Lectus commodo augue arcu dignissim velit aliquam imperdiet. Cras eleifend turpis fames primis vulputate ornare sagittis. Libero feugiat tristique accumsan maecenas potenti ultricies habitant. Cubilia curae hac habitasse platea dictumst lorem ipsum. Faucibus ex sapien vitae pellentesque sem placerat in. Tempus leo eu aenean sed diam urna tempor.sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem.</p>
         </div>
@@ -43,9 +43,9 @@
 
     <main>
         
-        <section id="minhas-paixoes">
+        <section id="my-passions" class="my-passions">
             <h2>minhas paixoes:</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <details class="details">
                         <summary>Gatos</summary>
@@ -58,7 +58,7 @@
                     <details class="details">
                         <summary>jogos</summary>
                         <p>Gosto de stardew valley, fields of mistria, sillent hill, undertale...</p>
-                        <img src="assets/stardew valley.png" alt="stardew valley" width="200" height="200">
+                        <img src="assets/stardew-valley.png" alt="stardew valley" width="200" height="200">
                     </details>
                 </li>
                 
@@ -80,18 +80,18 @@
             </ul>
         </section>
 
-        <section id="minhas-habilidades">
+        <section id="skills" class="skills">
             <h2>Minhas habilidades:</h2>
-            <ul>
-                <li class="list"><abbr title="HyperText Markup Language">HTML</abbr></li>
-                <li class="list"><abbr title="Cascading Style Sheets">CSS</abbr></li>
-                <li class="list"><abbr title="Linguagem de Programacao">JavaScript</abbr></li>
+            <ul class="list">
+                <li class="list-skills"><abbr title="HyperText Markup Language">HTML</abbr></li>
+                <li class="list-skills"><abbr title="Cascading Style Sheets">CSS</abbr></li>
+                <li class="list-skills"><abbr title="Linguagem de Programacao">JavaScript</abbr></li>
             </ul>
         </section>
 
-        <section id="primeiro-codigo">
-                <p class="subtitulo-primeiro-codigo">Meu primeiro codigo:</p> <!-- o strong aq dentro n funcionou -->
-                <pre>
+        <section id="first-code" class="first-code">
+                <p class="my-first-code-subtitle">Meu primeiro codigo:</p> <!-- o strong aq dentro n funcionou -->
+                <pre class="code-snippet">
                 <code>
                     function helloWorld() {
                         console.log("Hello, World!");
@@ -102,21 +102,23 @@
         
     </main>
 
-    <div class="linha"></div> <!-- a "bordinha separadora" -->
+    <div class="line"></div> <!-- a "bordinha separadora" -->
 
     <footer>
-        <h2 class="thanks">Obrigado por visitar minha página! Espero que tenha gostado de conhecer um pouco mais sobre mim.</h2>
         
-        <h3 id="contatos">Você pode me encontrar nas redes sociais:</h3>
+        
+        <h3 id="contacts">Você pode me encontrar nas redes sociais:</h3>
 
         <div>
-            <ul class="link-contato">
+            <ul class="list">
                 <li><a href="https://br.linkedin.com/in/inara-bagatoli-811494213?trk=public_post_feed-actor-name" target="_blank">Meu linkedin</a></li>
                 <li><a href="link" target="_blank">Meu github</a></li>
                 <li><a href="https:" target="_blank">Meu instagram</a></li>
             </ul>
         </div>
 
+        <h2 class="thanks">Obrigado por visitar minha página! Espero que tenha gostado de conhecer um pouco mais sobre mim.</h2>
+        
         <img class="footer-image" src="assets/footer.png" alt="footer image">
     </footer>
 </body>
