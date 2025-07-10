@@ -1,27 +1,27 @@
 /* -por pelo menos duas fontes, uma delas tenho que usar dois font weights diferentes. ✔️
-   -usar pelo menos algum componente com cor diferente. ✔️
-   -estilos globais: aplicar classe pro body e todo mundo vai ter aquilo, em alguns casos sobescrever. ✔️
-   -estilizar todos os titulos, links e paragrafos, botao, listas. ✔️
-   -por o details dnv e estilizar ele. EXTRA!!! <<<< ✔️
-   -estilizar foto (por borda ou box shadow enfim) ✔️
-   -botao precisa ter box shadow, foto so se ficar bom ✔️
-   -botar uma parte do site colorido background ✔️
-  - botao tem que ter uma border, um contorno. 
-  - usar hover depois de arrumar tudinho ✔️
-  - ver sobre flex flow pra quebrar oos elementos pra baixo ✔️
-  - anotar sobre gap ✔️
-  - details um abaixo do outro com um estilo mais bonito de setinha, qnd der hover o mouse deve ficar em formato de link (mão do mickey) ✔️
-  - Jardim de flores repetido na largura inteira da página e sem borda inferior.
-  - efeito de zoom na foto da Inara ✔️
-  - falta um <hr> estilizado (VER OQ EH UM HR)
-  - jogo de cores mais complexo que azul, preto e branco.
-  - nem tudo ali é um h3, poderia ser só um <p> mesmo.
-  - fazer <b> funcionar
-  - evitar AO MAXIMO nome de arquivos/assets com espaço (ina foto de perfil e stardew valley). ✔️
-  - Estilizacao nos titulos.
-  - estilos repetidos para as sections, usar uma unica classe para os 3.
-  - mudar pt para ing ✔️
-  */
+-usar pelo menos algum componente com cor diferente. ✔️
+-estilos globais: aplicar classe pro body e todo mundo vai ter aquilo, em alguns casos sobescrever. ✔️
+-estilizar todos os titulos, links e paragrafos, botao, listas. ✔️
+-por o details dnv e estilizar ele. EXTRA!!! <<<< ✔️
+-estilizar foto (por borda ou box shadow enfim) ✔️
+-botao precisa ter box shadow, foto so se ficar bom ✔️
+-botar uma parte do site colorido background ✔️
+- botao tem que ter uma border, um contorno. 
+- usar hover depois de 
+- ver sobre flex flow pra quebrar oos elementos pra baixo ✔️
+- anotar sobre gap ✔️
+- details um abaixo do outro com um estilo mais bonito de setinha, qnd der hover o mouse deve ficar em formato de link (mão do mickey) ✔️
+- Jardim de flores repetido na largura inteira da página e sem borda inferior.
+- efeito de zoom na foto da Inara ✔️
+- falta um <hr> estilizado (VER OQ EH UM HR) ✔️
+- jogo de cores mais complexo que azul, preto e branco. ✔️
+- nem tudo ali é um h3, poderia ser só um <p> mesmo. ✔️
+- fazer <b> funcionar
+- evitar AO MAXIMO nome de arquivos/assets com espaço (ina foto de perfil e stardew valley). ✔️
+- Estilizacao nos titulos.
+- estilos repetidos para as sections, usar uma unica classe para os 3.
+- mudar pt para ing ✔️
+*/
 
 
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap'); 
@@ -36,6 +36,7 @@ body {
     font-style: normal;
     background-image: linear-gradient(to top, #e2f3ff 0,1%, #ffffff);
     padding: 20px;
+    background-attachment: fixed; /* nao funcionou kkkk */
 }
 
 .name {
@@ -57,15 +58,18 @@ body {
 
 ul {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-top: 50px;
     list-style: none; /* isso aqui tira as bolinhas */
     font-weight: 500;
+    justify-content: center;
 }
 
 a {
   text-decoration: none; /* isso aqui tira o sublinhado */
-  background-color: #c7e4ff; 
+  background-color: #ffe0fd; 
   color: rgb(0, 0, 0);              
   padding: 10px 20px;
   border-radius: 8px;
@@ -78,7 +82,7 @@ a {
 }
 
 a:hover {
-  background-color: #b5d6f8;
+  background-color: #ffc5fb;
 }
 
 .line {
@@ -92,6 +96,7 @@ a:hover {
     box-shadow: 4px 4px 12px #71a3d1;
     object-fit: cover;
     transition: transform 0.3s ease; /* isso aq tbm da o efeito de zoon, mas aqui qnd tira o cursos da foto, volta lentinho e nao numa lapada so */
+    margin-bottom: 40px;
 }
 
 .profile-image:hover {
@@ -116,7 +121,7 @@ a:hover {
 
 .details {
     cursor: pointer; /* da a maozinha do mickey */
-    background-color: #e3f1ff; 
+    background-color: #ffe0fd; 
     color: #000000;              
     padding: 10px 20px;
     border-radius: 8px;
@@ -126,7 +131,7 @@ a:hover {
 }
 
 details:hover {
-  background-color: #d1e6ff;
+  background-color: #ffc5fb;
 }
 
 .skills {
@@ -139,7 +144,7 @@ details:hover {
 }
 
 .list-skills {
-    background-color: #e3f1ff; 
+    background-color: #ffe0fd; 
     cursor: pointer;
     color: #000000;              
     padding: 10px 20px;
@@ -149,7 +154,7 @@ details:hover {
 }
 
 .list-skills:hover {
-  background-color: #d1e6ff;
+  background-color: #ffc5fb;
 }
 
 .first-code {
@@ -181,8 +186,15 @@ details:hover {
   padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.14);
-  margin-top: 15px;
-  font-weight: 400;
+  margin-top: 20px;
+  font-weight: 300; /* nao vai px nem outra unidade */
+  font-size: large;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .profile {
@@ -194,6 +206,8 @@ details:hover {
 .thanks {
     margin-bottom: 40px;
     margin-top: 100px;
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 html {
@@ -201,12 +215,20 @@ html {
 }
 
 .code-snippet {
-    background-color: #f5f5f5;
+    background-color: #ffe0fd;
     border-radius: 8px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.14);
     font-size: 16px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    white-space: pre-line;
+    padding: 40px;
+}
 
+/* eh id pq puxa la de cima no "indice"*/
+#contacts {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 40px;
 }
