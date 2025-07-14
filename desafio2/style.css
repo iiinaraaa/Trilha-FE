@@ -57,7 +57,6 @@
 --font-size-l: 2.1875rem;
 --font-size-xl: 7.5rem;
 --font-size-xxl: 9.375rem;
-
 }
 
 .botao {
@@ -282,4 +281,10 @@ html {
     margin-top: 40px;
     font-family: var(--font-heading);
     font-weight: 400;
+}
+
+.bg-footer {
+  background-image: url(assets/footer.png);
+  height: 20rem;
+  mask-repeat: no-repeat;
 }
