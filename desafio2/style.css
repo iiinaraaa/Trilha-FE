@@ -69,7 +69,7 @@ body {
     font-weight: 200;
     font-style: normal;
     background-image: linear-gradient(to top, var(--color-bg2) 0,1%, var(--color-bg) 100%);
-    padding: 20px;
+    
     background-attachment: fixed; /* nao funcionou kkkk */
     color: var(--color-text);
 }
@@ -154,7 +154,8 @@ a:hover {
 .my-passions {
   background-color: var(--color-primary); 
   color: var(--color-text);              
-  padding: 10px 20px;
+  padding: 60px;
+  margin: 20px;
   border-radius: 8px;
   box-shadow: 2px 2px 6px var(--color-shadow);
   margin-top: 20px;
@@ -185,7 +186,8 @@ details:hover {
 .skills {
   background-color: var(--color-primary); 
   color: var(--color-text);              
-  padding: 10px 20px;
+  padding: 60px;
+  margin: 20px;
   border-radius: 8px;
   box-shadow: 2px 2px 6px var(--color-shadow);
   margin-top: 20px;
@@ -208,7 +210,8 @@ details:hover {
 .first-code {
   background-color: var(--color-primary); 
   color: var(--color-text);              
-  padding: 10px 20px;
+  padding: 60px;
+  margin: 20px;
   border-radius: 8px;
   box-shadow: 2px 2px 6px var(--color-shadow);
   transition: background-color 0.3s ease;
@@ -236,7 +239,8 @@ details:hover {
   box-shadow: 2px 2px 6px var(--color-shadow);
   margin-top: 20px;
   font-weight: 300; /* nao vai px nem outra unidade */
-  
+  padding: 60px;
+  margin: 20px;
 }
 
 .title {
@@ -256,6 +260,7 @@ details:hover {
     margin-top: 100px;
     font-weight: 500;
     font-size: var(--font-size-sm);
+    padding: 20px;
 }
 
 html {
@@ -281,10 +286,11 @@ html {
     margin-top: 40px;
     font-family: var(--font-heading);
     font-weight: 400;
+    margin: 20px;
 }
 
 .bg-footer {
   background-image: url(assets/footer.png);
   height: 20rem;
-  mask-repeat: no-repeat;
+  
 }
