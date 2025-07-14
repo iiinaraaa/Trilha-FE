@@ -69,7 +69,8 @@ body {
     font-weight: 200;
     font-style: normal;
     background-image: linear-gradient(to top, var(--color-bg2) 0,1%, var(--color-bg) 100%);
-    
+    margin: 0;
+    padding: 0;
     background-attachment: fixed; /* nao funcionou kkkk */
     color: var(--color-text);
 }
@@ -136,6 +137,7 @@ a:hover {
 .line {
     border-bottom: 1px solid #ccc;
     margin-top: 50px;
+    margin: 20px;
 }
 
 .profile-image {
@@ -292,5 +294,5 @@ html {
 .bg-footer {
   background-image: url(assets/footer.png);
   height: 20rem;
-  
+  margin: 0;
 }
