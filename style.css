@@ -33,6 +33,39 @@ body{
     animation: blink 1s step-start infinite;
 }
 
+
+.typing-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Pixelify Sans", sans-serif;
+    animation: typing 6s steps(30, end) 1s infinite alternate;
+    color: rgb(0, 255, 17);
+    margin: 2rem;
+}
+
+.blinking-cursor {
+    animation: blink cursor 1s step-start infinite;
+}
+
+/* dai aqui ele vai apagar */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 30ch; /* ver oq eh esse ch ai que eu n entendi muito bem... */
+    }
+    55% {
+        width: 30ch;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+
+
 @keyframes blink {
     50% {
         opacity: 0;
