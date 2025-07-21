@@ -38,7 +38,7 @@ body{
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Pixelify Sans", monospace, sans-serif;
     animation: typing 6s steps(30, end) 1s infinite alternate;
     color: rgb(0, 255, 17);
     margin: 2rem;
@@ -54,7 +54,7 @@ body{
         width: 0;
     }
     50% {
-        width: 30ch; /* ver oq eh esse ch ai que eu n entendi muito bem... */
+        width: 30ch; /* ch: unidade de medida que tem no css 30ch espaco pra 30 letras incluindo espacos.. se por px ou algo assim n fica legal */
     }
     55% {
         width: 30ch;
@@ -66,6 +66,7 @@ body{
 
 
 
+/* esse aqui eh responsavel pelo _ no final piscandinho */
 @keyframes blink {
     50% {
         opacity: 0;
