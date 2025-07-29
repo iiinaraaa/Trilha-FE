@@ -137,6 +137,23 @@ body {
     height: auto;
 }
 
+
+
+.footer {
+    background-color:var(--color-dark-bg);
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+
+
+
+
+/* learn more  */
+
 .learn-more {
     background-color: white;
     padding: 1rem;
@@ -145,22 +162,40 @@ body {
 
 .green-container {
     background-color: var(--color-knowmore-background);
+    border-radius: 20px ;
 }
 
-.green-title-LM { 
+.green-container-without-title {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 14px;
+}
+
+.green-title-LM {  
     background-color: var(--color-knowmore-title);
     color: white;
-}
-
-.footer {
-    background-color:var(--color-dark-bg);
-    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 40px;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 0px;
+    align-items: center;
+    font-weight: bold;
 }
 
+.list {
+    column-count: 2;
+}
+
+li::before {
+    content: "✔️";
+    color: black;
+}
+
+
+
+/* column-count
+ 
+column-gap */
 
 
 
