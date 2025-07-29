@@ -98,10 +98,14 @@ body {
 .video-section {
     background-color: var(--color-dark-bg);
     padding:20px 20px;
+    /* padding-left: 200px;
+    padding-right: 200px; */
     display: flex;
     justify-content: center;
     
-    
+    /* width: calc(100% + 24px);
+    position: relative;
+    left: -2rem; */
 }
 
 .video {
@@ -116,23 +120,21 @@ body {
     padding-bottom: 1rem;
 }
 
-.footer {
-    background-color:var(--color-dark-bg);
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 0px;
-}
-
 .main {
     background-color: white;
-    padding: 2rem;
+    padding-top: 2rem;  /*esse padding afasta o video tbm, tem que por padding em cada elemento individualmente */
     box-shadow:
     -7px 0 9px -8px rgba(16, 15, 15, 0.849),
     4px 0 1px -4 rgba(16, 15, 15, 0.885);
-    margin-left: 15rem;
-    margin-right: 15rem;
+    /* margin-left: 15rem; */
+    /* margin-right: 15rem; */
+}
+
+
+
+.img-responsive {
+    width: 100%;
+    height: auto;
 }
 
 .learn-more {
@@ -141,11 +143,23 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-.img-responsive {
-    width: 100%;
-    height: auto;
+.green-container {
+    background-color: var(--color-knowmore-background);
 }
 
+.green-title-LM { 
+    background-color: var(--color-knowmore-title);
+    color: white;
+}
+
+.footer {
+    background-color:var(--color-dark-bg);
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 0px;
+}
 
 
 
