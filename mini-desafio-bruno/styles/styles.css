@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+
+body {
+    background-color: pink;
+}
+
+.model-image {
+    padding-bottom: 40px;
+}
+
+.container-image {
+    position: relative;
+}
+
+.card-image {
+    border-radius: 10px;
+    width: 369px;
+    height: 369px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.card-area {
+    background-color: #ffffff;
+    display: flex;
+    justify-content:space-between;
+    padding: 24px;
+    border-radius: 10px 10px 0px 10px;
+    margin: 20px; /* so p eu enxergar o border radious */
+    position: absolute;
+    top: 228px;
+    left: 10px;
+    max-width: 369px;
+    width: 300px;
+
+}
+
+.card-text {
+    margin: 0;
+    padding: 0;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 500;
+    color: #33496a;
+}
+
+.card-button {
+    border-radius: 5px 5px 0px 5px;
+    background-color: #ffde41;
+    border: none;
+    width: 34px;
+    height: 23px;
+    margin-left: 10px;
+    
+}
+
+.seta {
+    width: 9px;
+}
+
+
+
+
+

@@ -18,6 +18,10 @@
 --color-knowmore-title: #2fa866;
 --color-knowmore-background: #c5ebd6;
 
+/* padding do main branco */
+
+/* --padding-w-main:  */
+
 /* --font-size-s: 1.7rem ;
 --font-size-sm: 1.2rem;
 --font-size-m: 1.5rem;
@@ -37,7 +41,7 @@
 .title {
     font-family: 'idroid.otf';
     color: var(--color-titles);
-    margin-top: 1rem;
+    margin: 0;
     font-size: 2rem;
 }
 
@@ -161,13 +165,6 @@
 
 .main {
     background-color: white;
-    padding-top: 2rem;  /*esse padding afasta o video tbm, tem que por padding em cada elemento individualmente */
-    box-shadow:
-    -7px 0 9px -8px rgba(16, 15, 15, 0.849),
-    4px 0 1px -4 rgba(16, 15, 15, 0.885);
-    /* margin-left: 15rem; */
-    /* margin-right: 15rem; */
-    max-width: 1024px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -233,8 +230,13 @@
     content: "✔️";
     color: black;
 } 
+   
 
+/* padding do main branco,  */
 
+.main-1 {
+    margin: 1.25rem;
+}
 
 
 

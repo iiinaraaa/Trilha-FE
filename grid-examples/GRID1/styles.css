@@ -1,0 +1,87 @@
+/* apenas estilizacao nessa area, grid +p baixo */
+
+body {
+    background-color: black;
+}
+
+.div-father {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px auto 100px 100px;
+    gap: 50px;
+    
+}
+
+.card {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    
+    padding: 40px;
+    text-align: center;
+    text-shadow: 0px 0px 3px black;
+}
+
+.div-soon-1 {
+    background-color: #fce300;
+    grid-column: span 2; 
+    
+}
+
+.div-soon-2 {
+    background-color: #2B6A4D;
+    grid-row: span 2;
+}
+
+.div-soon-3 {
+    background-color: #568D66;
+    
+}
+
+.div-soon-4 {
+    background-color: #A5C1AE;
+}
+
+.div-soon-5 {
+    background-color: #DCDFE5;
+    grid-column: span 2;
+}
+
+
+.space {
+    background-color: pink;
+    margin-bottom: 50px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+.div-soon-6 {
+    background-color: #DF8080;
+}
+
+.div-soon-7 {
+    background-color: #CB0B0A;
+}
+
+.div-soon-8 {
+    background-color: #AD080F;
+}
+
+.div-soon-9 {
+    background-color: #8E0413;
+}
+
+
+
+
+
+
+
+/* grid de fato!!! */
+
