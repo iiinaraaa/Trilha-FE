@@ -1,0 +1,189 @@
+:root {
+    /* Cores padroes */
+    --colorText--primary: black; 
+    --colorText--secondary: #654b14;
+    --colorBG--primary: #eeddee;
+    --colorBG--secondary: #c7c7c7; 
+
+    /* Journalism */
+     --colorText--primaryJournalism: white; 
+    --colorText--secondaryJournalism: white;
+    --colorBG--primaryJournalism: red;
+    --colorBG--secondaryJournalism: tomato; 
+
+    /* Sports */
+     --colorText--primarySports: white; 
+    --colorText--secondarySports: white;
+    --colorBG--primarySports: green;
+    --colorBG--secondarySports: lightgreen; 
+}
+
+.CategoryGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.CategoryGrid__Column{
+   padding: 20px;
+   color: var(--colorText--primary);
+}
+
+.CategoryGrid__Column--Journalism {
+    color: var(--colorText--journalism);
+}
+
+.CategoryGrid__Column--Sports {
+    color: var(--colorText--sports);
+}
+
+
+
+.CategoryGrid__Column--Journalism{
+    
+    /* background-color: Pink; */
+}
+
+/* Main Button */
+
+.MainButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--colorBG--primary);
+    color: var(--colorText--primary);
+    border-radius: 6px;
+    border-color: transparent;
+}
+
+
+.MainButton--sports {
+    background-color: var(--colorBG--primarySports);
+    color: var(--colorText--primarySports);
+}
+       
+
+.MainButton--journalism {
+    background-color: var(--colorBG--primaryJournalism);
+    color: var(--colorText--primaryJournalism);
+}
+
+.MainButton--agriculture{
+    background-color: yellow;
+    color: black;
+}
+
+/* 
+    Icon button
+*/
+
+.IconButton{
+    background-color: var(--colorBG--primary);
+    border: 2px solid var(--colorBG--primary);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.IconButton--big{
+    padding: 40px;
+    font-size: 40px;
+    border-radius: 20px;
+}
+
+.IconButton.IconButton--journalism {
+    background-color: var(--colorBG--primaryJournalism);
+}
+
+.IconButton.IconButton--sports {
+    background-color: var(--colorBG--primarySports);
+}
+
+.IconButton:hover{
+    background-color: var(--colorBG--secondary);
+}
+
+.IconButton.IconButton--journalism:hover {
+    background-color: var(--colorBG--secondaryJournalism);
+}
+
+.IconButton.IconButton--sports:hover {
+    background-color: var(--colorBG--secondarySports);
+}
+
+/* IconButton - Emoji */
+.IconButton:hover .IconButton__Emoji{
+    color: var(--colorText--primary);
+}
+
+.IconButton__Emoji {
+    font-weight: bold;
+    color: var(--colorText--secondary);
+    padding-right: 15px;
+}
+
+.IconButton.IconButton--journalism .IconButton__Emoji {
+    color: var(--colorText--primaryJournalism);
+}
+
+.IconButton.IconButton--sports .IconButton__Emoji {
+    color: var(--colorText--primarySports);
+}
+
+/* IconButton - Text */
+.IconButton__Text {
+    font-weight: bold;
+    color: var(--colorText--primary);
+    padding-right: 15px;
+}
+
+.IconButton.IconButton--journalism .IconButton__Text {
+    color: var(--colorText--primaryJournalism);
+}
+
+.IconButton.IconButton--journalism .IconButton__Text {
+    color: var(--colorText--primarySports);
+}
+
+.CategoryGrid__Title{
+    font-size: 20px;
+}
+        
+.CategoryGrid__Card{
+    display: grid;
+    border-radius: 10px;
+    grid-template-rows: 150px auto;
+}
+
+.CategoryGrid__Link{
+    text-decoration: none;
+}
+
+ .CategoryGrid__CardImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.CategoryGrid__CardInfo{
+    background-color: var(--colorBG--primary);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.CategoryGrid__Column--Journalism .CategoryGrid__CardInfo{
+    background-color: var(--colorText--journalism);
+}
+
+.CategoryGrid__Column--Sports .CategoryGrid__CardInfo{
+    background-color: var(--colorText--sports);
+}
+
+.CategoryGrid__CardTitle{
+    color: var(--colorText--primary);
+}
+                        
+.CategoryGrid__CardCategory{
+    color: var(--colorText--secondary);
+}
