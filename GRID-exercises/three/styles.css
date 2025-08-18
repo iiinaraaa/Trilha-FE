@@ -12,6 +12,8 @@
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: ;
+    border: solid 1px;
+
 }
 
 .grid-area-card:nth-child(1) {
@@ -101,9 +103,23 @@
     grid-column: 4/5;
 }
 
-.grid-area-card:hover {
-    
+.grid-area-card-hover {
+    transition: all 0.3s ease-in-out;
+     
 }
+
+.grid-area-card-hover:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 11px 10px 14px -1px rgba(2, 76, 62, 0.626);
+    -webkit-box-shadow: 11px 10px 14px -1px rgba(7, 87, 87, 0.697);
+    -moz-box-shadow: 11px 10px 14px -1px rgba(8, 89, 93, 0.504);
+    
+ }
+
+
+
+
 
 
 
