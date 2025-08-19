@@ -1,0 +1,26 @@
+:root {
+    --color--textFirst: black;
+    --color--firstBG: #faf0ca;
+
+    --color--firstSquare: white;
+    --color--secondSquare: black;
+}
+
+body {
+    background-color: pink;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    border: solid;
+}
+
+.square:nth-child(16n + 1){
+    background-color: var(--color--firstSquare);
+}
+
