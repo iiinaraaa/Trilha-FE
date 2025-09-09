@@ -1,5 +1,6 @@
 //base
 @use 'base/reset'; //SEMPRE VEM PRIMEIRO!!!!
+@use 'base/globals';
 @use 'base/colors';
 @use 'base/typography';
 
@@ -12,6 +13,7 @@
 @use 'layouts/footer';
 @use 'layouts/grid';
 @use 'layouts/header';
+@use 'layouts/flex';
 
 //themes
 @use 'themes/dark';

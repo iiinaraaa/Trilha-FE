@@ -1,0 +1,29 @@
+@use '../layouts/flex';
+@use '../base/colors';
+@use '../base/typography';
+
+.interface {
+    display: flex;
+    justify-content: flex.$jc-around;
+    align-items: flex.$ai-center;
+}
+
+.header-list {
+    display: flex;
+    flex-direction: flex.$flex-row;
+    justify-content: flex.$jc-around;
+    align-items: flex.$ai-center;
+    gap: 0 40px;
+}
+
+a {
+    text-decoration: typography.$text-decoration;
+    color: colors.$primary-color-link;
+    display: inline-block;
+    transition: .2s ease;
+
+    &:hover {
+        color: colors.$secondary-color-link;
+        transform: scale(1.05);
+    }
+}
