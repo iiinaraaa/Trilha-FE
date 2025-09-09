@@ -1,0 +1,42 @@
+@use '../base/typography';
+@use '../base/colors';
+@use '../layouts/flex';
+
+
+@mixin header-styles {
+    
+    h1.title-dot{
+        color: colors.$primary-color-text;
+        line-height: 27px;
+
+        &::after{
+            content: ".";
+            color: colors.$secondary-color-text;
+            padding-left: 2px;
+        }
+    }
+
+    p {
+        color: colors.$primary-color-text;
+        // display: inline-block;
+    }
+
+}
+
+.txt-middle-top {
+    @include header-styles()
+}
+
+.flex {
+    display: flex;
+    align-items: flex.$ai-center;
+    justify-content: center;
+    // width: 100%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    max-width: 1300px;
+    gap: 30px;
+}
+
+
+
