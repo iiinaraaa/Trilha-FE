@@ -1,0 +1,17 @@
+@use '../base/colors';
+
+
+
+.specialties {
+    color: colors.$color-primary;
+    
+}
+
+.title__text--colored {
+    color: colors.$color-secondary;
+}
+
+.topo-do-site {
+    align-items: center;
+    justify-content: center;
+}

@@ -5,7 +5,7 @@
 @use 'base/typography';
 
 //components
-@use 'components/buttons';
+@use 'components/button';
 @use 'components/cards';
 @use 'components/forms';
 
@@ -13,11 +13,15 @@
 @use 'layouts/footer';
 @use 'layouts/grid';
 @use 'layouts/header';
-@use 'layouts/flex';
-@use 'layouts/middle-top';
+
+@use 'layouts/hero';
+@use 'layouts/specialties';
+
 
 //themes
 @use 'themes/dark';
 
 //utils
 @use '../scss/utils/mixins';
+@use '../scss/utils/keyframes';
+@use '../scss/utils/animations';

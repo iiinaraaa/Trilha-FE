@@ -1,0 +1,75 @@
+@use '../base/typography';
+@use '../base/colors';
+
+@use '../utils/mixins'; //n funfou
+@use '../utils/animations';
+
+
+
+@mixin header--styles {
+    
+    .hero__title--dot{
+        color: colors.$color-primary;
+        line-height: 27px;
+
+        &::after{
+            content: ".";
+            color: colors.$color-secondary;
+            padding-left: 2px;
+        }
+    }
+
+    .hero__text {
+        color: colors.$color-primary;
+        // display: inline-block;
+    }
+
+}
+
+
+.hero__interface--texts {
+    @include header--styles();
+}
+
+.hero__interface--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 100%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    max-width: 1300px;
+    gap: 30px;
+}
+
+.hero__image {
+    @include animations.floatAnim;
+    
+
+    //botei isso aqui la no globals>body
+    // max-width: 1000px;
+    // overflow-x: hidden;
+
+
+
+
+
+
+
+    // nao deu certo nada disso aqui
+    // display: block;
+    // max-width: 100%;
+    // height: auto;
+
+
+
+
+    //isso aqui eh o famoso brak point que fala ali que o tamanho maximo vai ser 772 ai faz oq ta em {}
+    // @media (max-width: 772px) {
+    //     width: 100%;
+    //     display: block;
+    // }
+}
+
+
+

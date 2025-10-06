@@ -1,11 +1,21 @@
+
+
+$color-light: white;
+$color-dark: black;
+
+
 // background-colors
-$background-color: #000;
+$color-bg: $color-dark;
+
+
+
 //text-colors
-$primary-color-link: #7d7d7d;
-$secondary-color-link: #fff;
+$color-primary-link: #7d7d7d;
+$color-primary-link--hover: $color-light;
 
-$primary-color-text: #fff;
-$secondary-color-text: #00FF08;
+$color-primary: $color-light;
+$color-secondary: #00FF08;
+$color-tertiary: #ff00f2;
 
-//button color
-$primary-color-button: #00FF08;
+
+

@@ -185,32 +185,31 @@ summary {
 }
 
 body {
-  background-color: #000;
   font-family: "poppins", sans-serif;
 }
 
-header .btn-contato button {
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #00FF08;
-  border-radius: 30px;
-  cursor: pointer;
-}
-header .btn-contato button:hover {
-  box-shadow: 0px 0px 8px #00FF08;
+body {
+  background-color: black;
+  max-width: 8160px;
+  overflow-x: hidden;
 }
 
-main .btn-contato button {
+.button {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
   background-color: #00FF08;
   border-radius: 30px;
-  cursor: pointer;
 }
-main .btn-contato button:hover {
+.button:hover {
   box-shadow: 0px 0px 8px #00FF08;
+}
+.button--tertiary {
+  background-color: #ff00f2;
+}
+.button--tertiary:hover {
+  color: black;
+  box-shadow: 0px 0px 8px #ff00f2;
 }
 
 .interface {
@@ -219,37 +218,46 @@ main .btn-contato button:hover {
   align-items: center;
 }
 
-.header-list {
+.interface__menu--list {
   display: flex;
-  flex-direction: row;
+  flex-direction: flex-row;
   gap: 0 40px;
+  padding-right: 20px;
 }
 
-a {
+.menu__list--link {
   text-decoration: none;
   color: #7d7d7d;
   display: inline-block;
   transition: 0.2s ease;
 }
-a:hover {
-  color: #fff;
+.menu__list--link:hover {
+  color: white;
   transform: scale(1.05);
 }
 
-.txt-middle-top h1.title-dot {
-  color: #fff;
+@keyframes float {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+.hero__interface--texts .hero__title--dot {
+  color: white;
   line-height: 27px;
 }
-.txt-middle-top h1.title-dot::after {
+.hero__interface--texts .hero__title--dot::after {
   content: ".";
   color: #00FF08;
   padding-left: 2px;
 }
-.txt-middle-top p {
-  color: #fff;
+.hero__interface--texts .hero__text {
+  color: white;
 }
 
-.flex {
+.hero__interface--flex {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,6 +265,24 @@ a:hover {
   margin-right: 4rem;
   max-width: 1300px;
   gap: 30px;
+}
+
+.hero__image {
+  position: relative;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+.specialties {
+  color: white;
+}
+
+.title__text--colored {
+  color: #00FF08;
+}
+
+.topo-do-site {
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

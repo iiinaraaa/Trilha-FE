@@ -1,0 +1,29 @@
+@use '../base/typography';
+@use '../base/colors';
+
+ .button  {
+    padding: 10px 40px;
+    font-size: typography.$font-size-medium;
+    font-weight: typography.$font-weight-medium;
+    background-color: colors.$color-secondary;
+    border-radius: 30px;
+    
+
+    &:hover {
+        box-shadow: 0px 0px 8px colors.$color-secondary;
+        
+        
+    }
+
+    &--tertiary {
+        background-color: colors.$color-tertiary;
+        
+        &:hover {
+            color: colors.$color-dark;
+            box-shadow: 0px 0px 8px colors.$color-tertiary;
+        }
+    }
+}
+
+
+

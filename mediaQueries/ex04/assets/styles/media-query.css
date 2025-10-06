@@ -1,0 +1,101 @@
+/* todas as demais midias */
+
+/* typical devices breakpoints
+
+guanabara usou esses da w3c como referencia, mas tem do bootstrap e varios outros fatores que podem definir breakpoints de telas, ate pq existem MUITAS telas e nao eh como antigamente que existia um padrao para tamanhos por conta da pouca variedade diferente de hoje em dia que existem ate tamanhos para relogios ou para monitores com telas enormes...
+
+----------------------------------------------------------------
+
+pequenas telas: ate 600px
+celular: de 600px ate 768px
+tablet: 768px ate 992px
+desktop: 992 ate 1200px
+grandes telas: acima de 1200px
+
+
+cinthya falou que geralmente usam estes:
+pequenas telas: ate 600px
+celular: de 600px ate 768px
+tablet: 768px ate 1024px
+desktop: 1024 ate 1280px
+grandes telas: acima de 1200px
+
+*/
+
+
+/*   */
+
+
+@media print { /* IMPRESSAO */
+    body {
+        background-image: url(../images/back-print.jpg);
+    }
+
+    .img__mobile, .img__tablet, .img__desktop, .img__tv {
+        display: none;
+    }
+
+    .img__print {
+        display: block;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {  /*  TABLET  */
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+
+    .img__mobile, .img__print, .img__desktop, .img__tv {
+        display: none;
+    }
+
+    .img__tablet {
+        display: block;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {     /*  DESKTOP  */
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    .img__mobile, .img__print, .img__tablet, .img__tv {
+        display: none;
+    }
+
+    .img__desktop {
+        display: block;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {    /*  GRANDES TELAS  */
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+
+    .img__mobile, .img__print, .img__tablet, .img__desktop {
+        display: none;
+    }
+
+    .img__tv {
+        display: block;
+    }
+
+}
+
