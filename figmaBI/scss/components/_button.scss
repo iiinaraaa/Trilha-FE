@@ -1,0 +1,36 @@
+@use '../base/breakpoints' as bp;
+@use '../base/colors';
+@use '../base/animations';
+
+// .button {
+//     font-size: 14.88px;
+//     color: colors.$secondary-text;
+//     letter-spacing: -0.16px;
+//     line-height: 24px;
+//     background-color: colors.$btn-primary;
+//     padding: 18px 28px;
+//     border-radius: 8px;
+//     transition: animations.$speed-slow all ease-in;
+//     cursor: pointer;
+//     border: none;
+
+//     &:hover {
+//         background-color: colors.$btn-primary--hover;
+//         transition: animations.$speed-fast all ease-out;
+//     }
+
+//     &--dark {
+//         color: colors.$primary-text;
+//         background-color: colors.$bg-secondary;
+
+//         &:hover {
+//             background-color: colors.$btn-secondary--hover;
+//         }
+//     }
+
+//     &--mobileFull {
+//         @media (max-width: bp.$tablet) {
+//             width: 100%;
+//         }
+//     }
+// }

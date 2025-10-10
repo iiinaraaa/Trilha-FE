@@ -1,0 +1,29 @@
+@use "breakpoints" as bp;
+
+// bg colors
+
+$bg-primary: #F8F9FF;
+$bg-secondary: #F8D57E;
+$bg-tertiary: #E5F4F2;
+$bg-fourth: #F2BFAF;
+$bg-fifth: #FFFFFF;
+$bg-sixth: #2D2D2D;
+
+
+// button colors
+
+$btn-primary: #E5F4F2;
+$btn-secondary: #009379;
+$btn-tertiary: #FFFFFF;
+
+
+// text colors
+
+$primary-text: #2D2D2D;
+$secondary-text: #009379;
+$tertiary-text: white;
+
+body {
+  background-color: $bg-primary;
+  color: $primary-text;
+}

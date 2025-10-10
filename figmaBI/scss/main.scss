@@ -1,0 +1,18 @@
+//base
+@use 'base/reset'; //SEMPRE VEM PRIMEIRO!!!!
+@use 'base/animations';
+@use 'base/colors';
+@use 'base/typography';
+
+//components
+@use 'components/button';
+@use 'components/cards';
+@use 'components/forms';
+
+//layouts
+@use 'layouts/footer';
+@use 'layouts/grid';
+@use 'layouts/header';
+
+//themes
+@use 'themes/dark';
