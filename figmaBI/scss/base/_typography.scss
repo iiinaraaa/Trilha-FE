@@ -25,45 +25,39 @@ $size-bodyM: 16px;
 $size-bodyS: 14px;
 
 
-.h1--d2xl {
-    color: colors.$bg-fourth;
-}
 
+// * {
+//     display: none;
+// }
 
+// //mobile - sem media query pq eh mobile firts!!!!
+// *:nth-child(-n + 3) {
+//     display: block;
+//     font-size: $size-bodyS;
+//     color: colors.$btn-secondary;
+// }
 
+// // table
 
-
-body {
-    font-family: $font-primary;
-}
-
-// .text_h1--mobile {
-//     font-weight: normal;
-//     font-size: 37.81px;
-//     line-height: 40px;
-//     letter-spacing: -0.8px;
-//     color: colors.$primary-text;
-
-
-//     @media (min-width: bp.$tablet) {
-//         font-size: 68.06px;
-//         line-height: 72px;
-//         letter-spacing: -1.44px;
-//     }
-
-//     @media (min-width: bp.$small-desktop) {
-//         font-size: 67.22px;
-//     }
-
-//     @media (min-width: bp.$desktop) {
-//         font-size: 68.06px;
+// @media (min-width: 311px) and (max-width: 1024px) {
+//     *:nth-child(-n + 6) {
+//         display: block;
+//         color: colors.$bg-fourth;
+//         font-size: $size-displayL;
 //     }
 // }
 
-// .text--h2 {
+// // desktop
 
+// @media (min-width: 769px) and (max-width: 1440px) {
+//     *:nth-child(-n + 10) {
+//         display: block;
+//         color: colors.$bg-secondary;
+//         font-size: $size-display2XL;
+//     }
 // }
 
+// body {
+//     font-family: $font-primary;
+// }
 
-
- 

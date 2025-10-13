@@ -191,12 +191,60 @@ body {
   color: #2D2D2D;
 }
 
-.h1--d2xl {
-  color: #F2BFAF;
+button {
+  color: #FFFFFF;
+  padding-left: 78px;
+  padding-right: 78px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 20px;
+  border: none;
+  background-color: #009379;
+  display: flex;
+  gap: 10px;
 }
 
-body {
+.btn-first {
+  color: #FFFFFF;
+  padding-left: 78px;
+  padding-right: 78px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  margin: 10px;
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 20px;
+  border: none;
+  background-color: #009379;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-second {
+  background-color: #F8F9FF;
+  color: #009379;
+  border: #009379;
+  border: solid;
+  border-width: 2px;
+}
+
+.btn-third {
+  border: none;
+  background-color: #E5F4F2;
+  color: #009379;
+}
+
+.btn-fourth {
+  border: none;
+  background: none;
+  color: #009379;
 }
 
 /*# sourceMappingURL=styles.css.map */

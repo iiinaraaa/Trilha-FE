@@ -1,6 +1,99 @@
 @use '../base/breakpoints' as bp;
 @use '../base/colors';
 @use '../base/animations';
+@use '../base/typography' as tp;
+
+
+button {
+    color: colors.$btn-tertiary;
+    padding-left: 78px;
+    padding-right: 78px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin: 10px;
+    font-family: tp.$font-primary;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 20px;
+    border: none;
+    background-color: colors.$btn-secondary;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-first {
+    color: colors.$btn-tertiary;
+    padding-left: 78px;
+    padding-right: 78px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin: 10px;
+    font-family: tp.$font-primary;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 20px;
+    border: none;
+    background-color: colors.$btn-secondary;
+    display: flex;
+    gap: 10px;
+
+   
+}
+
+.btn-second {
+    background-color: colors.$bg-primary;
+    color: colors.$btn-secondary;
+    border: colors.$btn-secondary;
+    border: solid;
+    border-width: 2px;
+}
+
+.btn-third {
+    border: none;
+    background-color: colors.$bg-tertiary;
+    color: colors.$btn-secondary;
+}
+
+.btn-fourth {
+    border: none;
+    background: none;
+    color: colors.$btn-secondary;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // .button {
 //     font-size: 14.88px;
