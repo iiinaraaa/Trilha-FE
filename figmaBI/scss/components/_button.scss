@@ -4,7 +4,7 @@
 @use '../base/typography' as tp;
 
 
-button {
+button, .btn-first {
     color: colors.$btn-tertiary;
     padding-left: 78px;
     padding-right: 78px;
@@ -20,26 +20,15 @@ button {
     background-color: colors.$btn-secondary;
     display: flex;
     gap: 10px;
-}
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
-.btn-first {
-    color: colors.$btn-tertiary;
-    padding-left: 78px;
-    padding-right: 78px;
-    padding-bottom: 18px;
-    padding-top: 18px;
-    margin: 10px;
-    font-family: tp.$font-primary;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    border-radius: 20px;
-    border: none;
-    background-color: colors.$btn-secondary;
-    display: flex;
-    gap: 10px;
+    &:hover {
+        transform: scale(1.0);
+        box-shadow: 0 4px 10px #00937840;
+    }
 
-   
+    // TODO por o &-- com os outros botoes aqui depois de arrumar o html com BEM
 }
 
 .btn-second {
@@ -48,6 +37,7 @@ button {
     border: colors.$btn-secondary;
     border: solid;
     border-width: 2px;
+
 }
 
 .btn-third {
