@@ -4,7 +4,7 @@
 @use '../base/typography' as tp;
 
 
-button, .btn-first {
+.button {
     color: colors.$btn-tertiary;
     padding-left: 78px;
     padding-right: 78px;
@@ -28,25 +28,27 @@ button, .btn-first {
         box-shadow: 0 4px 10px #00937840;
     }
 
-    // TODO por o &-- com os outros botoes aqui depois de arrumar o html com BEM
+    &-second{
+        background-color: colors.$bg-primary;
+        color: colors.$btn-secondary;
+        border: colors.$btn-secondary;
+        border: solid;
+        border-width: 2px;
+    }
 }
 
-.btn-second {
-    background-color: colors.$bg-primary;
-    color: colors.$btn-secondary;
-    border: colors.$btn-secondary;
-    border: solid;
-    border-width: 2px;
+.button-second {
+    
 
 }
 
-.btn-third {
+.button-third {
     border: none;
     background-color: colors.$bg-tertiary;
     color: colors.$btn-secondary;
 }
 
-.btn-fourth {
+.button-fourth {
     border: none;
     background: none;
     color: colors.$btn-secondary;

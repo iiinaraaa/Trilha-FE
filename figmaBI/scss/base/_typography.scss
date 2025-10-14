@@ -26,38 +26,38 @@ $size-bodyS: 14px;
 
 
 
-// * {
-//     display: none;
-// }
+* {
+    display: none;
+}
 
-// //mobile - sem media query pq eh mobile firts!!!!
-// *:nth-child(-n + 3) {
-//     display: block;
-//     font-size: $size-bodyS;
-//     color: colors.$btn-secondary;
-// }
+//mobile - sem media query pq eh mobile firts!!!!
+*:nth-child(-n + 3) {
+    display: block;
+    font-size: $size-bodyS;
+    color: colors.$btn-secondary;
+}
 
-// // table
+// table
 
-// @media (min-width: 311px) and (max-width: 1024px) {
-//     *:nth-child(-n + 6) {
-//         display: block;
-//         color: colors.$bg-fourth;
-//         font-size: $size-displayL;
-//     }
-// }
+@media (min-width: 311px) and (max-width: 1024px) {
+    *:nth-child(-n + 6) {
+        display: block;
+        color: colors.$bg-fourth;
+        font-size: $size-displayL;
+    }
+}
 
-// // desktop
+// desktop
 
-// @media (min-width: 769px) and (max-width: 1440px) {
-//     *:nth-child(-n + 10) {
-//         display: block;
-//         color: colors.$bg-secondary;
-//         font-size: $size-display2XL;
-//     }
-// }
+@media (min-width: 769px) and (max-width: 1440px) {
+    *:nth-child(-n + 10) {
+        display: block;
+        color: colors.$bg-secondary;
+        font-size: $size-display2XL;
+    }
+}
 
-// body {
-//     font-family: $font-primary;
-// }
+body {
+    font-family: $font-primary;
+}
 

@@ -191,7 +191,35 @@ body {
   color: #2D2D2D;
 }
 
-button, .btn-first {
+* {
+  display: none;
+}
+
+*:nth-child(-n+3) {
+  display: block;
+  font-size: 14px;
+  color: #009379;
+}
+
+@media (min-width: 311px) and (max-width: 1024px) {
+  *:nth-child(-n+6) {
+    display: block;
+    color: #F2BFAF;
+    font-size: 50px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  *:nth-child(-n+10) {
+    display: block;
+    color: #F8D57E;
+    font-size: 90px;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.button {
   color: #FFFFFF;
   padding-left: 78px;
   padding-right: 78px;
@@ -210,12 +238,11 @@ button, .btn-first {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-button:hover, .btn-first:hover {
+.button:hover {
   transform: scale(1);
   box-shadow: 0 4px 10px rgba(0, 147, 120, 0.2509803922);
 }
-
-.btn-second {
+.button-second {
   background-color: #F8F9FF;
   color: #009379;
   border: #009379;
@@ -223,13 +250,13 @@ button:hover, .btn-first:hover {
   border-width: 2px;
 }
 
-.btn-third {
+.button-third {
   border: none;
   background-color: #E5F4F2;
   color: #009379;
 }
 
-.btn-fourth {
+.button-fourth {
   border: none;
   background: none;
   color: #009379;
