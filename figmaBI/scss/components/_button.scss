@@ -11,7 +11,7 @@
     padding-bottom: 18px;
     padding-top: 18px;
     margin: 10px;
-    font-family: tp.$font-primary;
+    font-family: tp.$font-body;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -28,31 +28,40 @@
         box-shadow: 0 4px 10px #00937840;
     }
 
-    &-second{
+    &--alert {
+        background-color: colors.$btn-alert;
+        color: colors.$btn-secondary;
+
+        &:hover {
+            box-shadow: 0 4px 10px #b8930141;
+        }
+    }
+
+    &--bordered {
         background-color: colors.$bg-primary;
         color: colors.$btn-secondary;
         border: colors.$btn-secondary;
         border: solid;
         border-width: 2px;
     }
+
+    &--faded {
+        border: none;
+        background-color: colors.$bg-tertiary;
+        color: colors.$btn-secondary;
+    }
+
+    &--clear {
+        border: none;
+        background: none;
+        color: colors.$btn-secondary;
+    }
 }
 
-.button-second {
-    
 
-}
 
-.button-third {
-    border: none;
-    background-color: colors.$bg-tertiary;
-    color: colors.$btn-secondary;
-}
 
-.button-fourth {
-    border: none;
-    background: none;
-    color: colors.$btn-secondary;
-}
+
 
 
 

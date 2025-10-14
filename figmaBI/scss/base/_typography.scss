@@ -7,8 +7,8 @@
 
 // font-family
 
-$font-primary: 'Poppins', sans-serif;
-$font-secondary: 'Mulish' sans-serif ;
+$font-heading: 'Poppins', sans-serif;
+$font-body: 'Mulish', sans-serif;
 
 // font size
 
@@ -25,39 +25,139 @@ $size-bodyM: 16px;
 $size-bodyS: 14px;
 
 
+//line height
 
-* {
-    display: none;
-}
+$line-height-display2XL: 1.3;
+$line-height-displayXL: 1.3;
+$line-height-displayL: 1.3;
+$line-height-displayM: 1.3;
+$line-height-displayS: 1.3;
+$line-height-displayXS: 1.3;
 
-//mobile - sem media query pq eh mobile firts!!!!
-*:nth-child(-n + 3) {
-    display: block;
-    font-size: $size-bodyS;
-    color: colors.$btn-secondary;
-}
+$line-height-bodyXL: 1.4;
+$line-height-bodyL: 1.5;
+$line-height-bodyM: 1.5;
+$line-height-bodyS: 1.6;
 
-// table
 
-@media (min-width: 311px) and (max-width: 1024px) {
-    *:nth-child(-n + 6) {
-        display: block;
-        color: colors.$bg-fourth;
-        font-size: $size-displayL;
-    }
-}
 
-// desktop
+//letter-spacing
 
-@media (min-width: 769px) and (max-width: 1440px) {
-    *:nth-child(-n + 10) {
-        display: block;
-        color: colors.$bg-secondary;
-        font-size: $size-display2XL;
-    }
-}
+$letter-spacing-display2XL: -2.5;
+$letter-spacing-displayXL: -2.5;
+$letter-spacing-displayL: -2;
+$letter-spacing-displayM: -2;
+$letter-spacing-displayS: -2;
+$letter-spacing-displayXS: -1;
+
+$letter-spacing-bodyXL: 0;
+$letter-spacing-bodyL: 0;
+$letter-spacing-bodyM: 0;
+$letter-spacing-bodyS: 0;
+
+
+
 
 body {
-    font-family: $font-primary;
+    font-family: $font-body;
+    font-size: $size-bodyM;
+    line-height: $line-height-bodyM;
+    letter-spacing: $letter-spacing-bodyM;
+    color: colors.$primary-text;
+}
+
+.text--body {
+    font-family: $font-body;
+    font-size: $size-bodyM;
+    line-height: $line-height-bodyM;
+    letter-spacing: $letter-spacing-bodyM;
+    color: colors.$primary-text;
+}
+
+.text--bodyL{
+    font-family: $font-body;
+    font-size: $size-bodyM;
+    line-height: $line-height-bodyM;
+    letter-spacing: $letter-spacing-bodyM;
+    color: colors.$primary-text;
+
+    @media (min-width: bp.$tablet) {
+        font-size: $size-bodyL;
+        line-height: $line-height-bodyL;
+        letter-spacing: $letter-spacing-bodyL;
+    }
+
+
+}
+
+
+//CREATE ENGAGING LANDING PAGES
+.text--h1 {
+    font-family: $font-heading;
+    font-size: $size-displayM;
+    line-height: $line-height-displayM;
+    letter-spacing: $letter-spacing-displayM;
+    color: colors.$primary-text;
+
+    @media (min-width: bp.$tablet) {
+        font-size: $size-displayXL;
+        line-height: $line-height-displayXL;
+        letter-spacing: $letter-spacing-displayXL;
+    }
+}
+
+
+//OUR METRICS STORY
+.text--h2 {
+    font-family: $font-heading;
+    font-size: $size-displayM;
+    line-height: $line-height-displayM;
+    letter-spacing: $letter-spacing-displayM;
+
+    //real stories from.. MOBILE  semibold
+    &--h2sm {
+        font-weight: 600;
+    }
+
+}
+
+
+.text--h3 {
+    font-family: $font-heading;
+    font-size: $size-displayS;
+    line-height: $line-height-displayS;
+    letter-spacing: $letter-spacing-displayS;
+
+    @media (min-width: bp.$tablet) {
+        font-size: $size-displayM;
+        line-height: $line-height-displayM;
+        letter-spacing: $letter-spacing-displayM;
+    }
+
+    @media (min-width: bp.$desktop) {
+        font-size: $size-displayL;
+        line-height: $line-height-displayL;
+        letter-spacing: $letter-spacing-displayL;
+    }
+}
+
+.text--h4 {
+    font-family: $font-heading;
+    font-size: $size-displayS;
+    line-height: $line-height-displayS;
+    letter-spacing: $letter-spacing-displayS;
+
+    @media (min-width: bp.$tablet) {
+        font-size: $size-displayXS;
+        line-height: $line-height-displayXS;
+        letter-spacing: $letter-spacing-displayXS;
+    }
+}
+
+.text--h5 {
+    font-family: $font-heading;
+    font-size: $size-displayXS;
+    line-height: $line-height-displayXS;
+    letter-spacing: $letter-spacing-displayXS;
 }
 
