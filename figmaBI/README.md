@@ -3,11 +3,11 @@
 <!-- - criar as cores -->
 <!-- - importar as google fonts -->
 <!-- - criar var sass p breakpoints, tem que ter um arquivo p isso -->
-- criar as tipografias de h1 ate h6 e body, pra isso funcionar tem que ter os breakpoints
-- criar um html com os h1s h6s e body provando que eles sao responsivos
+<!-- - criar as tipografias de h1 ate h6 e body, pra isso funcionar tem que ter os breakpoints -->
+<!-- - criar um html com os h1s h6s e body provando que eles sao responsivos -->
 <!-- - criar componente de button, e ele tem uma variante dark -->
-- fazer um componente de imagem responsiva (ex do guanabara) -->
-- criar um html com uma imagem e provar que ela eh responsiva (ex do guana)
+<!-- - fazer um componente de imagem responsiva (ex do guanabara) -->
+<!-- - criar um html com uma imagem e provar que ela eh responsiva (ex do guana) -->
 2 dias
 
 
@@ -23,6 +23,10 @@
 1 dia
 
 # atomos
+
+
+
+//vou fzr isso aqui primeiro pq os outros eu n entendi
 
 - icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone medio (our feature) e os grandes (features) (fazer a caixinha com border radious e a imagem), tem que ter variantes de tamanho e cor
 
