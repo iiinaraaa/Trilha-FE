@@ -1,0 +1,294 @@
+@use '../base/breakpoints' as bp;
+@use '../base/colors';
+
+
+
+
+
+
+
+
+.icon__primary { //cigarro salmao
+    background-color: colors.$icon-card-primary;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &--quadrado {
+        background-color: colors.$icon-card-secondary;
+    }
+
+    &--caixinha {
+        background-color: colors.$icon-card-tertiary;
+    }
+
+    &--confetti {
+        background-color: colors.$icon-card-tertiary;
+    }
+    
+    &--naveSecondary {
+        background-color: colors.$icon-card-secondary;
+    }
+}
+
+.icon__secondary {
+    background-color: colors.$icon-social;
+    display: inline-block;
+    margin: 10px;
+    padding: 12.2px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// redes sociais icons
+
+
+
+
+
+.social__icon--twitter {
+    background-color: colors.$icon-social;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.social__img--twitter {
+    padding-top: 9.6px;
+    padding-bottom: 9.6px;
+    padding-left: 8px;
+    padding-right: 8.51px;
+}
+
+.social__icon--mundinho {
+    background-color: colors.$icon-social;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.social__img--mundinho {
+    padding-top: 7.47px;
+    padding-bottom: 7.49px;
+    padding-left: 7.47px;
+    padding-right: 7.47px;
+}
+
+
+.social__icon--instagram {
+    background-color: colors.$icon-social;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.social__img--instagram {
+    padding: 7.47px;
+}
+
+.cardMeetOurTeam {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .social {
+//     padding-top: 10.67px;
+//     padding-bottom: 10.67px;
+//     padding-left: 7.47px;
+//     padding-right: 7.47px;
+//     border-radius: 16px;
+//     display: inline-block;
+//     overflow: hidden;
+//     background-color: colors.$icon-social;
+
+//     &--github {
+//         padding: 4px;
+//         background-color: colors.$icon-social-dark;
+//         border-radius: 16px;
+//     }
+
+//     &--instagram {
+//         padding: 7.47px;
+//         background-color: colors.$icon-social;
+//         border-radius: 16px;
+//     }
+
+  
+
+//     &--mundinho {
+//         padding-top: 7.47px;
+//         padding-bottom: 7.49px;
+//         padding-left: 7.47px;
+//         padding-right: 7.47px;
+//         background-color: colors.$icon-social;
+//         border-radius: 16px;
+//     }
+
+//     // &--twitter {
+//     //     background-color: colors.$icon-social;
+//     //     padding-top: 9.6px;
+//     //     padding-bottom: 9.6px;
+//     //     padding-left: 8px;
+//     //     padding-right: 8.51px;
+//     //     border-radius: 16px;
+//     // }
+
+//     &--youtube {
+//         background-color: colors.$icon-social-dark;
+//         padding-top: 10.13px;
+//         padding-bottom: 9.6px;
+//         padding-left: 7.47px;
+//         padding-right: 7.47px;
+//         border-radius: 16px;
+//     }
+
+//     &--linkedin {
+//         background-color: colors.$icon-social-dark;
+//         padding-top: 8px;
+//         padding-bottom: 7.85px;
+//         padding-left: 7.47px;
+//         padding-right: 7.62px;
+//         border-radius: 16px;
+//     }
+
+// }
+
+
+// .social__instagram--dark {
+//     background-color: colors.$icon-social-dark;
+// }
+
+// .social__twitter--dark {
+//     background-color: colors.$icon-social-dark;
+// }
+
+// .social__mundinho--dark {
+//     background-color: colors.$icon-social-dark;
+// }
+
+
+
+
+// @mixin cardSocialMediaIcons {
+//     .social--twitter {
+//         background-color: colors.$icon-social;
+//         border-radius: 16px;
+//         padding-top: 10.67px;
+//         padding-bottom: 10.67px;
+//         padding-left: 7.47px;
+//         padding-right: 7.47px;
+//         border-radius: 16px;
+//         display: inline-block;
+//     }
+// }
+

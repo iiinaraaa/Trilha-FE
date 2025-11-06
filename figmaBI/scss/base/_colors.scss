@@ -25,7 +25,31 @@ $primary-text: #2D2D2D;
 $secondary-text: #009379;
 $tertiary-text: white;
 
+//icons features
+
+$icon-card-primary: #ffe0dc;
+$icon-card-secondary: #cce9e4;
+$icon-card-tertiary: #fef7e5;
+
+
+$icon-social: #e5f4f2;
+$icon-social-dark: #4e4d4d;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   background-color: $bg-primary;
+  
   color: $primary-text;
 }

@@ -6,8 +6,13 @@
 
 //components
 @use 'components/button';
-@use 'components/cards';
+@use 'components/meetOurTeam';
+@use 'components/circle-background';
 @use 'components/forms';
+@use 'components/icon';
+@use 'components/metrics';
+
+
 
 //layouts
 @use 'layouts/footer';

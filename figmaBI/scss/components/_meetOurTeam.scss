@@ -1,0 +1,38 @@
+@use '../base/colors';
+@use '../base/typography' as tp;
+@use '../components/icon';
+
+.card__teamMember {
+    background-color: white;
+    border-radius: 20px;
+    width: 315px;
+    max-height: 459px;
+    margin-bottom: 30px;
+} 
+
+.card__teamMember--text {
+    text-align: center;
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.card__teamMember--title {
+    
+    font-family: tp.$font-heading;
+    font-weight: 600;
+    font-size: tp.$size-bodyL;
+    margin-bottom: 6px;
+}
+
+.card__teamMember--content {
+    font-family: tp.$font-body;
+    font-weight: 400;
+    font-size: tp.$size-bodyM;
+    margin-top: 0px;
+}
+
+
+
+
+
+
+

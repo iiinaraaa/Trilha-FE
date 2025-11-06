@@ -26,13 +26,18 @@
 
 
 
-//vou fzr isso aqui primeiro pq os outros eu n entendi
+<!--vou fzr isso aqui primeiro pq os outros eu n entendi
 
-- icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone medio (our feature) e os grandes (features) (fazer a caixinha com border radious e a imagem), tem que ter variantes de tamanho e cor
+icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone medio (our feature) e os grandes (features) (fazer a caixinha com border radious e a imagem), tem que ter variantes de tamanho e cor -->
+
+
+# moleculas
+
+<!-- - criar os cards e variantes do our metrics/select works -->
 
 # componentes
 
-- our metrics 2 variantes
+<!-- - our metrics 2 variantes - passei pra moleculas  -->
 - Meet our team
 - our features 
 
