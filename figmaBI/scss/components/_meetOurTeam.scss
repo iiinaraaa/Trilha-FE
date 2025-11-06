@@ -2,11 +2,13 @@
 @use '../base/typography' as tp;
 @use '../components/icon';
 
+
+//mobile
 .card__teamMember {
     background-color: white;
     border-radius: 20px;
     width: 315px;
-    max-height: 459px;
+    height: 459px;
     margin-bottom: 30px;
 } 
 
@@ -30,6 +32,73 @@
     margin-top: 0px;
 }
 
+//tablet
+
+.card__tablet {
+    display: flex;
+    gap: 20px;
+}
+
+.card__teamMemberTablet {
+    background-color: white;
+    border-radius: 20px;
+    width: 213.33px;
+    height: 354px;
+} 
+
+.card__teamMemberTablet--text {
+    text-align: center;
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.card__teamMemberTablet--title {
+    
+    font-family: tp.$font-heading;
+    font-weight: 600;
+    font-size: tp.$size-bodyL;
+    margin-bottom: 6px;
+}
+
+.card__teamMemberTablet--content {
+    font-family: tp.$font-body;
+    font-weight: 400;
+    font-size: tp.$size-bodyM;
+    margin-top: 0px;
+}
+
+//desktop
+
+.card__desktop {
+    display: flex;
+    gap: 30px;
+}
+
+.card__teamMemberDesktop {
+    background-color: white;
+    border-radius: 20px;
+    width: 370px;
+    height: 459px;
+} 
+
+.card__teamMemberDesktop--text {
+    text-align: center;
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.card__teamMemberDesktop--title {
+    
+    font-family: tp.$font-heading;
+    font-weight: 600;
+    font-size: tp.$size-bodyL;
+    margin-bottom: 6px;
+}
+
+.card__teamMemberDesktop--content {
+    font-family: tp.$font-body;
+    font-weight: 400;
+    font-size: tp.$size-bodyM;
+    margin-top: 0px;
+}
 
 
 
