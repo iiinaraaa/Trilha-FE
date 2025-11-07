@@ -2,7 +2,7 @@
 @use '../base/typography' as tp;
 @use '../components/icon';
 
-
+//first card layout
 //mobile
 .card__teamMember {
     background-color: white;
@@ -10,27 +10,28 @@
     width: 315px;
     height: 459px;
     margin-bottom: 30px;
+
+    &--text {
+        text-align: center;
+        border-bottom: solid 1px #d8d8d8;
+    }
+
+    &--title {
+        font-family: tp.$font-heading;
+        font-weight: 600;
+        font-size: tp.$size-bodyL;
+        margin-bottom: 6px;
+    }
+
+    &--content {
+        font-family: tp.$font-body;
+        font-weight: 400;
+        font-size: tp.$size-bodyM;
+        margin-top: 0px;
+    }
 } 
 
-.card__teamMember--text {
-    text-align: center;
-    border-bottom: solid 1px #d8d8d8;
-}
 
-.card__teamMember--title {
-    
-    font-family: tp.$font-heading;
-    font-weight: 600;
-    font-size: tp.$size-bodyL;
-    margin-bottom: 6px;
-}
-
-.card__teamMember--content {
-    font-family: tp.$font-body;
-    font-weight: 400;
-    font-size: tp.$size-bodyM;
-    margin-top: 0px;
-}
 
 //tablet
 
@@ -44,27 +45,26 @@
     border-radius: 20px;
     width: 213.33px;
     height: 354px;
+
+    &--text {
+        text-align: center;
+        border-bottom: solid 1px #d8d8d8;
+    }
+
+    &--title {
+        font-family: tp.$font-heading;
+        font-weight: 600;
+        font-size: tp.$size-bodyL;
+        margin-bottom: 6px;
+    }
+
+    &--content {
+        font-family: tp.$font-body;
+        font-weight: 400;
+        font-size: tp.$size-bodyM;
+        margin-top: 0px;
+    }
 } 
-
-.card__teamMemberTablet--text {
-    text-align: center;
-    border-bottom: solid 1px #d8d8d8;
-}
-
-.card__teamMemberTablet--title {
-    
-    font-family: tp.$font-heading;
-    font-weight: 600;
-    font-size: tp.$size-bodyL;
-    margin-bottom: 6px;
-}
-
-.card__teamMemberTablet--content {
-    font-family: tp.$font-body;
-    font-weight: 400;
-    font-size: tp.$size-bodyM;
-    margin-top: 0px;
-}
 
 //desktop
 
@@ -78,30 +78,110 @@
     border-radius: 20px;
     width: 370px;
     height: 459px;
+
+    &--text {
+        text-align: center;
+        border-bottom: solid 1px #d8d8d8;
+    }
+
+    &--title {
+        font-family: tp.$font-heading;
+        font-weight: 600;
+        font-size: tp.$size-bodyL;
+        margin-bottom: 6px;
+    }
+
+    &--content {
+        font-family: tp.$font-body;
+        font-weight: 400;
+        font-size: tp.$size-bodyM;
+        margin-top: 0px;
+    }
 } 
 
-.card__teamMemberDesktop--text {
-    text-align: center;
-    border-bottom: solid 1px #d8d8d8;
-}
 
-.card__teamMemberDesktop--title {
+//second card layout
+//mobile
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__member {
+        background-color: white;
+        width: 315px;
+        height: 433px;
+        border: solid 1px #e5f4f2;
+        border-radius: 20px;
+
+        &-image {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 16px;
+            
+        }
+
+        &-info {
+            text-align: center;
+            
+
+            &-name {
+                font-family: tp.$font-heading;
+                font-weight: 600;
+                font-size: tp.$size-bodyL;
+                margin: 0px;
+                
+            }
+
+            &-title {
+                font-family: tp.$font-body;
+                font-weight: 400;
+                font-size: tp.$size-bodyM;
+                margin: 0px;
+            }
+
+            &-description {
+                font-family: tp.$font-body;
+                font-weight: 400;
+                font-size: tp.$size-bodyM;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin: 0px;
+                padding-top: 30px;
+            }
+        }
+
+        &-socials {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 40px;
+            
+            
+            
+
+            &-item {
+                font-family: tp.$font-heading;
+                font-weight: 700;
+                font-size: tp.$size-bodyS;
+                color: colors.$secondary-text;
+            }
+        }
+
+        
+    }
+
     
-    font-family: tp.$font-heading;
-    font-weight: 600;
-    font-size: tp.$size-bodyL;
-    margin-bottom: 6px;
 }
 
-.card__teamMemberDesktop--content {
-    font-family: tp.$font-body;
-    font-weight: 400;
-    font-size: tp.$size-bodyM;
-    margin-top: 0px;
-}
-
-
-
-
+// .team-card__member {
+//     background-color: tomato;
+//     width: 315px;
+//     height: 433px;
+    
+// }
 
 

@@ -482,19 +482,16 @@ body {
   height: 459px;
   margin-bottom: 30px;
 }
-
 .card__teamMember--text {
   text-align: center;
   border-bottom: solid 1px #d8d8d8;
 }
-
 .card__teamMember--title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 21px;
   margin-bottom: 6px;
 }
-
 .card__teamMember--content {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
@@ -513,19 +510,16 @@ body {
   width: 213.33px;
   height: 354px;
 }
-
 .card__teamMemberTablet--text {
   text-align: center;
   border-bottom: solid 1px #d8d8d8;
 }
-
 .card__teamMemberTablet--title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 21px;
   margin-bottom: 6px;
 }
-
 .card__teamMemberTablet--content {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
@@ -544,24 +538,77 @@ body {
   width: 370px;
   height: 459px;
 }
-
 .card__teamMemberDesktop--text {
   text-align: center;
   border-bottom: solid 1px #d8d8d8;
 }
-
 .card__teamMemberDesktop--title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 21px;
   margin-bottom: 6px;
 }
-
 .card__teamMemberDesktop--content {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-top: 0px;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.team-card__member {
+  background-color: white;
+  width: 315px;
+  height: 433px;
+  border: solid 1px #e5f4f2;
+  border-radius: 20px;
+}
+.team-card__member-image {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+.team-card__member-info {
+  text-align: center;
+}
+.team-card__member-info-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0px;
+}
+.team-card__member-info-title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+}
+.team-card__member-info-description {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0px;
+  padding-top: 30px;
+}
+.team-card__member-socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.team-card__member-socials-item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #009379;
 }
 
 .metrics__mobile--layout {
