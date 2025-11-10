@@ -1,0 +1,77 @@
+@use '../base/colors';
+@use '../base/typography' as tp;
+@use '../components/icon';
+
+// eu preciso deixar esse use icon ai? nao sei...
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.features__card {
+    background-color: white;
+    width: 315px;
+    height: 408px;
+    border-radius: 20px;
+    border: solid 1px #e5f4f2;
+
+    &-icon {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        margin: 0px;
+    }
+
+    &-content {
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        
+    }
+
+    &-title {
+        font-family: tp.$font-heading;
+        font-size: tp.$size-displayS;
+        font-weight: 600;
+        margin: 0px;
+        padding-bottom: 24px;
+    }
+
+    &-description {
+        font-family: tp.$font-body;
+        font-size: tp.$size-bodyM;
+        font-weight: 400;
+        margin: 0px;
+    }
+
+    &-button {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        font-family: tp.$font-heading;
+        font-weight: 600;
+        font-size: tp.$size-bodyM;
+        color: colors.$secondary-text;
+        padding-top: 30px;
+        
+    }
+}
+
+//TODO arrumar o alinhamento das coisas
+
+
+
+
+
+
+

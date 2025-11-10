@@ -39,7 +39,11 @@ icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone 
 
 <!-- - our metrics 2 variantes - passei pra moleculas  -->
 <!-- - Meet our team -->
-- fazer as variantes do meet out team
-- our features 
+<!-- - fazer as variantes do meet out team -->
+
+- our features / features
+
+- fazer o box-shadow dos cards
+
 
 

@@ -108,32 +108,50 @@
     flex-direction: column;
     gap: 30px;
 
+    &--tablet {
+        gap: 20px;
+    }
+
+    &--desktop {
+        flex-direction: row;
+    }
+
     &__member {
         background-color: white;
         width: 315px;
         height: 433px;
         border: solid 1px #e5f4f2;
         border-radius: 20px;
+        
+        &--tablet {
+            width: 680px;
+            height: 381px;
+        }
+
+        &--desktop {
+            width: 370px;
+            height: 407px;
+        }
 
         &-image {
             display: flex;
             justify-content: center;
             padding-top: 40px;
             padding-bottom: 16px;
-            
         }
 
         &-info {
             text-align: center;
-            
 
             &-name {
                 font-family: tp.$font-heading;
                 font-weight: 600;
                 font-size: tp.$size-bodyL;
                 margin: 0px;
-                
+                padding-bottom: 6px;
             }
+
+
 
             &-title {
                 font-family: tp.$font-body;
@@ -160,9 +178,6 @@
             padding-top: 30px;
             padding-bottom: 40px;
             
-            
-            
-
             &-item {
                 font-family: tp.$font-heading;
                 font-weight: 700;
@@ -170,18 +185,11 @@
                 color: colors.$secondary-text;
             }
         }
-
-        
     }
-
-    
 }
 
-// .team-card__member {
-//     background-color: tomato;
-//     width: 315px;
-//     height: 433px;
-    
-// }
+//second card layout tablet
+
+
 
 
