@@ -1,13 +1,19 @@
 @use '../base/colors';
 @use '../base/typography' as tp;
-@use '../components/icon';
 
-// eu preciso deixar esse use icon ai? nao sei...
 
 .features {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    &--tablet {
+        gap: 20px;
+    }
+
+    &--desktop {
+        
+    }
 }
 
 .features__card {
@@ -16,20 +22,33 @@
     height: 408px;
     border-radius: 20px;
     border: solid 1px #e5f4f2;
+    box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+
+    &--tablet {
+        width: 680px;
+        height: 351px;
+    }
+
+    &--desktop {
+        max-width: 370px;
+        max-height: 384px;
+    }
+
+    &--long {
+        height: 444px;
+    }
 
     &-icon {
         display: flex;
         justify-content: center;
         padding-top: 40px;
         padding-bottom: 30px;
-        margin: 0px;
     }
 
     &-content {
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
-        
     }
 
     &-title {
@@ -38,7 +57,17 @@
         font-weight: 600;
         margin: 0px;
         padding-bottom: 24px;
+
+        &--tablet {
+            font-size: tp.$size-bodyL;
+        }
+
+        &--desktop {
+            font-size: tp.$size-displayS;
+        }
     }
+
+
 
     &-description {
         font-family: tp.$font-body;
@@ -63,11 +92,11 @@
         font-size: tp.$size-bodyM;
         color: colors.$secondary-text;
         padding-top: 30px;
-        
+        padding-bottom: 40px;
     }
 }
 
-//TODO arrumar o alinhamento das coisas
+//TODO parei na parte do desktop, preciso arrumar os cards do desktop e os alinhamentos!!!
 
 
 

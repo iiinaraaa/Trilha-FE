@@ -401,7 +401,6 @@ body {
 .icon__primary {
   background-color: #ffe0dc;
   display: inline-block;
-  margin: 10px;
   padding: 20px;
   border-radius: 20px;
   overflow: hidden;
@@ -819,20 +818,33 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-
+.features--tablet {
+  gap: 20px;
+}
 .features__card {
   background-color: white;
   width: 315px;
   height: 408px;
   border-radius: 20px;
   border: solid 1px #e5f4f2;
+  box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+}
+.features__card--tablet {
+  width: 680px;
+  height: 351px;
+}
+.features__card--desktop {
+  max-width: 370px;
+  max-height: 384px;
+}
+.features__card--long {
+  height: 444px;
 }
 .features__card-icon {
   display: flex;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  margin: 0px;
 }
 .features__card-content {
   text-align: center;
@@ -845,6 +857,12 @@ body {
   font-weight: 600;
   margin: 0px;
   padding-bottom: 24px;
+}
+.features__card-title--tablet {
+  font-size: 21px;
+}
+.features__card-title--desktop {
+  font-size: 28px;
 }
 .features__card-description {
   font-family: "Mulish", sans-serif;
@@ -866,6 +884,7 @@ body {
   font-size: 16px;
   color: #009379;
   padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
