@@ -1,6 +1,7 @@
 @use '../base/breakpoints' as bp;
 @use '../base/colors';
 
+
 .icon__primary { //cigarro salmao
     background-color: colors.$icon-card-primary;
     display: inline-block;
@@ -29,10 +30,10 @@
 .icon__secondary {
     background-color: colors.$icon-social;
     display: inline-block;
-    margin: 10px;
     padding: 12.2px;
     border-radius: 16px;
     overflow: hidden;
+    margin-left: 15px;
 }
 
 // redes sociais icons

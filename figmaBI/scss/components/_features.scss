@@ -12,7 +12,8 @@
     }
 
     &--desktop {
-        
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
@@ -29,13 +30,13 @@
         height: 351px;
     }
 
-    &--desktop {
-        max-width: 370px;
-        max-height: 384px;
-    }
-
     &--long {
         height: 444px;
+    }
+
+    &--desktop {
+        width: 370px;
+        height: 384px;
     }
 
     &-icon {
@@ -63,7 +64,7 @@
         }
 
         &--desktop {
-            font-size: tp.$size-displayS;
+            font-size: 28px;
         }
     }
 
@@ -74,6 +75,8 @@
         font-size: tp.$size-bodyM;
         font-weight: 400;
         margin: 0px;
+
+        
     }
 
     &-button {
@@ -93,12 +96,42 @@
         color: colors.$secondary-text;
         padding-top: 30px;
         padding-bottom: 40px;
+
+        &--desktop {
+            
+            padding-top: 33px;
+            padding-bottom: 43px;
+        }
     }
 }
 
-//TODO parei na parte do desktop, preciso arrumar os cards do desktop e os alinhamentos!!!
 
+// features compact
 
+.features-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features-compact__card {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 315px;
+    height: 90px;
+    border-radius: 20px;
+    border: solid 1px #e5f4f2;
+}
+
+.features-compact__card-title {
+    font-family: tp.$font-body;
+    font-weight: 400;
+    font-size: tp.$size-bodyL;
+    padding-left: 11px;
+}
+
+//adicionar box shadow no features-compact 
 
 
 

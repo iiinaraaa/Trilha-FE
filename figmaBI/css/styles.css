@@ -421,10 +421,10 @@ body {
 .icon__secondary {
   background-color: #e5f4f2;
   display: inline-block;
-  margin: 10px;
   padding: 12.2px;
   border-radius: 16px;
   overflow: hidden;
+  margin-left: 15px;
 }
 
 .social__icon--twitter {
@@ -821,6 +821,11 @@ body {
 .features--tablet {
   gap: 20px;
 }
+.features--desktop {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .features__card {
   background-color: white;
   width: 315px;
@@ -833,12 +838,12 @@ body {
   width: 680px;
   height: 351px;
 }
-.features__card--desktop {
-  max-width: 370px;
-  max-height: 384px;
-}
 .features__card--long {
   height: 444px;
+}
+.features__card--desktop {
+  width: 370px;
+  height: 384px;
 }
 .features__card-icon {
   display: flex;
@@ -885,6 +890,33 @@ body {
   color: #009379;
   padding-top: 30px;
   padding-bottom: 40px;
+}
+.features__card-link--desktop {
+  padding-top: 33px;
+  padding-bottom: 43px;
+}
+
+.features-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.features-compact__card {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 315px;
+  height: 90px;
+  border-radius: 20px;
+  border: solid 1px #e5f4f2;
+}
+
+.features-compact__card-title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  padding-left: 11px;
 }
 
 /*# sourceMappingURL=styles.css.map */
