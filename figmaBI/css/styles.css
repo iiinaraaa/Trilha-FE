@@ -896,12 +896,12 @@ body {
   padding-bottom: 43px;
 }
 
-.features-compact {
+.featuresCompact {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.features-compact__card {
+.featuresCompact__card {
   background-color: white;
   display: flex;
   align-items: center;
@@ -911,12 +911,23 @@ body {
   border: solid 1px #e5f4f2;
   box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.05);
 }
-
-.features-compact__card-title {
+.featuresCompact__card-title {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 21px;
   padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .featuresCompact__card {
+    width: 330px;
+  }
+}
+@media (min-width: 768px) {
+  .featuresCompact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 655px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

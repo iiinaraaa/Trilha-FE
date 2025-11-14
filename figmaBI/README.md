@@ -37,17 +37,18 @@ icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone 
 
 # componentes
 
-<!-- - our metrics 2 variantes - passei pra moleculas  -->
-<!-- - Meet our team -->
-<!-- - fazer as variantes do meet out team -->
+- our metrics 2 variantes - passei pra moleculas ✅
+
+- Meet our team ✅
+
+- fazer as variantes do meet out team ✅
 
 
-//esses ate sexta 21/11 !!!!
-- fazer todas as variantes
+//esses ate sexta 21/11 !!!! - fazer todas as variantes
 
-- our features / features
+- our features / features ✅
 
-- list logos
+- list logos 
 
 - real stories cards
 
