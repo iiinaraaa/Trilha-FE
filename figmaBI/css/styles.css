@@ -901,7 +901,6 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-
 .features-compact__card {
   background-color: white;
   display: flex;
@@ -910,13 +909,14 @@ body {
   height: 90px;
   border-radius: 20px;
   border: solid 1px #e5f4f2;
+  box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.05);
 }
 
 .features-compact__card-title {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 21px;
-  padding-left: 11px;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

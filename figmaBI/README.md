@@ -41,9 +41,26 @@ icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone 
 <!-- - Meet our team -->
 <!-- - fazer as variantes do meet out team -->
 
+
+- fazer todas as variantes
+
 - our features / features
 
-- fazer o box-shadow dos cards
+- list logos
 
+- real stories cards
+
+- card plans
+
+- get landing page botar so o telefone ali
+
+//esses 3 ate sexta!!!!!!!
+
+- forms
+
+- footer
+
+
+//TODO parar de usar -- p tablet e desktop e usar breakpoint agora.. nos proximos
 
 
