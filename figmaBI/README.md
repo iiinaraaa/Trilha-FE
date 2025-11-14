@@ -42,6 +42,7 @@ icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone 
 <!-- - fazer as variantes do meet out team -->
 
 
+//esses ate sexta 21/11 !!!!
 - fazer todas as variantes
 
 - our features / features
@@ -54,7 +55,7 @@ icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone 
 
 - get landing page botar so o telefone ali
 
-//esses 3 ate sexta!!!!!!!
+//////////
 
 - forms
 
