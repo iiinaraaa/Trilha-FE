@@ -930,4 +930,24 @@ body {
   }
 }
 
+.listLogos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 315px;
+}
+@media (min-width: 768px) {
+  .listLogos {
+    display: flex;
+    gap: 39.2px;
+    width: 616px;
+  }
+}
+@media (min-width: 1200px) {
+  .listLogos {
+    gap: 126px;
+    max-width: 1170px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

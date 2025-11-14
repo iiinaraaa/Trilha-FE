@@ -1,0 +1,100 @@
+.listLogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 315px;
+
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 39.2px;
+        width: 616px;
+    }
+
+    @media (min-width: 1200px) {
+        gap: 126px;
+        max-width: 1170px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .listLogos {
+//     border-top: solid 1px #d8d8d8;
+//     border-bottom: solid 1px #d8d8d8;
+
+//     @media (min-width: 768px) {
+//         width: 616px;
+//         border-top: solid 1px #d8d8d8;
+//         border-bottom: solid 1px #d8d8d8;
+//         display: flex;
+//         flex-direction: row;
+//     }
+
+    
+
+//     &__container {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         width: 375px;
+//         padding: 30px;
+
+    
+
+//         &__image {
+//             padding-top: 16.92px;
+//             padding-bottom: 16.92px;
+//             padding-right: 52.5px;
+
+//             @media (min) {
+                
+//             }
+            
+//         }
+
+        
+//     }
+
+    
+// }
+
