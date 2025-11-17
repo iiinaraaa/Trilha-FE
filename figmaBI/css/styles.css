@@ -350,6 +350,11 @@ body {
   line-height: 20;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
   color: #FFFFFF;
   padding-left: 78px;
@@ -933,21 +938,28 @@ body {
 .listLogos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  width: 315px;
+  gap: 52px;
+  margin: 0 auto;
+  border-top: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+  padding-top: 46.92px;
+  padding-bottom: 49.04px;
+  margin-bottom: 180px;
 }
 @media (min-width: 768px) {
   .listLogos {
     display: flex;
-    gap: 39.2px;
-    width: 616px;
+    gap: 40px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .listLogos {
     gap: 126px;
-    max-width: 1170px;
   }
+}
+.listLogos__image {
+  width: 70px;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -75,14 +75,11 @@
         font-size: tp.$size-bodyM;
         font-weight: 400;
         margin: 0px;
-
-        
     }
 
     &-button {
         display: flex;
         justify-content: center;
-        
     }
 
     &-link {
@@ -112,12 +109,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-
-    
-    
-
-
-    
 
     &__card {
         background-color: white;
@@ -198,7 +189,7 @@
 //     border: solid 1px #e5f4f2;
 //     box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.05);
 
-//     //TODO esse eh filho, lembrar disso!! e usar o &
+
 // }
 
 // .features-compact__card-title {

@@ -1,0 +1,29 @@
+@use '../base/breakpoints' as bp;
+
+.listLogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 52px;
+    margin: 0 auto;
+    border-top: solid 1px #d8d8d8;
+    border-bottom: solid 1px #d8d8d8;
+    padding-top: 46.92px;
+    padding-bottom: 49.04px;
+    margin-bottom: 180px; //padding do final da borda ate o features (na palavra mesmo!
+    
+    @media (min-width: bp.$tablet) {
+        display: flex;
+        gap: 40px;
+        
+
+    }
+
+    @media (min-width: bp.$desktop) {
+        gap: 126px;
+    }
+
+    &__image {
+        width: 70px;
+        height: auto;
+    }   
+}

@@ -48,9 +48,9 @@ icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone 
 
 - our features / features ✅
 
-- list logos 
+- list logos / variante
 
-- real stories cards
+- real stories cards 
 
 - card plans
 
@@ -58,11 +58,34 @@ icon (rede social dos cabecas) variante redonda pqna, variante tamanho de icone 
 
 //////////
 
+- more than 50 integration (logos)
+
 - forms
 
 - footer
 
 
-//TODO parar de usar -- p tablet e desktop e usar breakpoint agora.. nos proximos
+
+
+
+
+TODO por padding-bottom nas coisas, top nao eh necessario
+TODO arrumar os outros projetos, fazer ele ser responsivo, e nao fazer eles separadinhos
+
+
+
+
+
+
+
+
+
+
+
+-parar de usar -- p tablet e desktop e usar breakpoint agora.. nos proximos
+
+-lembrar que as imagens tbm tem que ter tamanho e altura, e tambem ter border radious caso ela seja redonda
+
+-lembrar de por padding bottom nas coisas
 
 
