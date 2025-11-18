@@ -1,194 +1,85 @@
 @use '../base/colors';
 @use '../base/typography' as tp;
 @use '../components/icon';
+@use '../base/breakpoints' as bp;
 
-//first card layout
-//mobile
-.card__teamMember {
-    background-color: white;
-    border-radius: 20px;
-    width: 315px;
-    height: 459px;
-    margin-bottom: 30px;
-
-    &--text {
-        text-align: center;
-        border-bottom: solid 1px #d8d8d8;
-    }
-
-    &--title {
-        font-family: tp.$font-heading;
-        font-weight: 600;
-        font-size: tp.$size-bodyL;
-        margin-bottom: 6px;
-    }
-
-    &--content {
-        font-family: tp.$font-body;
-        font-weight: 400;
-        font-size: tp.$size-bodyM;
-        margin-top: 0px;
-    }
-} 
-
-
-
-//tablet
-
-.card__tablet {
-    display: flex;
-    gap: 20px;
-}
-
-.card__teamMemberTablet {
-    background-color: white;
-    border-radius: 20px;
-    width: 213.33px;
-    height: 354px;
-
-    &--text {
-        text-align: center;
-        border-bottom: solid 1px #d8d8d8;
-    }
-
-    &--title {
-        font-family: tp.$font-heading;
-        font-weight: 600;
-        font-size: tp.$size-bodyL;
-        margin-bottom: 6px;
-    }
-
-    &--content {
-        font-family: tp.$font-body;
-        font-weight: 400;
-        font-size: tp.$size-bodyM;
-        margin-top: 0px;
-    }
-} 
-
-//desktop
-
-.card__desktop {
-    display: flex;
-    gap: 30px;
-}
-
-.card__teamMemberDesktop {
-    background-color: white;
-    border-radius: 20px;
-    width: 370px;
-    height: 459px;
-
-    &--text {
-        text-align: center;
-        border-bottom: solid 1px #d8d8d8;
-    }
-
-    &--title {
-        font-family: tp.$font-heading;
-        font-weight: 600;
-        font-size: tp.$size-bodyL;
-        margin-bottom: 6px;
-    }
-
-    &--content {
-        font-family: tp.$font-body;
-        font-weight: 400;
-        font-size: tp.$size-bodyM;
-        margin-top: 0px;
-    }
-} 
-
-
-//second card layout
-//mobile
-
-.team-card {
+.card__container {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    align-items: center;
 
-    &--tablet {
+    @media (min-width: bp.$tablet) {
+        flex-direction: row;
         gap: 20px;
     }
 
-    &--desktop {
-        flex-direction: row;
-    }
-
-    &__member {
-        background-color: white;
-        width: 315px;
-        height: 433px;
-        border: solid 1px #e5f4f2;
-        border-radius: 20px;
-        
-        &--tablet {
-            width: 680px;
-            height: 381px;
-        }
-
-        &--desktop {
-            width: 370px;
-            height: 407px;
-        }
-
-        &-image {
-            display: flex;
-            justify-content: center;
-            padding-top: 40px;
-            padding-bottom: 16px;
-        }
-
-        &-info {
-            text-align: center;
-
-            &-name {
-                font-family: tp.$font-heading;
-                font-weight: 600;
-                font-size: tp.$size-bodyL;
-                margin: 0px;
-                padding-bottom: 6px;
-            }
-
-
-
-            &-title {
-                font-family: tp.$font-body;
-                font-weight: 400;
-                font-size: tp.$size-bodyM;
-                margin: 0px;
-            }
-
-            &-description {
-                font-family: tp.$font-body;
-                font-weight: 400;
-                font-size: tp.$size-bodyM;
-                padding-left: 30px;
-                padding-right: 30px;
-                margin: 0px;
-                padding-top: 30px;
-            }
-        }
-
-        &-socials {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            padding-top: 30px;
-            padding-bottom: 40px;
-            
-            &-item {
-                font-family: tp.$font-heading;
-                font-weight: 700;
-                font-size: tp.$size-bodyS;
-                color: colors.$secondary-text;
-            }
-        }
+    @media (min-width: bp.$desktop) {
+        gap: 30px;
     }
 }
 
-//second card layout tablet
+.card__teamMember {
+    background-color: white;
+    border-radius: 20px;
+    // width: 315px;
+    // height: 459px;
+    max-width: 315px;
+    
+    @media (min-width: bp.$tablet) {
+        width: 213.33px;
+        height: 354px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        width: 370px;
+        height: 459px;
+    }
+
+    &-image {
+        // width: 315px;
+        // height: 278px;
+        aspect-ratio: 315/278;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+
+        @media (min-width: bp.$tablet) {
+            // width: 1000px;
+        }
+    }
+    
+
+    &-text {
+        text-align: center;
+        border-bottom: solid 1px #d8d8d8;
+    }
+
+    &-title {
+        font-family: tp.$font-heading;
+        font-weight: 600;
+        font-size: tp.$size-bodyL;
+        margin-bottom: 6px;
+    }
+
+    &-content {
+        font-family: tp.$font-body;
+        font-weight: 400;
+        font-size: tp.$size-bodyM;
+        margin-top: 0px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

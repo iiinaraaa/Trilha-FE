@@ -1,29 +1,36 @@
 @use '../base/breakpoints' as bp;
 
-.listLogos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 52px;
+.listRoundLogos {
+    display: flex;
+    gap: 15px;
     margin: 0 auto;
     border-top: solid 1px #d8d8d8;
     border-bottom: solid 1px #d8d8d8;
-    padding-top: 46.92px;
-    padding-bottom: 49.04px;
-    margin-bottom: 180px; //padding do final da borda ate o features (na palavra mesmo!
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 60px; //padding do final da borda ate o features (na palavra mesmo!
     
     @media (min-width: bp.$tablet) {
-        display: flex;
-        gap: 40px;
-        
-
+        gap: 76px;
     }
 
     @media (min-width: bp.$desktop) {
-        gap: 126px;
+        gap: 157.2px;
     }
 
     &__image {
-        width: 70px;
-        height: auto;
+        width: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+
+        @media (min-width: bp.$tablet) {
+            width: 50px;
+            height: auto;
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 64px;
+            height: auto;
+        }
     }   
 }

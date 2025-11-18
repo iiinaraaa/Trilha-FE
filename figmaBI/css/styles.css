@@ -479,155 +479,62 @@ body {
   padding-bottom: 30px;
 }
 
-.card__teamMember {
-  background-color: white;
-  border-radius: 20px;
-  width: 315px;
-  height: 459px;
-  margin-bottom: 30px;
-}
-.card__teamMember--text {
-  text-align: center;
-  border-bottom: solid 1px #d8d8d8;
-}
-.card__teamMember--title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 21px;
-  margin-bottom: 6px;
-}
-.card__teamMember--content {
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: 0px;
-}
-
-.card__tablet {
-  display: flex;
-  gap: 20px;
-}
-
-.card__teamMemberTablet {
-  background-color: white;
-  border-radius: 20px;
-  width: 213.33px;
-  height: 354px;
-}
-.card__teamMemberTablet--text {
-  text-align: center;
-  border-bottom: solid 1px #d8d8d8;
-}
-.card__teamMemberTablet--title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 21px;
-  margin-bottom: 6px;
-}
-.card__teamMemberTablet--content {
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: 0px;
-}
-
-.card__desktop {
-  display: flex;
-  gap: 30px;
-}
-
-.card__teamMemberDesktop {
-  background-color: white;
-  border-radius: 20px;
-  width: 370px;
-  height: 459px;
-}
-.card__teamMemberDesktop--text {
-  text-align: center;
-  border-bottom: solid 1px #d8d8d8;
-}
-.card__teamMemberDesktop--title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 21px;
-  margin-bottom: 6px;
-}
-.card__teamMemberDesktop--content {
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: 0px;
-}
-
-.team-card {
+.card__container {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
 }
-.team-card--tablet {
-  gap: 20px;
+@media (min-width: 768px) {
+  .card__container {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
-.team-card--desktop {
-  flex-direction: row;
+@media (min-width: 1440px) {
+  .card__container {
+    gap: 30px;
+  }
 }
-.team-card__member {
+
+.card__teamMember {
   background-color: white;
-  width: 315px;
-  height: 433px;
-  border: solid 1px #e5f4f2;
   border-radius: 20px;
+  max-width: 315px;
 }
-.team-card__member--tablet {
-  width: 680px;
-  height: 381px;
+@media (min-width: 768px) {
+  .card__teamMember {
+    width: 213.33px;
+    height: 354px;
+  }
 }
-.team-card__member--desktop {
-  width: 370px;
-  height: 407px;
+@media (min-width: 1440px) {
+  .card__teamMember {
+    width: 370px;
+    height: 459px;
+  }
 }
-.team-card__member-image {
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 16px;
+.card__teamMember-image {
+  aspect-ratio: 315/278;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
-.team-card__member-info {
+.card__teamMember-text {
   text-align: center;
+  border-bottom: solid 1px #d8d8d8;
 }
-.team-card__member-info-name {
+.card__teamMember-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 21px;
-  margin: 0px;
-  padding-bottom: 6px;
+  margin-bottom: 6px;
 }
-.team-card__member-info-title {
+.card__teamMember-content {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  margin: 0px;
-}
-.team-card__member-info-description {
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0px;
-  padding-top: 30px;
-}
-.team-card__member-socials {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 40px;
-}
-.team-card__member-socials-item {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #009379;
+  margin-top: 0px;
 }
 
 .metrics__mobile--layout {
@@ -960,6 +867,101 @@ body {
 .listLogos__image {
   width: 70px;
   height: auto;
+}
+
+.listRoundLogos {
+  display: flex;
+  gap: 15px;
+  margin: 0 auto;
+  border-top: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .listRoundLogos {
+    gap: 76px;
+  }
+}
+@media (min-width: 1440px) {
+  .listRoundLogos {
+    gap: 157.2px;
+  }
+}
+.listRoundLogos__image {
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+@media (min-width: 768px) {
+  .listRoundLogos__image {
+    width: 50px;
+    height: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .listRoundLogos__image {
+    width: 64px;
+    height: auto;
+  }
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.team-card__member {
+  background-color: white;
+  width: 315px;
+  height: 433px;
+  border: solid 1px #e5f4f2;
+  border-radius: 20px;
+}
+.team-card__member-image {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+.team-card__member-info {
+  text-align: center;
+}
+.team-card__member-info-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0px;
+  padding-bottom: 6px;
+}
+.team-card__member-info-title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+}
+.team-card__member-info-description {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0px;
+  padding-top: 30px;
+}
+.team-card__member-socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.team-card__member-socials-item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #009379;
 }
 
 /*# sourceMappingURL=styles.css.map */

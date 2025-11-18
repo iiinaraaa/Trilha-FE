@@ -8,14 +8,13 @@
 //components
 @use 'components/button';
 @use 'components/meetOurTeam';
-@use 'components/circle-background';
 @use 'components/forms';
 @use 'components/icon';
 @use 'components/metrics';
 @use 'components/features';
 @use 'components/listLogos';
-
-
+@use 'components/listRoundLogos';
+@use 'components/meetOurTeamVariable';
 
 //layouts
 @use 'layouts/footer';
