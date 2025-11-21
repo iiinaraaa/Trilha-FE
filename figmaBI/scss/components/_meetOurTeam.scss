@@ -22,12 +22,10 @@
 .card__teamMember {
     background-color: white;
     border-radius: 20px;
-    // width: 315px;
-    // height: 459px;
     max-width: 315px;
     
     @media (min-width: bp.$tablet) {
-        width: 213.33px;
+        width: 213px;
         height: 354px;
     }
 
@@ -37,16 +35,22 @@
     }
 
     &-image {
-        // width: 315px;
-        // height: 278px;
         aspect-ratio: 315/278;
         overflow: hidden;
+        object-fit: cover;
         width: 100%;
         height: auto;
+        border-radius: 20px 20px 0 0;
 
         @media (min-width: bp.$tablet) {
-            // width: 1000px;
+            aspect-ratio: 213/173;
         }
+
+        @media (min-width: bp.$desktop){
+            aspect-ratio: 370/278;
+        }
+
+
     }
     
 

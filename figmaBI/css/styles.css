@@ -504,7 +504,7 @@ body {
 }
 @media (min-width: 768px) {
   .card__teamMember {
-    width: 213.33px;
+    width: 213px;
     height: 354px;
   }
 }
@@ -517,8 +517,20 @@ body {
 .card__teamMember-image {
   aspect-ratio: 315/278;
   overflow: hidden;
+  object-fit: cover;
   width: 100%;
   height: auto;
+  border-radius: 20px 20px 0 0;
+}
+@media (min-width: 768px) {
+  .card__teamMember-image {
+    aspect-ratio: 213/173;
+  }
+}
+@media (min-width: 1440px) {
+  .card__teamMember-image {
+    aspect-ratio: 370/278;
+  }
 }
 .card__teamMember-text {
   text-align: center;
