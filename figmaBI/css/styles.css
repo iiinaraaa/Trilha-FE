@@ -350,11 +350,6 @@ body {
   line-height: 20;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .button {
   color: #FFFFFF;
   padding-left: 78px;
@@ -505,32 +500,31 @@ body {
 @media (min-width: 768px) {
   .card__teamMember {
     width: 213px;
-    height: 354px;
   }
 }
 @media (min-width: 1440px) {
   .card__teamMember {
     width: 370px;
-    height: 459px;
   }
 }
-.card__teamMember-image {
+.card__teamMember-contentImage {
   aspect-ratio: 315/278;
   overflow: hidden;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
   border-radius: 20px 20px 0 0;
 }
 @media (min-width: 768px) {
-  .card__teamMember-image {
+  .card__teamMember-contentImage {
     aspect-ratio: 213/173;
   }
 }
 @media (min-width: 1440px) {
-  .card__teamMember-image {
+  .card__teamMember-contentImage {
     aspect-ratio: 370/278;
   }
+}
+.card__teamMember-contentImage-img {
+  width: 100%;
+  height: auto;
 }
 .card__teamMember-text {
   text-align: center;
@@ -741,13 +735,19 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
 }
-.features--tablet {
-  gap: 20px;
+@media (min-width: 768px) {
+  .features {
+    gap: 20px;
+  }
 }
-.features--desktop {
-  flex-direction: row;
-  flex-wrap: wrap;
+@media (min-width: 1440px) {
+  .features {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .features__card {
@@ -758,16 +758,20 @@ body {
   border: solid 1px #e5f4f2;
   box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
 }
-.features__card--tablet {
-  width: 680px;
-  height: 351px;
-}
 .features__card--long {
   height: 444px;
 }
-.features__card--desktop {
-  width: 370px;
-  height: 384px;
+@media (min-width: 768px) {
+  .features__card {
+    width: 680px;
+    height: 351px;
+  }
+}
+@media (min-width: 1440px) {
+  .features__card {
+    width: 370px;
+    height: 384px;
+  }
 }
 .features__card-icon {
   display: flex;
@@ -787,11 +791,15 @@ body {
   margin: 0px;
   padding-bottom: 24px;
 }
-.features__card-title--tablet {
-  font-size: 21px;
+@media (min-width: 768px) {
+  .features__card-title {
+    font-size: 21px;
+  }
 }
-.features__card-title--desktop {
-  font-size: 28px;
+@media (min-width: 1440px) {
+  .features__card-title {
+    font-size: 28px;
+  }
 }
 .features__card-description {
   font-family: "Mulish", sans-serif;
@@ -814,44 +822,6 @@ body {
   color: #009379;
   padding-top: 30px;
   padding-bottom: 40px;
-}
-.features__card-link--desktop {
-  padding-top: 33px;
-  padding-bottom: 43px;
-}
-
-.featuresCompact {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.featuresCompact__card {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  width: 315px;
-  height: 90px;
-  border-radius: 20px;
-  border: solid 1px #e5f4f2;
-  box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.05);
-}
-.featuresCompact__card-title {
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
-  font-size: 21px;
-  padding-left: 20px;
-}
-@media (min-width: 768px) {
-  .featuresCompact__card {
-    width: 330px;
-  }
-}
-@media (min-width: 768px) {
-  .featuresCompact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 655px;
-  }
 }
 
 .listLogos {
@@ -923,6 +893,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  .team-card {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .team-card__member {
   background-color: white;
@@ -930,6 +907,18 @@ body {
   height: 433px;
   border: solid 1px #e5f4f2;
   border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .team-card__member {
+    width: 680px;
+    height: 381px;
+  }
+}
+@media (min-width: 1440px) {
+  .team-card__member {
+    width: 370px;
+    height: 407px;
+  }
 }
 .team-card__member-image {
   display: flex;
@@ -974,6 +963,144 @@ body {
   font-weight: 700;
   font-size: 14px;
   color: #009379;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .features {
+    gap: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .features {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.features__card {
+  background-color: white;
+  width: 315px;
+  height: 408px;
+  border-radius: 20px;
+  border: solid 1px #e5f4f2;
+  box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+}
+.features__card--long {
+  height: 444px;
+}
+@media (min-width: 768px) {
+  .features__card {
+    width: 680px;
+    height: 351px;
+  }
+}
+@media (min-width: 1440px) {
+  .features__card {
+    width: 370px;
+    height: 384px;
+  }
+}
+.features__card-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.features__card-content {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.features__card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0px;
+  padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .features__card-title {
+    font-size: 21px;
+  }
+}
+@media (min-width: 1440px) {
+  .features__card-title {
+    font-size: 28px;
+  }
+}
+.features__card-description {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px;
+}
+.features__card-button {
+  display: flex;
+  justify-content: center;
+}
+.features__card-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #009379;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.featuresCompact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 315px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .featuresCompact {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 680px;
+  }
+}
+@media (min-width: 1440px) {
+  .featuresCompact {
+    max-width: 570px;
+  }
+}
+.featuresCompact__card {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 315px;
+  height: 90px;
+  border-radius: 20px;
+  border: solid 1px #e5f4f2;
+  box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.05);
+}
+@media (min-width: 768px) {
+  .featuresCompact__card {
+    width: 330px;
+  }
+}
+@media (min-width: 1440px) {
+  .featuresCompact__card {
+    width: 275px;
+  }
+}
+.featuresCompact__card-title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

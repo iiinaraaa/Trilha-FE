@@ -18,17 +18,20 @@
 
 # moleculas
 
-- criar os cards e variantes do our metrics/select works ✅ <!-- TODO refazer! de forma responsiva -->
 
 # componentes
 
- - Meet our team ✅ <!-- TODO refazer! de forma responsiva -->
+- Meet our team ✅ 
+- variantes do meet out team ✅
 
-- fazer as variantes do meet out team ✅ <!-- TODO refazer! de forma responsiva --> 
-
-- our features / features ✅ <!-- TODO refazer! de forma responsiva -->
+- our features / features ✅ 
+- features small ✅
+- features variable ✅
 
 - list logos / variante ✅
+
+- our metrics
+- variante our metrics
 
 - real stories cards 
 
@@ -42,10 +45,7 @@
 
 - footer
 
-
-
-
-- obs:
+# anotacao:
 
 - por padding-bottom nas coisas, top nao eh necessario
 
@@ -61,15 +61,39 @@
 
 - na questao de img e medias eh bom usar aspect-ratio por conta de responsividade
 
+- e se usa aspect-ratio em divs, com imagem dentro:
+
+&-contentImage {
+    aspect-ratio: 315/278;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+
+    @media (min-width: bp.$tablet) {
+        aspect-ratio: 213 / 173;
+    }
+
+    &-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+- nem sempre precisamos definir height pras coisas pq isso quebra tudo as vezes
+
+- MARGIN: 0 AUTO: isso aqui alinha no meio sem precisar usar flex ou grid, mas precisa acompanhar um max-width ou display: block;
 
 
-- to do :
 
-TODO arrumar os outros projetos, fazer ele ser responsivo, e nao fazer eles separadinhos
 
-TODO arrumar o bem nos icons
+# to do :
+
+- arrumar os outros projetos, fazer ele ser responsivo, e nao fazer eles separadinhos ✅
 
 - arrumar o padrao no nome das pastas que eu to fznd no storypobre ✅
+
+TODO Por o projeto no vercel pra facilitar acesso dos mentores
+
+TODO arrumar o bem nos icons
 
 
 

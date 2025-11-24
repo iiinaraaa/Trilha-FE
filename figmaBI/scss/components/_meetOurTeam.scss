@@ -26,31 +26,29 @@
     
     @media (min-width: bp.$tablet) {
         width: 213px;
-        height: 354px;
     }
 
     @media (min-width: bp.$desktop) {
         width: 370px;
-        height: 459px;
     }
 
-    &-image {
+    &-contentImage {
         aspect-ratio: 315/278;
         overflow: hidden;
-        object-fit: cover;
-        width: 100%;
-        height: auto;
         border-radius: 20px 20px 0 0;
 
         @media (min-width: bp.$tablet) {
-            aspect-ratio: 213/173;
+            aspect-ratio: 213 / 173;
         }
 
         @media (min-width: bp.$desktop){
-            aspect-ratio: 370/278;
+            aspect-ratio: 370 / 278;
         }
 
-
+        &-img {
+            width: 100%;
+            height: auto;
+        }
     }
     
 
@@ -73,18 +71,3 @@
         margin-top: 0px;
     }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
