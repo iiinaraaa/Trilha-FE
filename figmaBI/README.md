@@ -30,8 +30,8 @@
 
 - list logos / variante ✅
 
-- our metrics
-- variante our metrics
+- our metrics ✅
+- variante our metrics ✅
 
 - real stories cards 
 

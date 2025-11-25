@@ -1,223 +1,69 @@
 @use '../base/colors';
 @use '../base/typography' as tp;
-
-
-
-.metrics__mobile--layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0px auto;
-    max-width: 350px;
-}
+@use '../base/breakpoints' as bp;
 
 .metrics {
-    background-color: colors.$bg-fifth;
-    width: 147.5px;
-    height: 164px;
-    text-align: center;
-    margin: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 16px;
-    padding-left: 16px;
-    border-bottom: solid 4px #f2bfaf;
-    border-radius: 20px 20px 0 0;
-    
-    
-    
-
-    &--title {
-        font-family: tp.$font-heading;
-        font-size: tp.$size-displayS;
-        font-weight: 600;
-        margin: 0px;
-    }
-
-    &--content {
-        font-family: tp.$font-body;
-        font-size: tp.$size-bodyM;
-        font-weight: 400;
-        margin: 0px;
-    }
-}
-
-
-.metrics__tablet {
-    background-color: colors.$bg-fifth;
-    width: 155px;
-    height: 143px;
-    text-align: center;
-    margin: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 16px;
-    padding-left: 16px;
-    border-bottom: solid 4px #f2bfaf;
-    border-radius: 20px 20px 0 0;
-
-
-    &--title {
-        font-family: tp.$font-heading;
-        font-size: tp.$size-displayS;
-        font-weight: 600;
-        margin: 0px;
-    }
-
-    &--content {
-        font-family: tp.$font-body;
-        font-size: tp.$size-bodyM;
-        font-weight: 400;
-        margin: 0px;
-        margin-bottom: 30px;
-    }
-
-}
-
-.metrics__tablet--smaller {
-    width: 155px;
-    height: 122px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.metrics__tablet--layout {
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-.metrics__desktop {
-    background-color: colors.$bg-fifth;
-    width: 270px;
-    height: 171px;
-    text-align: center;
-    margin: 10px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-right: 16px;
-    padding-left: 16px;
-    border-bottom: solid 4px #f2bfaf;
-    border-radius: 20px 20px 0 0;
-
-    &--title {
-        font-family: tp.$font-heading;
-        font-size: tp.$size-displayS;
-        font-weight: 700;
-        margin: 0px;
-    }
-
-    &--content {
-        font-family: tp.$font-body;
-        font-size: tp.$size-bodyM;
-        font-weight: 400;
-        margin: 0px;
-        margin-bottom: 30px;
-    }
-}
-
-.metrics__desktop--layout {
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-
-// secondary card
-
-.secondMetrics__mobile--layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 315px;
+    align-items: center;
+    width: 315px;
+    margin: 0 auto;
+    align-items: flex-start;
+    
+    @media (min-width: bp.$tablet) {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        width: 680px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        width: 1170px;
+    }
+
+    &__card {
+        background-color: colors.$bg-fifth;
+        width: 147.5px;
+        height: 164px;
+        text-align: center;
+        margin: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 16px;
+        padding-left: 16px;
+        border-bottom: solid 4px #f2bfaf;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        @media (min-width: bp.$tablet) {
+            width: 155px;
+            height: 143px;
+
+            &--smaller {
+                height: 122px;
+            }
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 270px;
+            height: 171px;
+        }
+
+        &-title {
+            font-family: tp.$font-heading;
+            font-size: tp.$size-displayS;
+            font-weight: 600;
+            margin: 0px; 
+        }
+
+        &-content {
+            font-family: tp.$font-body;
+            font-size: tp.$size-bodyM;
+            font-weight: 400;
+            margin: 0px;
+        }
+    }
 }
-
-
-.secondMetrics__card--mobile {
-    margin: 10px;
-    border-left: solid 4px #f2bfaf;
-    padding-left: 20px;
-}
-
-.secondMetrics__mobile--title {
-    font-family: tp.$font-heading;
-    font-size: tp.$size-displayM;
-    font-weight: 700;
-    margin: 0px;
-}
-
-.secondMetrics__mobile--content {
-    font-family: tp.$font-body;
-    font-size: tp.$size-bodyM;
-    font-weight: 400;
-    margin: 0px;
-}
-
-
-
-//tablet
-
-.secondMetrics__tablet--layout {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 680px;
-}
-
-
-.secondMetrics__card--tablet {
-    margin: 10px;
-    border-left: solid 4px #f2bfaf;
-    padding-left: 20px;
-    max-width: 155px;
-}
-
-.secondMetrics__tablet--title {
-    font-family: tp.$font-heading;
-    font-size: tp.$size-displayM;
-    font-weight: 700;
-    margin: 0px;
-}
-
-.secondMetrics__tablet--content {
-    font-family: tp.$font-body;
-    font-size: tp.$size-bodyM;
-    font-weight: 400;
-    margin: 0px;
-}
-
-//desktop
-
-.secondMetrics__desktop--layout {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width:1,170px;
-}
-
-
-.secondMetrics__card--desktop {
-    margin: 10px;
-    border-left: solid 4px #f2bfaf;
-    padding-left: 20px;
-    max-width: 270px;
-}
-
-.secondMetrics__desktop--title {
-    font-family: tp.$font-heading;
-    font-size: tp.$size-displayM;
-    font-weight: 700;
-    margin: 0px;
-}
-
-.secondMetrics__desktop--content {
-    font-family: tp.$font-body;
-    font-size: tp.$size-bodyM;
-    font-weight: 400;
-    margin: 0px;
-}
-
-
-//TODO arrumar esse codigo depois do html - BEM 
-
-//TODO separar o style do variable
