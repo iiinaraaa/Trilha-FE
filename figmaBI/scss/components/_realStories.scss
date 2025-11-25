@@ -1,0 +1,55 @@
+@use '../base/colors';
+@use '../base/typography' as tp;
+@use '../base/breakpoints' as bp;
+
+
+.realStories {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+    &__card {
+        background-color: white;
+        width: 315px;
+        height: 458.08px;
+        border: solid 1px #e5f4f2;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-image {
+            width: 56px;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     @media (min-width: bp.$tablet) {
+//         
+//     }
+
+//     @media (min-width: bp.$desktop) {
+//         
+//     }
