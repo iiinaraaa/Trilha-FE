@@ -33,8 +33,8 @@
 - our metrics ✅
 - variante our metrics ✅
 
-- real stories cards 
-- variantes real cards (nao precisa por o background ainda, so quando costurar)
+- real stories cards ✅
+- variantes real cards (nao precisa por o background ainda, so quando costurar, fazer so uma variante, so o background q muda) 
 
 - card plans
 
@@ -82,6 +82,8 @@
 - nem sempre precisamos definir height pras coisas pq isso quebra tudo as vezes
 
 - MARGIN: 0 AUTO: isso aqui alinha no meio sem precisar usar flex ou grid, mas precisa acompanhar um max-width ou display: block;
+
+- testimonials: significa depoimentos em portugues. Real stories poderia ser substituido por testimonials e nao seria errado.
 
 
 
