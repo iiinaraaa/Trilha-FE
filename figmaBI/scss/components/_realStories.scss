@@ -2,12 +2,21 @@
 @use '../base/typography' as tp;
 @use '../base/breakpoints' as bp;
 
-
 .realStories {
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
+
+    @media (min-width: bp.$tablet) {
+        gap: 20px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+    }
 
     &__card {
         background-color: white;
@@ -18,11 +27,108 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+
+        &-stars {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+
+            @media (min-width: bp.$tablet) {
+                padding-left: 29px;
+                justify-content: flex-start;
+            }
+
+            @media (min-width: bp.$desktop) {
+                justify-content: center;
+                padding-left: 0px;
+            }
+        }
+        
+        &--split {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            &-2 {
+                text-align: start;
+            }
+
+            @media (min-width: bp.$tablet) {
+                padding-left: 47px;
+            }
+
+            @media (min-width: bp.$desktop) {
+                padding-left: 0px;
+            }
+        }
 
         &-image {
             width: 56px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+
+            @media (min-width: bp.$tablet) {
+                margin-top: 5px;
+            }
         }
-        
+
+        &-name {
+            font-family: tp.$font-heading;
+            font-weight: 600;
+            font-size: tp.$size-bodyL;
+            margin-bottom: 6px;
+            margin-top: 0px;
+        }
+
+        &-title {
+            font-family: tp.$font-body;
+            font-weight: 400;
+            font-size: tp.$size-bodyS;
+            margin-bottom: 30px;
+            margin-top: 0px;
+
+            @media (min-width: bp.$desktop) {
+                margin-bottom: 0px;
+            }
+        }
+
+        &-description {
+            font-size: tp.$size-bodyM;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 30px;
+            
+            @media (min-width: bp.$tablet) {
+                width: 341px;
+                text-align: start;
+                margin-bottom: 24px;
+                padding-right: 0px;
+            }
+
+            @media (min-width: bp.$desktop) {
+                width: 310px;
+                text-align: center;
+                padding-left: 0px;
+            }
+        }
+
+        @media (min-width: bp.$tablet) {
+            width: 680px;
+            height: 270.08px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 370px;
+            height: 434.08px;
+            flex-direction: column;
+            padding: 21px;
+        }
     }
 }
 
@@ -46,10 +152,3 @@
 
 
 
-//     @media (min-width: bp.$tablet) {
-//         
-//     }
-
-//     @media (min-width: bp.$desktop) {
-//         
-//     }

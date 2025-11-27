@@ -34,6 +34,7 @@
 - variante our metrics ✅
 
 - real stories cards 
+- variantes real cards (nao precisa por o background ainda, so quando costurar)
 
 - card plans
 

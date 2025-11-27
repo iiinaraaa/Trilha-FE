@@ -1040,6 +1040,18 @@ body {
   gap: 30px;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .realStories {
+    gap: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .realStories {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+}
 .realStories__card {
   background-color: white;
   width: 315px;
@@ -1049,9 +1061,111 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+}
+.realStories__card-stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .realStories__card-stars {
+    padding-left: 29px;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1440px) {
+  .realStories__card-stars {
+    justify-content: center;
+    padding-left: 0px;
+  }
+}
+.realStories__card--split {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.realStories__card--split-2 {
+  text-align: start;
+}
+@media (min-width: 768px) {
+  .realStories__card--split {
+    padding-left: 47px;
+  }
+}
+@media (min-width: 1440px) {
+  .realStories__card--split {
+    padding-left: 0px;
+  }
 }
 .realStories__card-image {
   width: 56px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .realStories__card-image {
+    margin-top: 5px;
+  }
+}
+.realStories__card-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 6px;
+  margin-top: 0px;
+}
+.realStories__card-title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+@media (min-width: 1440px) {
+  .realStories__card-title {
+    margin-bottom: 0px;
+  }
+}
+.realStories__card-description {
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .realStories__card-description {
+    width: 341px;
+    text-align: start;
+    margin-bottom: 24px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .realStories__card-description {
+    width: 310px;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .realStories__card {
+    width: 680px;
+    height: 270.08px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1440px) {
+  .realStories__card {
+    width: 370px;
+    height: 434.08px;
+    flex-direction: column;
+    padding: 21px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
