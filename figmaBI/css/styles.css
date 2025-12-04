@@ -1326,4 +1326,173 @@ body {
   }
 }
 
+.teste {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .teste {
+    gap: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .teste {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+.cardPlans {
+  background-color: white;
+  width: 315px;
+  height: 459px;
+  border-radius: 20px;
+  border: solid 1px #f8f9ff;
+  box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+}
+@media (min-width: 768px) {
+  .cardPlans {
+    width: 680px;
+    height: 444px;
+  }
+}
+@media (min-width: 1440px) {
+  .cardPlans {
+    width: 370px;
+    height: 438px;
+  }
+}
+.cardPlans--variable {
+  background-color: #009379;
+  color: white;
+}
+.cardPlans__informations {
+  padding-left: 30px;
+  width: 273px;
+}
+@media (min-width: 768px) {
+  .cardPlans__informations {
+    width: 293px;
+  }
+}
+.cardPlans__informations-type {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 6px;
+}
+.cardPlans__informations-section {
+  display: flex;
+  gap: 12px;
+}
+.cardPlans__informations-section-value {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin: 0px;
+}
+.cardPlans__informations-section-month {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0px;
+  padding-top: 35px;
+}
+.cardPlans__informations-description {
+  font-weight: 400;
+  margin: 0px;
+  padding-bottom: 24px;
+  padding-top: 6px;
+}
+.cardPlans__benefits {
+  padding-left: 30px;
+}
+.cardPlans__benefits-item {
+  display: flex;
+  gap: 12px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+.cardPlans__benefits-description {
+  margin: 0px;
+}
+.cardPlans__button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.cardPlans__button-item {
+  width: 255px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #e5f4f2;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #009379;
+}
+@media (min-width: 768px) {
+  .cardPlans__button-item {
+    width: 620px;
+    height: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .cardPlans__button-item {
+    width: 310px;
+  }
+}
+
+.cellVariable {
+  width: 320px;
+  height: 266.67px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.cellVariable__content {
+  position: absolute;
+  width: 224px;
+  height: 224px;
+  background-color: #f2bfaf;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+.cellVariable__content-image {
+  margin-top: 50px;
+  margin-left: 24px;
+  position: absolute;
+  z-index: 2;
+}
+.cellVariable__circle {
+  width: 112px;
+  height: 112px;
+  border: solid 18.7px #009379;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  margin-top: -12px;
+  margin-left: -47px;
+}
+.cellVariable__circle-second {
+  width: 63.41px;
+  height: 63.41px;
+  border: solid 18.7px #ff6250;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  margin-top: 174px;
+  margin-left: 175px;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -34,7 +34,9 @@
 - variante our metrics ✅
 
 - real stories cards ✅
-- variantes real cards (nao precisa por o background ainda, so quando costurar, fazer so uma variante, so o background q muda) 
+- variantes real cards (nao precisa por o background ainda, so quando costurar, fazer so uma variante, so o background q muda) ✅
+
+- arrumar o button
 
 - card plans
 
@@ -78,6 +80,7 @@
         height: auto;
     }
 }
+- video sobre aspect ratio: https://www.youtube.com/watch?v=sanebW8YMbo
 
 - nem sempre precisamos definir height pras coisas pq isso quebra tudo as vezes
 
@@ -85,7 +88,27 @@
 
 - testimonials: significa depoimentos em portugues. Real stories poderia ser substituido por testimonials e nao seria errado.
 
+- Z-INDEX:
+https://www.youtube.com/watch?v=vo1JBj-OAa8
 
+https://www.w3schools.com/cssref/pr_pos_z-index.php
+
+https://www.alura.com.br/artigos/z-index-utilizar-essa-propriedade-css
+
+alura:
+Quando pensamos em posicionamento de elementos, a primeira coisa que vem à nossa cabeça são os eixos X e Y - o eixo X é referente à coordenada horizontal e o eixo Y referente a coordenada vertical. Já o eixo Z é responsável pelo cálculo e posicionamento da profundidade de um determinado elemento em relação à tela, se estará mais afastado ou mais próximo.
+E para que essa propriedade tenha efeito, o elemento precisa ter a propriedade position definida com o valor diferente de static, que é seu valor de posicionamento padrão. Ou seja, o elemento deve estar com sua position definida com fixed, sticky, relative ou absolute.
+
+![alt text](image-1.png)
+
+- POSITIONS:
+https://www.w3schools.com/Css/css_positioning.asp
+
+https://www.youtube.com/watch?v=YEmdHbQBCSQ
+
+https://www.youtube.com/watch?v=zPlt84S1L0U
+
+https://www.youtube.com/watch?v=0vDGIR1NFqM
 
 
 # to do :
