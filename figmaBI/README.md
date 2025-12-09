@@ -36,13 +36,28 @@
 - real stories cards ✅
 - variantes real cards (nao precisa por o background ainda, so quando costurar, fazer so uma variante, so o background q muda) ✅
 
-- arrumar o button
+- card plans ✅
 
-- card plans
+- refazer os buttons do primeiro layout! ✅
 
-- get landing page botar so o telefone ali
+- get landing page botar so o telefone ali ✅
+- fazer o responsivo ✅
+- TODO arrumar esse codigo como arrumei o creat engaging 
 
-- more than 50 integration (logos)
+
+- creat engaging - so o cell ✅
+- fazer o responsivo ✅
+
+
+
+
+- header
+
+- creat engaging - todo o bloco
+
+- get landing page todo o bloco (do cell pequeno)
+
+- o ultimo banner
 
 - forms
 
@@ -110,6 +125,11 @@ https://www.youtube.com/watch?v=zPlt84S1L0U
 
 https://www.youtube.com/watch?v=0vDGIR1NFqM
 
+- para mover coisas usando position, devemos usar top, bottom, left, right... nao eh certo usar margin ou padding por exemplo.
+
+- relative: ocupa um espaco determinado
+- absolute: ele fica sem tamanho definido, e se scrollar a tela ele eh absoluto a todos os outros.
+
 
 # to do :
 
@@ -120,6 +140,10 @@ https://www.youtube.com/watch?v=0vDGIR1NFqM
 TODO Por o projeto no vercel pra facilitar acesso dos mentores
 
 TODO arrumar o bem nos icons
+
+- arrumar o endereco das imagens dos componentes ✅
+
+- arrumar a pasta das imagens e por a img dentro de assets ✅
 
 
 

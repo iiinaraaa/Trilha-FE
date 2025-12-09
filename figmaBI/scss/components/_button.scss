@@ -3,128 +3,42 @@
 @use '../base/animations';
 @use '../base/typography' as tp;
 
-
-.button {
-    color: colors.$btn-tertiary;
-    padding-left: 78px;
-    padding-right: 78px;
-    padding-bottom: 18px;
-    padding-top: 18px;
-    margin: 10px;
-    font-family: tp.$font-body;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    border-radius: 20px;
-    border: none;
-    background-color: colors.$btn-secondary;
+.btn {
     display: flex;
-    gap: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
 
-    &:hover {
-        transform: scale(1.0);
-        box-shadow: 0 4px 10px #00937840;
-    }
+    &__item {
+        width: 221px;
+        height: 60px;
+        border-radius: 20px;
+        border: none;
+        font-family: tp.$font-heading;
+        font-weight: 600;
+        font-size: tp.$size-bodyM;
+    
 
-    &--alert {
-        background-color: colors.$btn-alert;
-        color: colors.$btn-secondary;
-
-        &:hover {
-            box-shadow: 0 4px 10px #b8930141;
+        &--clear {
+            background-color: colors.$bg-primary;
+            color: colors.$btn-secondary;
         }
-    }
 
-    &--bordered {
-        background-color: colors.$bg-primary;
-        color: colors.$btn-secondary;
-        border: colors.$btn-secondary;
-        border: solid;
-        border-width: 2px;
-    }
+        &--soft {
+            background-color: colors.$btn-primary;
+            color: colors.$btn-secondary;
+        }
 
-    &--faded {
-        border: none;
-        background-color: colors.$bg-tertiary;
-        color: colors.$btn-secondary;
-    }
+        &--primary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: colors.$btn-secondary;
+            color: colors.$tertiary-text;
 
-    &--clear {
-        border: none;
-        background: none;
-        color: colors.$btn-secondary;
+        }
+
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .button {
-//     font-size: 14.88px;
-//     color: colors.$secondary-text;
-//     letter-spacing: -0.16px;
-//     line-height: 24px;
-//     background-color: colors.$btn-primary;
-//     padding: 18px 28px;
-//     border-radius: 8px;
-//     transition: animations.$speed-slow all ease-in;
-//     cursor: pointer;
-//     border: none;
-
-//     &:hover {
-//         background-color: colors.$btn-primary--hover;
-//         transition: animations.$speed-fast all ease-out;
-//     }
-
-//     &--dark {
-//         color: colors.$primary-text;
-//         background-color: colors.$bg-secondary;
-
-//         &:hover {
-//             background-color: colors.$btn-secondary--hover;
-//         }
-//     }
-
-//     &--mobileFull {
-//         @media (max-width: bp.$tablet) {
-//             width: 100%;
-//         }
-//     }
-// }

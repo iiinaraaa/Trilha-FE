@@ -4,9 +4,12 @@
 
 .cellVariable {
     width: 320px;
-    height: 266.67px;
     margin: 0 auto;
     padding-top: 40px; //TODO isso aqui eh gambiarra.... pro circulo verde aparecer quando eu estiver estilizando
+
+    @media (min-width: bp.$desktop) {
+        width: 378px;
+    }
     
     &__content {
         position: absolute;
@@ -15,13 +18,25 @@
         background-color: #f2bfaf;
         border-radius: 50%;
         overflow: hidden;
-        z-index: 1;
+
+        @media (min-width: bp.$desktop) {
+            width: 378px;
+            height: 378px;
+        }
+        
         
         &-image {
             margin-top: 50px;
             margin-left: 24px;
-            position: absolute;
+            position: relative;
             z-index: 2;
+
+            @media (min-width: bp.$desktop) {
+                width: 264px;
+                height: 507.69px;
+                margin-top: -69px;
+                margin-left: 68px;
+            }
         }
     }
 
@@ -32,8 +47,16 @@
         border-radius: 50%;
         position: absolute;
         z-index: 1;
-        margin-top: -12px;
-        margin-left: -47px;
+        margin-top: 3px;
+        margin-left: -45px;
+
+        @media (min-width: bp.$desktop) {
+            width: 189px;
+            height: 188px;
+            border: solid 31.55px #009379;
+            margin-top: 3px;
+            margin-left: -45px;
+        }
 
         &-second {
             width: 63.41px;
@@ -42,9 +65,16 @@
             border-radius: 50%;
             position: absolute;
             z-index: 2;
-            margin-top: 174px;
+            margin-top: 165px;
             margin-left: 175px;
+
+            @media (min-width: bp.$desktop) {
+                width: 107px;
+                height: 107px;
+                border: solid 31.55px #ff6250;
+                margin-top: 272px;
+                margin-left: 270px;
+            }
         }
     }
 }
-
