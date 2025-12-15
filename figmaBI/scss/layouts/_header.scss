@@ -1,0 +1,46 @@
+@use '../base/breakpoints' as bp;
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    @media (min-width: bp.$tablet) {
+        justify-content: space-between;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 20px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+}
+
+.btn__item--clear{
+    display: none;
+
+    @media (min-width: bp.$desktop) {
+        display: block;
+    }
+}
+
+.btn__item--soft {
+    display: none;
+
+    @media (min-width: bp.$tablet) {
+        display: block;
+    }
+}
+
+.btn__item--primary {
+    
+    display: none;
+
+    @media (min-width: bp.$desktop) {
+        display: flex;
+        justify-content: center;
+    }
+}

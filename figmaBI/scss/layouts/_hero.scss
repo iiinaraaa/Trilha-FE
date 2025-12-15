@@ -1,0 +1,48 @@
+@use '../base/breakpoints' as bp;
+@use '../base/colors';
+@use '../base/animations';
+@use '../base/typography' as tp;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__textContainer {
+        text-align: center;
+        width: 315px;
+    
+        &-title {
+            font-family: tp.$font-heading;
+            font-weight: 700;
+            font-size: tp.$size-displayM;
+            margin-top: 60px;
+            margin-bottom: 20px;
+
+            @media (min-width: bp.$tablet) {
+                font-size: tp.$size-displayXL;
+            }
+        }
+
+        &-description {
+            font-family: tp.$font-body;
+            font-weight: 400;
+            font-size: tp.$size-bodyM;
+            margin-top: 0;
+                margin-bottom: 30px;
+
+
+            @media (min-width: bp.$tablet) {
+                font-size: tp.$size-bodyL;
+            }
+        }
+
+    }
+
+    .btn__item--borderHero {
+        display: none;
+    }
+    
+    
+}

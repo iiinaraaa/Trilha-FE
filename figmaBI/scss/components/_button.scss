@@ -39,6 +39,19 @@
 
         }
 
-        
+        &--primaryHero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: colors.$btn-secondary;
+            color: colors.$tertiary-text;
+        }
+ 
+        &--borderHero {
+            border: solid 1px #009379;
+            color: colors.$btn-secondary;
+            background-color: white;
+        }   
     }
 }

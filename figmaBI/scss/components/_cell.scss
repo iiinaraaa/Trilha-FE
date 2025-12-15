@@ -4,9 +4,8 @@
 
 .cell {
     display: flex;
-    justify-content: center; //nos outros irei arrumar quando costurar
-    padding-top: 40px; //TODO isso aqui eh gambiarra.... pro circulo verde aparecer quando eu estiver estilizando
-    padding-left: 40px; //GAMBIARRAAAAAAAA
+    justify-content: center; 
+    margin-top: 68px;
 
     &__content {
         position: relative;

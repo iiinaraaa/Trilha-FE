@@ -42,16 +42,13 @@
 
 - get landing page botar so o telefone ali ✅
 - fazer o responsivo ✅
-- TODO arrumar esse codigo como arrumei o creat engaging 
+- arrumar esse codigo como arrumei o creat engaging ✅
 
 
 - creat engaging - so o cell ✅
 - fazer o responsivo ✅
 
-
-
-
-- header
+- header ✅
 
 - creat engaging - todo o bloco
 

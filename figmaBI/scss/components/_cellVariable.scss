@@ -3,16 +3,11 @@
 @use '../base/breakpoints' as bp;
 
 .cellVariable {
-    width: 320px;
-    margin: 0 auto;
-    padding-top: 40px; //TODO isso aqui eh gambiarra.... pro circulo verde aparecer quando eu estiver estilizando
-
-    @media (min-width: bp.$desktop) {
-        width: 378px;
-    }
+    display: flex;
+    justify-content: center;
     
     &__content {
-        position: absolute;
+        position: relative;
         width: 224px;
         height: 224px;
         background-color: #f2bfaf;
@@ -24,18 +19,17 @@
             height: 378px;
         }
         
-        
         &-image {
-            margin-top: 50px;
-            margin-left: 24px;
+            top: 50px;
+            left: 24px;
             position: relative;
             z-index: 2;
 
             @media (min-width: bp.$desktop) {
                 width: 264px;
                 height: 507.69px;
-                margin-top: -69px;
-                margin-left: 68px;
+                top: -69px;
+                left: 68px;
             }
         }
     }
@@ -45,17 +39,17 @@
         height: 112px;
         border: solid 18.7px #009379;
         border-radius: 50%;
-        position: absolute;
+        position: relative;
         z-index: 1;
-        margin-top: 3px;
-        margin-left: -45px;
+        top: 4px;
+        left: -272px;
 
         @media (min-width: bp.$desktop) {
             width: 189px;
             height: 188px;
             border: solid 31.55px #009379;
-            margin-top: 3px;
-            margin-left: -45px;
+            top: 6px;
+            left: -451px;
         }
 
         &-second {
@@ -63,17 +57,17 @@
             height: 63.41px;
             border: solid 18.7px #ff6250;
             border-radius: 50%;
-            position: absolute;
+            position: relative;
             z-index: 2;
-            margin-top: 165px;
-            margin-left: 175px;
+            top: 167px;
+            left: -160px;
 
             @media (min-width: bp.$desktop) {
                 width: 107px;
                 height: 107px;
                 border: solid 31.55px #ff6250;
-                margin-top: 272px;
-                margin-left: 270px;
+                top: 284px;
+                left: -281px;
             }
         }
     }
