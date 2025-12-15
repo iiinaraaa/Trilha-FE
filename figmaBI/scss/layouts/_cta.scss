@@ -1,0 +1,60 @@
+@use '../base/breakpoints' as bp;
+@use '../base/colors';
+@use '../base/animations';
+@use '../base/typography' as tp;
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: bp.$tablet) {
+        flex-direction: row;
+    }
+
+    &__content {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        width: 315px;
+
+        @media (min-width: bp.$tablet) {
+            width: 340px;
+            text-align: start;
+            align-items: flex-start;
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 570px;
+            text-align: start;
+            align-items: flex-start;
+        }
+    }
+
+    &__title {
+        font-family: tp.$font-heading;
+        font-weight: 600;
+        font-size: tp.$size-bodyXL;
+
+        @media (min-width: bp.$tablet) {
+            font-weight: 700;
+            font-size: tp.$size-displayM;
+        }
+
+        @media (min-width: bp.$desktop) {
+            font-size: tp.$size-displayL;
+        }
+    }
+
+    &__description {
+        font-family: tp.$font-body;
+        font-size: tp.$size-bodyM;
+        font-weight: 400;
+
+        @media (min-width: bp.$desktop) {
+            font-size: tp.$size-bodyL;
+        }
+    }
+
+}

@@ -4,12 +4,6 @@
 @use '../base/typography' as tp;
 
 .btn {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-
-    &__item {
         width: 221px;
         height: 60px;
         border-radius: 20px;
@@ -46,12 +40,25 @@
             gap: 8px;
             background-color: colors.$btn-secondary;
             color: colors.$tertiary-text;
+            cursor: pointer;
         }
  
         &--borderHero {
             border: solid 1px #009379;
             color: colors.$btn-secondary;
             background-color: white;
+            cursor: pointer;
         }   
+
+        &--start {
+            cursor: pointer;
+            
+            background-color: colors.$btn-secondary;
+            color: colors.$tertiary-text;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
     }
-}
+

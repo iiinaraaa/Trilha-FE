@@ -19,7 +19,7 @@
     }
 }
 
-.btn__item--clear{
+.btn--clear{
     display: none;
 
     @media (min-width: bp.$desktop) {
@@ -27,7 +27,7 @@
     }
 }
 
-.btn__item--soft {
+.btn--soft {
     display: none;
 
     @media (min-width: bp.$tablet) {
@@ -35,7 +35,7 @@
     }
 }
 
-.btn__item--primary {
+.btn--primary {
     
     display: none;
 

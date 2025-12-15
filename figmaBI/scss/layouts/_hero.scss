@@ -8,41 +8,72 @@
     flex-direction: column;
     align-items: center;
 
+    @media (min-width: bp.$desktop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 115px;
+    }
 
     &__textContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper {
         text-align: center;
         width: 315px;
-    
-        &-title {
-            font-family: tp.$font-heading;
-            font-weight: 700;
-            font-size: tp.$size-displayM;
-            margin-top: 60px;
-            margin-bottom: 20px;
 
-            @media (min-width: bp.$tablet) {
-                font-size: tp.$size-displayXL;
-            }
+        @media (min-width: bp.$tablet) {
+            width: 680px;
         }
+
+        @media (min-width: bp.$desktop) {
+            text-align: start;
+            width: 648px;
+        }
+    }
+
+    .btn--borderHero {
+        display: none;
+
+        @media (min-width: bp.$desktop) {
+            display: block;
+        }
+    }
+
+    &__buttonContainer {
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: bp.$desktop) {
+            justify-content: flex-start;
+            gap: 18px;
+            padding-top: 10px;
+        }
+    }
+
+    &__title {
+        font-family: tp.$font-heading;
+        font-weight: 700;
+        font-size: tp.$size-displayM;
+        margin-top: 60px;
+        margin-bottom: 20px;
+
+        @media (min-width: bp.$tablet) {
+            font-size: tp.$size-displayXL;
+        }
+    }
 
         &-description {
             font-family: tp.$font-body;
             font-weight: 400;
             font-size: tp.$size-bodyM;
             margin-top: 0;
-                margin-bottom: 30px;
-
+            margin-bottom: 30px;
 
             @media (min-width: bp.$tablet) {
                 font-size: tp.$size-bodyL;
             }
         }
-
-    }
-
-    .btn__item--borderHero {
-        display: none;
-    }
-    
-    
 }

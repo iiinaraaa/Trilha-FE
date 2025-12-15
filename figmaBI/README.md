@@ -50,15 +50,26 @@
 
 - header ✅
 
-- creat engaging - todo o bloco
+- creat engaging - todo o bloco ✅
 
-- get landing page todo o bloco (do cell pequeno)
+- get landing page todo o bloco (do cell pequeno) call to action
 
-- o ultimo banner
+- o ultimo banner (bruno disse que nao precisa fazer)
 
 - forms
 
 - footer
+
+- fazer o bloco do features com os cards
+
+- fazer o bloco do our metrics
+
+- fazer o bloco do real stories
+
+- fazer o bloco dos plans 
+
+- fazer o bloco do meet our team 
+
 
 # anotacao:
 
@@ -127,6 +138,11 @@ https://www.youtube.com/watch?v=0vDGIR1NFqM
 - relative: ocupa um espaco determinado
 - absolute: ele fica sem tamanho definido, e se scrollar a tela ele eh absoluto a todos os outros.
 
+- o nome do bem NAO precisa ser herediatario, exemplo:
+- hero > hero__textContainer > hero__wrapper > hero__title 
+- hero__cellContainer
+- achei que era hereditario, mas tbm preciso lembrar do BLOCO! o hero nesse caso é o pai, o resto sao blocos e tbm pode ter o modifier --
+
 
 # to do :
 
@@ -138,9 +154,22 @@ TODO Por o projeto no vercel pra facilitar acesso dos mentores
 
 TODO arrumar o bem nos icons
 
+TODO os buttons sao um A e tem que ter o cursor pointer
+
+TODO fazer hover nos buttons
+
+- fazer um storypobre com todos os componentes que eu fiz ✅
+
 - arrumar o endereco das imagens dos componentes ✅
 
 - arrumar a pasta das imagens e por a img dentro de assets ✅
+
+
+
+# duvidas:
+
+- o variable cell nao esta centralizado.
+- o cell variable tem algo errado!
 
 
 

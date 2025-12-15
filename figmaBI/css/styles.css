@@ -351,12 +351,6 @@ body {
 }
 
 .btn {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.btn__item {
   width: 221px;
   height: 60px;
   border-radius: 20px;
@@ -365,15 +359,15 @@ body {
   font-weight: 600;
   font-size: 16px;
 }
-.btn__item--clear {
+.btn--clear {
   background-color: #F8F9FF;
   color: #009379;
 }
-.btn__item--soft {
+.btn--soft {
   background-color: #E5F4F2;
   color: #009379;
 }
-.btn__item--primary {
+.btn--primary {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,18 +375,29 @@ body {
   background-color: #009379;
   color: white;
 }
-.btn__item--primaryHero {
+.btn--primaryHero {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   background-color: #009379;
   color: white;
+  cursor: pointer;
 }
-.btn__item--borderHero {
+.btn--borderHero {
   border: solid 1px #009379;
   color: #009379;
   background-color: white;
+  cursor: pointer;
+}
+.btn--start {
+  cursor: pointer;
+  background-color: #009379;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .icon__primary {
@@ -1647,29 +1652,29 @@ body {
   }
 }
 
-.btn__item--clear {
+.btn--clear {
   display: none;
 }
 @media (min-width: 1440px) {
-  .btn__item--clear {
+  .btn--clear {
     display: block;
   }
 }
 
-.btn__item--soft {
+.btn--soft {
   display: none;
 }
 @media (min-width: 768px) {
-  .btn__item--soft {
+  .btn--soft {
     display: block;
   }
 }
 
-.btn__item--primary {
+.btn--primary {
   display: none;
 }
 @media (min-width: 1440px) {
-  .btn__item--primary {
+  .btn--primary {
     display: flex;
     justify-content: center;
   }
@@ -1680,11 +1685,53 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1440px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 115px;
+  }
+}
 .hero__textContainer {
+  display: flex;
+  flex-direction: column;
+}
+.hero__wrapper {
   text-align: center;
   width: 315px;
 }
-.hero__textContainer-title {
+@media (min-width: 768px) {
+  .hero__wrapper {
+    width: 680px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero__wrapper {
+    text-align: start;
+    width: 648px;
+  }
+}
+.hero .btn--borderHero {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .hero .btn--borderHero {
+    display: block;
+  }
+}
+.hero__buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1440px) {
+  .hero__buttonContainer {
+    justify-content: flex-start;
+    gap: 18px;
+    padding-top: 10px;
+  }
+}
+.hero__title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 38px;
@@ -1692,11 +1739,11 @@ body {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .hero__textContainer-title {
+  .hero__title {
     font-size: 67px;
   }
 }
-.hero__textContainer-description {
+.hero-description {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1704,12 +1751,67 @@ body {
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
-  .hero__textContainer-description {
+  .hero-description {
     font-size: 21px;
   }
 }
-.hero .btn__item--borderHero {
-  display: none;
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .cta {
+    flex-direction: row;
+  }
+}
+.cta__content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 315px;
+}
+@media (min-width: 768px) {
+  .cta__content {
+    width: 340px;
+    text-align: start;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1440px) {
+  .cta__content {
+    width: 570px;
+    text-align: start;
+    align-items: flex-start;
+  }
+}
+.cta__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  .cta__title {
+    font-weight: 700;
+    font-size: 38px;
+  }
+}
+@media (min-width: 1440px) {
+  .cta__title {
+    font-size: 50px;
+  }
+}
+.cta__description {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (min-width: 1440px) {
+  .cta__description {
+    font-size: 21px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
