@@ -3,11 +3,23 @@
 @use '../base/breakpoints' as bp;
 
 .cellVariable {
-    display: flex;
-    justify-content: center;
     
+    position: relative;
+    max-width: 320px;
+    padding-top: 19.56px;
+    padding-bottom: 23.11px;
+    padding-left: 53.93px;
+    padding-right: 42.07px;
+
+    @media (min-width: bp.$desktop) {
+        max-width: 540px;
+        padding-top: 33px;
+        padding-bottom: 39px;
+        padding-left: 91px;
+        padding-right: 71px;
+    }
+
     &__content {
-        position: relative;
         width: 224px;
         height: 224px;
         background-color: #f2bfaf;
@@ -26,10 +38,10 @@
             z-index: 2;
 
             @media (min-width: bp.$desktop) {
-                width: 264px;
+                width: 320px;
                 height: 507.69px;
-                top: -69px;
-                left: 68px;
+                top: -27px;
+                left: 41px;
             }
         }
     }
@@ -39,17 +51,17 @@
         height: 112px;
         border: solid 18.7px #009379;
         border-radius: 50%;
-        position: relative;
+        position: absolute;
         z-index: 1;
-        top: 4px;
-        left: -272px;
+        top: 21.93px;
+        left: 0;
 
         @media (min-width: bp.$desktop) {
             width: 189px;
             height: 188px;
             border: solid 31.55px #009379;
-            top: 6px;
-            left: -451px;
+            top: 37px;
+            left: 24px;
         }
 
         &-second {
@@ -57,17 +69,17 @@
             height: 63.41px;
             border: solid 18.7px #ff6250;
             border-radius: 50%;
-            position: relative;
+            position: absolute;
             z-index: 2;
-            top: 167px;
-            left: -160px;
+            bottom: 23.11px;
+            right: 23.11px;
 
             @media (min-width: bp.$desktop) {
                 width: 107px;
                 height: 107px;
                 border: solid 31.55px #ff6250;
-                top: 284px;
-                left: -281px;
+                bottom: 39px;
+                right: 39px;
             }
         }
     }

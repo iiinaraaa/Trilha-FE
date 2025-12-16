@@ -1,6 +1,5 @@
 @use '../base/breakpoints' as bp;
 @use '../base/colors';
-@use '../base/animations';
 @use '../base/typography' as tp;
 
 .cta {
@@ -10,6 +9,8 @@
 
     @media (min-width: bp.$tablet) {
         flex-direction: row;
+        justify-content: center;
+        gap: 60px;
     }
 
     &__content {
@@ -20,7 +21,7 @@
         width: 315px;
 
         @media (min-width: bp.$tablet) {
-            width: 340px;
+            width: 341px;
             text-align: start;
             align-items: flex-start;
         }
@@ -40,10 +41,13 @@
         @media (min-width: bp.$tablet) {
             font-weight: 700;
             font-size: tp.$size-displayM;
+            margin-bottom: 0;
+            margin-top: 13px;
         }
 
         @media (min-width: bp.$desktop) {
             font-size: tp.$size-displayL;
+            
         }
     }
 
@@ -55,6 +59,10 @@
         @media (min-width: bp.$desktop) {
             font-size: tp.$size-bodyL;
         }
+    }
+
+    &__button {
+        margin-top: 17px;
     }
 
 }

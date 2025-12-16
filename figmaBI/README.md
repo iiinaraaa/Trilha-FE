@@ -52,11 +52,15 @@
 
 - creat engaging - todo o bloco ✅
 
-- get landing page todo o bloco (do cell pequeno) call to action
+- get landing page todo o bloco (do cell pequeno) call to action ✅
+
 
 - o ultimo banner (bruno disse que nao precisa fazer)
 
 - forms
+- botao
+- icons
+- formulario
 
 - footer
 
@@ -142,6 +146,17 @@ https://www.youtube.com/watch?v=0vDGIR1NFqM
 - hero > hero__textContainer > hero__wrapper > hero__title 
 - hero__cellContainer
 - achei que era hereditario, mas tbm preciso lembrar do BLOCO! o hero nesse caso é o pai, o resto sao blocos e tbm pode ter o modifier --
+
+- markdown: 
+:cat:
+https://markdownlivepreview.com/
+
+- animations: 
+https://www.w3schools.com/css/css3_animations.asp
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation
+
+
 
 
 # to do :

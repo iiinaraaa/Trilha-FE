@@ -1,0 +1,44 @@
+@use '../base/breakpoints' as bp;
+@use '../base/colors';
+@use '../base/typography' as tp;
+
+.forms {
+    display: flex;
+    justify-content: center;
+
+    &__card {
+        background-color: white;
+        width: 315px;
+        border-radius: 20px;
+        border: solid 1px #e5f4f2;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        @media (min-width: bp.$tablet) {
+            width: 680px;
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 1170px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+
+    &__title {
+        font-family: tp.$font-heading;
+        font-weight: 700;
+        font-size: tp.$size-displayM;
+    }
+
+    &__desription {
+        font-family: tp.$font-body;
+        font-weight: 400;
+        font-size: tp.$size-bodyM;
+    }
+
+
+
+    
+}
+
