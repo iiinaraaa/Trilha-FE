@@ -87,6 +87,43 @@
 
 
 
+.iconForms {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    &__item {
+        background-color: colors.$icon-social;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    &__imageInstagram {
+        padding-top: 7px;
+        padding-left: 8px;
+    }
+
+    &__imageDrible {
+        padding-top: 7px;
+        padding-left: 8px;
+    }
+
+    &__imageBehance {
+        padding-top: 10px;
+        padding-left: 8px;
+    }
+
+    &__imageTwitter {
+        padding-top: 9px;
+        padding-left: 9px;
+    }
+
+
+
+
+}
+
 
 
 

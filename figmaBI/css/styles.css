@@ -476,6 +476,34 @@ body {
   padding-bottom: 30px;
 }
 
+.iconForms {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.iconForms__item {
+  background-color: #e5f4f2;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.iconForms__imageInstagram {
+  padding-top: 7px;
+  padding-left: 8px;
+}
+.iconForms__imageDrible {
+  padding-top: 7px;
+  padding-left: 8px;
+}
+.iconForms__imageBehance {
+  padding-top: 10px;
+  padding-left: 8px;
+}
+.iconForms__imageTwitter {
+  padding-top: 9px;
+  padding-left: 9px;
+}
+
 .card__container {
   display: flex;
   flex-direction: column;
@@ -573,11 +601,41 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 38px;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
-.forms__desription {
+.forms__description {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  margin: 0;
+  padding-bottom: 40px;
+}
+.forms__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.forms__contact-cell {
+  display: flex;
+  gap: 12px;
+}
+.forms__contact-email {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+.forms__contact-link {
+  text-decoration: none;
+  color: #2D2D2D;
+}
+.forms__logosTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .metrics {

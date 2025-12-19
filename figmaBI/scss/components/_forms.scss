@@ -29,12 +29,48 @@
         font-family: tp.$font-heading;
         font-weight: 700;
         font-size: tp.$size-displayM;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 10px;
     }
 
-    &__desription {
+    &__description {
         font-family: tp.$font-body;
         font-weight: 400;
         font-size: tp.$size-bodyM;
+        margin: 0;
+        padding-bottom: 40px;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+
+        &-cell {
+            display: flex;
+            gap: 12px;
+        }
+
+        &-email {
+            display: flex;
+            gap: 12px;
+            padding-bottom: 20px;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: colors.$primary-text;
+        }
+    }
+
+    &__logosTitle {
+        font-family: tp.$font-heading;
+        font-weight: 600;
+        font-size: tp.$size-bodyL;
+        margin: 0;
+        padding-bottom: 20px;
     }
 
 
