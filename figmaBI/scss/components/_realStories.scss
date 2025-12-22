@@ -29,6 +29,8 @@
         align-items: center;
         box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
 
+
+
         &-stars {
             display: flex;
             justify-content: center;
@@ -113,6 +115,10 @@
                 text-align: center;
                 padding-left: 0px;
             }
+        }
+
+        @media (min-width: bp.$small-tablet) {
+            width: 483px;
         }
 
         @media (min-width: bp.$tablet) {

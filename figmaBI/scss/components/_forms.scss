@@ -74,6 +74,26 @@
     }
 
 
+    //FORMS
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        
+    }
+
+
+    &__name {
+        background-color: pink;
+    }
+
+    &__email {
+        background-color: green;
+    }
+
+
 
     
 }

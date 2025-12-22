@@ -1,11 +1,5 @@
+$small-tablet: 481px;
 $tablet: 768px;
 $small-desktop: 1024px;
 $desktop: 1440px;
 $fullhd: 1920px;
-
-// exemplo de uso
-// 1- im port
-// @use 'breakpoints' as bp;
-
-// 2  - breakpoint
-// @media (min-width: bp.$tablet) 

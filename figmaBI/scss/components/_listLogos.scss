@@ -2,6 +2,8 @@
 
 .listLogos {
     display: grid;
+    justify-items: center;
+    max-width: 375px;
     grid-template-columns: repeat(3, 1fr);
     gap: 52px;
     margin: 0 auto;
@@ -11,13 +13,16 @@
     padding-bottom: 49.04px;
     margin-bottom: 180px; //padding do final da borda ate o features (na palavra mesmo!
     
+    
     @media (min-width: bp.$tablet) {
         display: flex;
         gap: 40px;
+        max-width: 616px;
     }
 
     @media (min-width: bp.$desktop) {
         gap: 126px;
+        max-width: 1170px;
     }
 
     &__image {

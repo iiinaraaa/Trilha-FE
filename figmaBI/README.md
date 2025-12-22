@@ -156,6 +156,21 @@ https://www.w3schools.com/css/css3_animations.asp
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation
 
+- FORM:
+
+https://www.w3schools.com/html/html_forms.asp
+
+https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Forms/Your_first_form
+
+https://www.youtube.com/watch?v=hlwlM4a5rxg
+
+
+- label x placeholder:
+
+![alt text](image-2.png)
+
+
+
 
 
 
@@ -178,6 +193,7 @@ TODO fazer hover nos buttons
 - arrumar o endereco das imagens dos componentes ✅
 
 - arrumar a pasta das imagens e por a img dentro de assets ✅
+
 
 
 
