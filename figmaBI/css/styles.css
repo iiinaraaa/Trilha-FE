@@ -358,22 +358,39 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.4s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.btn:hover {
+  box-shadow: 0px 0px 0px 5px rgba(14, 146, 31, 0.633);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(45, 192, 99, 0.46);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(45, 200, 102, 0.46);
 }
 .btn--clear {
   background-color: #F8F9FF;
   color: #009379;
+  display: flex;
+  justify-content: center;
 }
 .btn--soft {
   background-color: #E5F4F2;
   color: #009379;
+  display: flex;
+  justify-content: center;
 }
 .btn--primary {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 8px;
   background-color: #009379;
   color: white;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .btn--primaryHero {
   display: flex;
@@ -383,12 +400,17 @@ body {
   background-color: #009379;
   color: white;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 .btn--borderHero {
   border: solid 1px #009379;
   color: #009379;
   background-color: white;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .btn--start {
   cursor: pointer;
@@ -398,6 +420,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  flex-direction: row;
 }
 
 .icon__primary {
@@ -509,6 +532,7 @@ body {
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .card__container {
@@ -1763,8 +1787,8 @@ body {
 .logosSumindo {
   display: flex;
   justify-content: center;
+  gap: 76px;
   max-width: 315px;
-  gap: 15px;
   margin: 0 auto;
   border-top: solid 1px #d8d8d8;
   border-bottom: solid 1px #d8d8d8;
@@ -1785,21 +1809,33 @@ body {
   }
 }
 .logosSumindo__image {
-  display: none;
   width: 40px;
   border-radius: 50%;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  display: none;
 }
-@media (min-width: 768px) {
-  .logosSumindo__image {
+@media (min-width: 397px) {
+  .logosSumindo__image:nth-child(3) {
+    display: block;
     width: 50px;
-    height: auto;
   }
 }
-@media (min-width: 1440px) {
-  .logosSumindo__image {
-    width: 64px;
-    height: auto;
+@media (min-width: 538px) {
+  .logosSumindo__image:nth-child(4) {
+    display: block;
+    width: 50px;
+  }
+}
+@media (min-width: 611px) {
+  .logosSumindo__image:nth-child(5) {
+    display: block;
+    width: 50px;
+  }
+}
+@media (min-width: 854px) {
+  .logosSumindo__image:nth-child(6) {
+    display: block;
+    width: 50px;
   }
 }
 
@@ -1847,8 +1883,7 @@ body {
 }
 @media (min-width: 1440px) {
   .btn--primary {
-    display: flex;
-    justify-content: center;
+    display: block;
   }
 }
 
@@ -1884,12 +1919,14 @@ body {
     width: 648px;
   }
 }
-.hero .btn--borderHero {
+.hero .btn {
   display: none;
 }
 @media (min-width: 1440px) {
   .hero .btn--borderHero {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 .hero__buttonContainer {

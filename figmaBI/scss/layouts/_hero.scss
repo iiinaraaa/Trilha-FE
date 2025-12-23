@@ -34,13 +34,21 @@
         }
     }
 
-    .btn--borderHero {
+    
+
+
+    .btn {
         display: none;
 
-        @media (min-width: bp.$desktop) {
-            display: block;
+        &--borderHero {
+            @media (min-width: bp.$desktop) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
         }
     }
+
 
     &__buttonContainer {
         display: flex;

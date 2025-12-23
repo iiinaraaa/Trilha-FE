@@ -19,7 +19,7 @@
     }
 }
 
-.btn--clear{
+.btn--clear {
     display: none;
 
     @media (min-width: bp.$desktop) {
@@ -36,11 +36,14 @@
 }
 
 .btn--primary {
-    
     display: none;
 
     @media (min-width: bp.$desktop) {
-        display: flex;
-        justify-content: center;
+        display: block;
     }
 }
+
+
+
+
+

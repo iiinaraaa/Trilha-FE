@@ -54,8 +54,14 @@
 
 - get landing page todo o bloco (do cell pequeno) call to action ✅
 
+- arrumar coisas mencionadas na call com o bruno, margin nas coisas e mais algumas coisas. ✅
 
-- o ultimo banner (bruno disse que nao precisa fazer)
+- fazer hover nos buttons ✅
+
+
+- o ultimo banner (bruno disse que nao precisa fazer) ✅
+
+- esperar a cin pra alinhar o hero pq ta bugado
 
 - forms
 - botao
@@ -169,6 +175,15 @@ https://www.youtube.com/watch?v=hlwlM4a5rxg
 
 ![alt text](image-2.png)
 
+- tipos de animacao(no devtools):
+![alt text](image-3.png)
+
+
+
+- BUTTON / <A>: 
+- No HTML, o <a> (âncora) é usado para navegação: leva o usuário para outro lugar, como outra página, uma seção da mesma página, um arquivo ou um link externo (ex.: site, WhatsApp, e-mail com mailto:).
+Já o <button> é usado para executar uma ação, como enviar um formulário (submit), cancelar (reset) ou disparar uma função em JavaScript.
+
 
 
 
@@ -186,8 +201,6 @@ TODO arrumar o bem nos icons
 
 TODO os buttons sao um A e tem que ter o cursor pointer
 
-TODO fazer hover nos buttons
-
 - fazer um storypobre com todos os componentes que eu fiz ✅
 
 - arrumar o endereco das imagens dos componentes ✅
@@ -199,8 +212,7 @@ TODO fazer hover nos buttons
 
 # duvidas:
 
-- o variable cell nao esta centralizado.
-- o cell variable tem algo errado!
+
 
 
 
