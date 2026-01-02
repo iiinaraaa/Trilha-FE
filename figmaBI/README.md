@@ -184,6 +184,10 @@ https://www.youtube.com/watch?v=hlwlM4a5rxg
 - No HTML, o <a> (âncora) é usado para navegação: leva o usuário para outro lugar, como outra página, uma seção da mesma página, um arquivo ou um link externo (ex.: site, WhatsApp, e-mail com mailto:).
 Já o <button> é usado para executar uma ação, como enviar um formulário (submit), cancelar (reset) ou disparar uma função em JavaScript.
 
+- SHORTHAND: 
+- ![alt text](image-4.png)
+- regra: sentido horario
+- TOP, RIGHT, BOTTOM, LEFT.
 
 
 
@@ -212,7 +216,7 @@ TODO os buttons sao um A e tem que ter o cursor pointer
 
 # duvidas:
 
-
+- no forms o divisor n aparece no mobile
 
 
 

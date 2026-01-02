@@ -422,7 +422,6 @@ body {
   gap: 8px;
   flex-direction: row;
 }
-
 .icon__primary {
   background-color: #ffe0dc;
   display: inline-block;
@@ -665,12 +664,40 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-top: 40px;
 }
 .forms__name {
-  background-color: pink;
+  border-radius: 16px;
+  border: solid 1px #d8d8d8;
+  padding: 8px 20px 8px 20px;
+  display: flex;
+  align-items: center;
+  width: 235px;
+  height: 60px;
 }
 .forms__email {
-  background-color: green;
+  border-radius: 16px;
+  border: solid 1px #d8d8d8;
+  padding: 8px 20px 8px 20px;
+  display: flex;
+  align-items: center;
+  width: 235px;
+  height: 60px;
+}
+.forms__input {
+  border: none;
+  width: 154px;
+}
+.forms__input::placeholder {
+  color: #2d2d2d;
+  font-weight: 400;
+  font-size: 16px;
+}
+.forms__divisor {
+  width: 1px;
+  height: 20px;
+  background-color: #d8e3ff;
+  margin: 0px 12px 0px 8px;
 }
 
 .metrics {
