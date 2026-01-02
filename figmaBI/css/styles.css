@@ -422,6 +422,14 @@ body {
   gap: 8px;
   flex-direction: row;
 }
+.btn--submit {
+  justify-content: center;
+  background-color: #009379;
+  color: white;
+  width: 159px;
+  height: 60px;
+}
+
 .icon__primary {
   background-color: #ffe0dc;
   display: inline-block;
@@ -600,6 +608,15 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (min-width: 1440px) {
+  .forms__wrapper {
+    display: flex;
+    gap: 274px;
+  }
+}
+.forms__wrapperContact {
+  padding-top: 23px;
+}
 .forms__card {
   background-color: white;
   width: 315px;
@@ -635,6 +652,16 @@ body {
   margin: 0;
   padding-bottom: 40px;
 }
+@media (min-width: 768px) {
+  .forms__description {
+    width: 465px;
+  }
+}
+@media (min-width: 1440px) {
+  .forms__description {
+    width: 1050px;
+  }
+}
 .forms__contact {
   display: flex;
   flex-direction: column;
@@ -653,6 +680,11 @@ body {
   text-decoration: none;
   color: #2D2D2D;
 }
+@media (min-width: 1440px) {
+  .forms__wrapperSocial {
+    padding-top: 32px;
+  }
+}
 .forms__logosTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -666,6 +698,11 @@ body {
   gap: 10px;
   padding-top: 40px;
 }
+@media (min-width: 1440px) {
+  .forms__form {
+    padding-top: 22px;
+  }
+}
 .forms__name {
   border-radius: 16px;
   border: solid 1px #d8d8d8;
@@ -674,6 +711,16 @@ body {
   align-items: center;
   width: 235px;
   height: 60px;
+}
+@media (min-width: 768px) {
+  .forms__name {
+    width: 600px;
+  }
+}
+@media (min-width: 1440px) {
+  .forms__name {
+    width: 465px;
+  }
 }
 .forms__email {
   border-radius: 16px;
@@ -684,9 +731,19 @@ body {
   width: 235px;
   height: 60px;
 }
+@media (min-width: 768px) {
+  .forms__email {
+    width: 600px;
+  }
+}
+@media (min-width: 1440px) {
+  .forms__email {
+    width: 465px;
+  }
+}
 .forms__input {
   border: none;
-  width: 154px;
+  width: 153px;
 }
 .forms__input::placeholder {
   color: #2d2d2d;
@@ -698,6 +755,10 @@ body {
   height: 20px;
   background-color: #d8e3ff;
   margin: 0px 12px 0px 8px;
+}
+.forms__button {
+  margin-top: 20px;
+  margin: 20px 0px 40px 0px;
 }
 
 .metrics {

@@ -64,9 +64,10 @@
 - esperar a cin pra alinhar o hero pq ta bugado
 
 - forms
-- botao
-- icons
-- formulario
+- botao ✅
+- icons ✅
+- formulario ✅   
+- media query 
 
 - footer
 
@@ -216,7 +217,7 @@ TODO os buttons sao um A e tem que ter o cursor pointer
 
 # duvidas:
 
-- no forms o divisor n aparece no mobile
+
 
 
 
