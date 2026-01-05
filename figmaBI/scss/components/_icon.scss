@@ -118,11 +118,42 @@
         padding-top: 9px;
         padding-left: 9px;
     }
-
-
-
-
 }
+
+.iconFooter {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+
+    &__item {
+        background-color: colors.$icon-social-dark;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    &__imageInsta {
+        padding-top: 7px;
+        padding-left: 8px;
+    }
+
+    &__imageGithub {
+        padding-top: 4px;
+        padding-left: 5px;
+    }
+
+    &__imageMundinho {
+        padding-top: 7px;
+        padding-left: 8px;
+    }
+    
+    &__imageTwitter {
+        padding-top: 10px;
+        padding-left: 9px;
+    }
+}
+
+
 
 
 

@@ -534,6 +534,34 @@ body {
   padding-left: 9px;
 }
 
+.iconFooter {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.iconFooter__item {
+  background-color: #4e4d4d;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.iconFooter__imageInsta {
+  padding-top: 7px;
+  padding-left: 8px;
+}
+.iconFooter__imageGithub {
+  padding-top: 4px;
+  padding-left: 5px;
+}
+.iconFooter__imageMundinho {
+  padding-top: 7px;
+  padding-left: 8px;
+}
+.iconFooter__imageTwitter {
+  padding-top: 10px;
+  padding-left: 9px;
+}
+
 .card__container {
   display: flex;
   flex-direction: column;
@@ -624,10 +652,12 @@ body {
   border: solid 1px #e5f4f2;
   padding-left: 40px;
   padding-right: 40px;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .forms__card {
     width: 680px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1440px) {
@@ -635,6 +665,7 @@ body {
     width: 1170px;
     padding-left: 60px;
     padding-right: 60px;
+    margin-bottom: 60px;
   }
 }
 .forms__title {
@@ -1924,6 +1955,56 @@ body {
   .logosSumindo__image:nth-child(6) {
     display: block;
     width: 50px;
+  }
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer__content {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 122px;
+  width: 100%;
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+}
+.footer__text {
+  margin: 20px 20px 24px 20px;
+}
+@media (min-width: 768px) {
+  .footer__text {
+    margin: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__text {
+    margin: 60px;
+  }
+}
+.footer__IconContainer {
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  .footer__IconContainer {
+    margin: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__IconContainer {
+    margin: 60px;
   }
 }
 

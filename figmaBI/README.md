@@ -67,19 +67,19 @@
 - botao ✅
 - icons ✅
 - formulario ✅   
-- media query 
+- media query ✅
 
 - footer
 
-- fazer o bloco do features com os cards
+- fazer o bloco todo do features com os cards
 
-- fazer o bloco do our metrics
+- fazer o bloco todo do our metrics
 
-- fazer o bloco do real stories
+- fazer o bloco todo do real stories
 
-- fazer o bloco dos plans 
+- fazer o bloco todo dos plans 
 
-- fazer o bloco do meet our team 
+- fazer o bloco todo do meet our team 
 
 
 # anotacao:
@@ -192,6 +192,19 @@ Já o <button> é usado para executar uma ação, como enviar um formulário (su
 
 
 
+- COMO COLAR O FOOTER NO FIM DA PAGINA? 
+- consegui achar a resposta na alura, depois de quebrar a cabeca com um montao de outras maneiras e pra surpresa de 0 pessoas nao ter funcionado de primeira.
+
+- resposta:
+- position: fixed;
+- bottom: 0;
+- acompanhando o width 100% pra ocupar toda a largura.
+
+
+- existem algumas mudancas no design que nao fazem mt sentido, a cin me disse que esse tipo de coisa especifica nao precisa mudar pq deve ser erro de design mesmo.
+
+
+
 
 
 # to do :
@@ -204,13 +217,15 @@ TODO Por o projeto no vercel pra facilitar acesso dos mentores
 
 TODO arrumar o bem nos icons
 
-TODO os buttons sao um A e tem que ter o cursor pointer
+- buttons sao um A e tem que ter o cursor pointer ✅
 
 - fazer um storypobre com todos os componentes que eu fiz ✅
 
 - arrumar o endereco das imagens dos componentes ✅
 
 - arrumar a pasta das imagens e por a img dentro de assets ✅
+
+- TODO arrumar o main html com os componentes todos pra ver se ta dando certo!!
 
 
 
