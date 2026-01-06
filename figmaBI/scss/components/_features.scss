@@ -8,14 +8,47 @@
     gap: 30px;
     align-items: center;
 
-    @media (min-width: bp.$tablet) {
-        gap: 20px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media (min-width: bp.$desktop) {
+        
+            flex-direction: row;
+        }
     }
 
-    @media (min-width: bp.$desktop) {
-        flex-direction: row;
-        justify-content: center;
-        gap: 30px;
+    &__text {
+        text-align: center;
+        width: 315px;
+
+        @media (min-width: bp.$tablet) {
+            width: 680px;
+        }
+    }
+
+    &__textTitle {
+        font-family: tp.$font-heading;
+        font-size: tp.$size-displayM;
+        font-weight: 600;
+        margin: 0;
+
+        @media (min-width: bp.$tablet) {
+            font-weight: 700;
+        }
+    }
+
+    &__textDescription {
+        font-family: tp.$font-body;
+        font-size: tp.$size-bodyM;
+        font-weight: 400;
+        margin: 0;
+        padding-top: 15px;
+
+        @media (min-width: bp.$desktop) {
+            padding-bottom: 19px;
+        }
     }
 }
 

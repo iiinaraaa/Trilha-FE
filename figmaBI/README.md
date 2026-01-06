@@ -69,18 +69,21 @@
 - formulario ✅   
 - media query ✅
 
-- footer
+- footer ✅
 
-- fazer o bloco todo do features com os cards
+- fazer o bloco todo do features com os cards ✅
 
-- fazer o bloco todo do our metrics
+- fazer o bloco todo do our metrics 
+- esse ta mais complicadinho entao vou deixar por ultimo pra add o texto
 
-- fazer o bloco todo do real stories
+- fazer o bloco todo do real stories 
+- precisa resolver o alinhamento
 
 - fazer o bloco todo dos plans 
+- precisa resolver o alinhamento
 
 - fazer o bloco todo do meet our team 
-
+- precisa resolver o alinhamento
 
 # anotacao:
 
@@ -203,6 +206,8 @@ Já o <button> é usado para executar uma ação, como enviar um formulário (su
 
 - existem algumas mudancas no design que nao fazem mt sentido, a cin me disse que esse tipo de coisa especifica nao precisa mudar pq deve ser erro de design mesmo.
 
+- apaguei o features variable!
+
 
 
 
@@ -232,7 +237,10 @@ TODO arrumar o bem nos icons
 
 # duvidas:
 
+- onde eu criei a pasta layout pra costurar os cards, deveria ser chamado de organism? seguindo o atomic design??? nao tenho certeza, entao botei de layout seguindo como tava fznd no sass.
 
+- eu boto os textos fora ou dentro da div principal?
+- ja botei width e buga tudo, ja tentei alinhar com flex tb n da
 
 
 

@@ -27,6 +27,9 @@
 
     &__text {
         margin: 20px 20px 24px 20px;
+        font-family: tp.$font-body;
+        font-weight: 400;
+        font-size: tp.$size-bodyS;
 
         @media (min-width: bp.$tablet) {
             margin: 30px;
