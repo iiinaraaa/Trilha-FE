@@ -3,6 +3,37 @@
 @use '../components/icon';
 @use '../base/breakpoints' as bp;
 
+.MOT__textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.MOT__textContainerTitle {
+    font-family: tp.$font-heading;
+    font-weight: 600;
+    font-size: tp.$size-displayM;
+    margin: 0 0 15px 0;
+
+    @media (min-width: bp.$tablet) {
+        font-weight: 700;
+    }
+}
+
+.MOT__textContainerDescription {
+    width: 315px;
+    font-family: tp.$font-body;
+    font-size: tp.$size-bodyM;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    text-align: center;
+
+    @media (min-width: bp.$tablet) {
+        width: 680px;
+    }
+}
+
 .card__container {
     display: flex;
     flex-direction: column;
@@ -52,7 +83,6 @@
         }
     }
     
-
     &-text {
         text-align: center;
         border-bottom: solid 1px #d8d8d8;

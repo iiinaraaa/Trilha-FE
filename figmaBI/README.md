@@ -73,17 +73,21 @@
 
 - fazer o bloco todo do features com os cards ✅
 
+- arrumar o icon da rede social ✅
+
 - fazer o bloco todo do our metrics 
 - esse ta mais complicadinho entao vou deixar por ultimo pra add o texto
 
-- fazer o bloco todo do real stories 
-- precisa resolver o alinhamento
+- refazer o main com as coisas novas
 
-- fazer o bloco todo dos plans 
-- precisa resolver o alinhamento
+- fazer o bloco todo do real stories ✅
+- precisa resolver o alinhamento ✅
 
-- fazer o bloco todo do meet our team 
-- precisa resolver o alinhamento
+- fazer o bloco todo dos plans ✅
+- precisa resolver o alinhamento ✅
+
+- fazer o bloco todo do meet our team ✅
+- precisa resolver o alinhamento ✅
 
 # anotacao:
 
@@ -207,6 +211,10 @@ Já o <button> é usado para executar uma ação, como enviar um formulário (su
 - existem algumas mudancas no design que nao fazem mt sentido, a cin me disse que esse tipo de coisa especifica nao precisa mudar pq deve ser erro de design mesmo.
 
 - apaguei o features variable!
+
+- arrumar o alinhamento dos textos com os cards 
+- solucao: 
+- envolver tudo em uma divzona nova, o texto e os cards separados, alinhar tudo e o tamanho do texto se muda no p ou no h2, e nao na div pai.. assim da errado!
 
 
 

@@ -562,6 +562,39 @@ body {
   padding-left: 9px;
 }
 
+.MOT__textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.MOT__textContainerTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  margin: 0 0 15px 0;
+}
+@media (min-width: 768px) {
+  .MOT__textContainerTitle {
+    font-weight: 700;
+  }
+}
+
+.MOT__textContainerDescription {
+  width: 315px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .MOT__textContainerDescription {
+    width: 680px;
+  }
+}
+
 .card__container {
   display: flex;
   flex-direction: column;
@@ -1175,6 +1208,50 @@ body {
   padding-left: 20px;
 }
 
+.realStories__textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.realStories__textContainerTitle {
+  text-align: center;
+  width: 225px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .realStories__textContainerTitle {
+    width: 680px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 1440px) {
+  .realStories__textContainerTitle {
+    width: 1170px;
+  }
+}
+
+.realStories__textContainerDescription {
+  text-align: center;
+  width: 315px;
+}
+@media (min-width: 768px) {
+  .realStories__textContainerDescription {
+    width: 680px;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .realStories__textContainerDescription {
+    width: 1170px;
+  }
+}
+
 .realStories {
   display: flex;
   flex-direction: column;
@@ -1311,6 +1388,42 @@ body {
     height: 434.08px;
     flex-direction: column;
     padding: 21px;
+  }
+}
+
+.cardPlansBP__textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cardPlansBP__textContainerTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  width: 322px;
+  text-align: center;
+  margin: 0 0 12px 0;
+}
+@media (min-width: 768px) {
+  .cardPlansBP__textContainerTitle {
+    width: 680px;
+    font-weight: 700;
+  }
+}
+
+.cardPlansBP__textContainerDescription {
+  text-align: center;
+  width: 315px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 40px 0;
+}
+@media (min-width: 768px) {
+  .cardPlansBP__textContainerDescription {
+    width: 680px;
   }
 }
 

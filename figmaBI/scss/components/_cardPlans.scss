@@ -3,6 +3,41 @@
 @use '../base/breakpoints' as bp;
 
 
+.cardPlansBP__textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardPlansBP__textContainerTitle {
+    font-family: tp.$font-heading;
+    font-weight: 600;
+    font-size: tp.$size-displayM;
+    width: 322px;
+    text-align: center;
+    margin: 0 0 12px 0;
+
+    @media (min-width: bp.$tablet) {
+        width: 680px;
+        font-weight: 700;
+    }
+}
+
+.cardPlansBP__textContainerDescription {
+    text-align: center;
+    width: 315px;
+    font-family: tp.$font-body;
+    font-weight: 400;
+    font-size: tp.$size-bodyM;
+    margin: 0 0 40px 0;
+
+    @media (min-width: bp.$tablet) {
+        width: 680px;
+    }
+}
+
+
 .cardPlansBP {
     display: flex;
     flex-direction: column;

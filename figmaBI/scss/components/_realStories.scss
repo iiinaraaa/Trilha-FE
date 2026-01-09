@@ -2,6 +2,46 @@
 @use '../base/typography' as tp;
 @use '../base/breakpoints' as bp;
 
+.realStories__textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.realStories__textContainerTitle {
+    text-align: center;
+    width: 225px;
+    font-family: tp.$font-heading;
+    font-weight: 600;
+    font-size: tp.$size-displayM;
+    margin: 0;
+
+    @media (min-width: bp.$tablet) {
+        width: 680px;
+        padding-bottom: 10px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        width: 1170px;
+    }
+}
+
+.realStories__textContainerDescription {
+    text-align: center;
+    width: 315px;
+
+    @media (min-width: bp.$tablet) {
+        width: 680px;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        width: 1170px;
+    }
+}
+
 .realStories {
     display: flex;
     flex-direction: column;
