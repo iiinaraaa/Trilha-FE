@@ -76,9 +76,15 @@
 - arrumar o icon da rede social ✅
 
 - fazer o bloco todo do our metrics 
-- esse ta mais complicadinho entao vou deixar por ultimo pra add o texto
+- esse ta mais complicadinho entao vou deixar por ultimo pra add o texto 
 
-- refazer o main com as coisas novas
+- call do felps:
+- tirar o justify content do header e alinhar de outra forma pq as coisas estao quebrando
+- dar uma olhada nas coisas que estao quebrando:
+- forms e cell.
+- com tudo isso precisa resolver o scroll no eixo x.
+
+- refazer o main com as coisas novas ✅
 
 - fazer o bloco todo do real stories ✅
 - precisa resolver o alinhamento ✅

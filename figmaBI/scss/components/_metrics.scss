@@ -3,6 +3,13 @@
 @use '../base/breakpoints' as bp;
 
 
+.metrics__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
 .metrics {
     display: grid;
@@ -24,6 +31,45 @@
 
     @media (min-width: bp.$desktop) {
         width: 1170px;
+    }
+
+    &__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__textTitle {
+        font-family: tp.$font-heading;
+        font-size: tp.$size-displayM;
+        font-weight: 700;
+        width: 315px;
+        line-height: 130%;
+        margin: 0;
+        padding-bottom: 20px;
+
+        @media (min-width: bp.$tablet) {
+            width: 486px;
+        }
+    }
+
+    &__textDescription {
+        font-size: tp.$size-bodyM;
+        font-family: tp.$font-body;
+        font-weight: 400;
+        line-height: 130%;
+        width: 315px;
+        margin: 0;
+        padding-bottom: 40px;
+
+        @media (min-width: bp.$tablet) {
+            width: 680px;
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 1170px;
+        }
     }
 
     &__card {
