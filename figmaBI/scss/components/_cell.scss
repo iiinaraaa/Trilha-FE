@@ -13,10 +13,14 @@
         height: 285.42px;
         background-color: #f2bfaf;
         border-radius: 50%;
+        margin-bottom: 60px;
+
+        
 
         @media (min-width: bp.$desktop) {
             width: 401.37px;
             height: 401.37px; 
+            margin-bottom: 100px;
         }
         
         &-image {

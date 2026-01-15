@@ -3,3 +3,15 @@ $tablet: 768px;
 $small-desktop: 1024px;
 $desktop: 1440px;
 $fullhd: 1920px;
+
+$marginBottomComponent: 40px;
+
+body {
+    @media (min-width: $tablet) {
+        $marginBottomComponent: 60px;
+    }
+
+    @media (min-width: $desktop) {
+        $marginBottomComponent: 80px;
+    }
+}

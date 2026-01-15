@@ -7,6 +7,11 @@
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    margin-bottom: 60px;
+
+    @media (min-width: bp.$tablet) {
+        margin-bottom: 80px;
+    }
 
     &__wrapper {
         display: flex;

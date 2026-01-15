@@ -9,19 +9,8 @@
 </head>
 
 <body>
-
-        
         <div style="display: flex; flex-direction: row;
         gap: 18px; flex-wrap: wrap;">
-                <!-- header buttons -->
-                
-                <button class="btn btn--clear">Contact</button>
-
-                <button class="btn btn--soft">How it works</button>
-
-                <button class="btn btn--primary"><img class="btn-image" src="../../css/assets/img/button/Rocket.svg" alt="">Get Started</button> 
-
-
                 <!-- hero button -->
 
                 <button class="btn btn--primaryHero"><img class="btn-image" src="../../css/assets/img/button/Rocket.svg" alt="">Get Started</button>
@@ -36,15 +25,22 @@
                 <!-- forms button -->
 
                 <button class="btn btn--submit">Submit</button>
-
-
-
-
-
         </div>
 
 
-        
-</body>
+        <div class="HeaderBtn">
+                <div class="HeaderBtn__primaryHidden">
+                        <button class="HeaderBtn__primary"><img class="btn-image" src="../../css/assets/img/button/Rocket.svg" alt="">Get Started</button>   
+                </div>
 
+                <div class="HeaderBtn__softHidden">
+                        <button class="HeaderBtn__soft">How it works</button>
+                </div>
+
+                <div class="HeaderBtn__clearHidden">
+                       <button class="HeaderBtn__clear">Contact</button> 
+                </div>
+                
+        </div>
+</body>
 </html>

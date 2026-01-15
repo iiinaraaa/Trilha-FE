@@ -61,8 +61,6 @@
 
 - o ultimo banner (bruno disse que nao precisa fazer) ✅
 
-- esperar a cin pra alinhar o hero pq ta bugado
-
 - forms
 - botao ✅
 - icons ✅
@@ -75,14 +73,17 @@
 
 - arrumar o icon da rede social ✅
 
-- fazer o bloco todo do our metrics 
-- esse ta mais complicadinho entao vou deixar por ultimo pra add o texto 
+- fazer o bloco todo do our metrics ✅
+- esse ta mais complicadinho entao vou deixar por ultimo pra add o texto ✅
 
-- call do felps:
-- tirar o justify content do header e alinhar de outra forma pq as coisas estao quebrando
-- dar uma olhada nas coisas que estao quebrando:
-- forms e cell.
-- com tudo isso precisa resolver o scroll no eixo x.
+- fazer os botoes do header
+- alinhamento do header 
+
+- padding bottom nas coisas pra deixar bonitinho ✅
+
+- footer  tem que ficar colado la no final da pagina
+
+- social media icon do forms sumiu ✅
 
 - refazer o main com as coisas novas ✅
 
@@ -234,8 +235,6 @@ Já o <button> é usado para executar uma ação, como enviar um formulário (su
 
 TODO Por o projeto no vercel pra facilitar acesso dos mentores
 
-TODO arrumar o bem nos icons
-
 - buttons sao um A e tem que ter o cursor pointer ✅
 
 - fazer um storypobre com todos os componentes que eu fiz ✅
@@ -251,10 +250,8 @@ TODO arrumar o bem nos icons
 
 # duvidas:
 
-- onde eu criei a pasta layout pra costurar os cards, deveria ser chamado de organism? seguindo o atomic design??? nao tenho certeza, entao botei de layout seguindo como tava fznd no sass.
-
-- eu boto os textos fora ou dentro da div principal?
-- ja botei width e buga tudo, ja tentei alinhar com flex tb n da
+![alt text](image-6.png)
+- a partir dessa resolucao o layout quebra e n centraliza mais...
 
 
 

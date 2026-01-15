@@ -370,28 +370,6 @@ body {
   -webkit-box-shadow: 0px 0px 0px 5px rgba(45, 192, 99, 0.46);
   -moz-box-shadow: 0px 0px 0px 5px rgba(45, 200, 102, 0.46);
 }
-.btn--clear {
-  background-color: #F8F9FF;
-  color: #009379;
-  display: flex;
-  justify-content: center;
-}
-.btn--soft {
-  background-color: #E5F4F2;
-  color: #009379;
-  display: flex;
-  justify-content: center;
-}
-.btn--primary {
-  display: flex;
-  gap: 8px;
-  background-color: #009379;
-  color: white;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
 .btn--primaryHero {
   display: flex;
   align-items: center;
@@ -428,6 +406,98 @@ body {
   color: white;
   width: 159px;
   height: 60px;
+}
+
+.HeaderBtn {
+  display: flex;
+  gap: 20px;
+}
+.HeaderBtn__primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 221px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.4s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+  cursor: pointer;
+  background-color: #009379;
+  color: white;
+}
+.HeaderBtn__primary:hover {
+  box-shadow: 0px 0px 0px 5px rgba(14, 146, 31, 0.633);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(45, 192, 99, 0.46);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(45, 200, 102, 0.46);
+}
+.HeaderBtn__soft {
+  border: solid 1px #009379;
+  color: #009379;
+  background-color: #e5f4f2;
+  width: 221px;
+  height: 60px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.4s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+  cursor: pointer;
+}
+.HeaderBtn__soft:hover {
+  box-shadow: 0px 0px 0px 5px rgba(14, 146, 31, 0.633);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(45, 192, 99, 0.46);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(45, 200, 102, 0.46);
+}
+.HeaderBtn__clear {
+  cursor: pointer;
+  width: 221px;
+  height: 60px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background-color: #F8F9FF;
+  color: #009379;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.4s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+  cursor: pointer;
+}
+.HeaderBtn__clear:hover {
+  box-shadow: 0px 0px 0px 5px rgba(14, 146, 31, 0.633);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(45, 192, 99, 0.46);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(45, 200, 102, 0.46);
+}
+.HeaderBtn__primaryHidden {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .HeaderBtn__primaryHidden {
+    display: block;
+  }
+}
+.HeaderBtn__softHidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .HeaderBtn__softHidden {
+    display: block;
+  }
+}
+.HeaderBtn__clearHidden {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .HeaderBtn__clearHidden {
+    display: block;
+  }
 }
 
 .icon__primary {
@@ -601,6 +671,7 @@ body {
   gap: 30px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .card__container {
@@ -611,6 +682,7 @@ body {
 @media (min-width: 1440px) {
   .card__container {
     gap: 30px;
+    margin-bottom: 60px;
   }
 }
 
@@ -714,7 +786,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 @media (min-width: 768px) {
   .forms__description {
@@ -828,6 +900,7 @@ body {
 .metrics__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .metrics {
@@ -940,6 +1013,12 @@ body {
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .features {
+    margin-bottom: 80px;
+  }
 }
 .features__wrapper {
   display: flex;
@@ -1069,13 +1148,14 @@ body {
   border-bottom: solid 1px #d8d8d8;
   padding-top: 46.92px;
   padding-bottom: 49.04px;
-  margin-bottom: 180px;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .listLogos {
     display: flex;
     gap: 40px;
     max-width: 616px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1440px) {
@@ -1261,7 +1341,7 @@ body {
 
 .realStories__textContainerTitle {
   text-align: center;
-  width: 225px;
+  width: 327px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 38px;
@@ -1301,6 +1381,7 @@ body {
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .realStories {
@@ -1312,6 +1393,7 @@ body {
     flex-direction: row;
     gap: 30px;
     justify-content: center;
+    margin-bottom: 70px;
   }
 }
 .realStories__card {
@@ -1476,6 +1558,7 @@ body {
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .cardPlansBP {
@@ -1488,6 +1571,7 @@ body {
     flex-direction: row;
     gap: 30px;
     justify-content: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -1692,11 +1776,13 @@ body {
   height: 285.42px;
   background-color: #f2bfaf;
   border-radius: 50%;
+  margin-bottom: 60px;
 }
 @media (min-width: 1440px) {
   .cell__content {
     width: 401.37px;
     height: 401.37px;
+    margin-bottom: 100px;
   }
 }
 .cell__content-image {
@@ -1843,7 +1929,6 @@ body {
 
 .footer {
   display: flex;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -1896,48 +1981,53 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
   padding-top: 20px;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .header {
     justify-content: space-between;
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-top: 20px;
+    padding: 20px 48px 30px 48px;
   }
 }
 @media (min-width: 1440px) {
   .header {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
+    padding: 20px 50px 60px 50px;
   }
 }
 
-.btn--clear {
-  display: none;
-}
-@media (min-width: 1440px) {
-  .btn--clear {
-    display: block;
-  }
-}
-
-.btn--soft {
+.btn__header {
   display: none;
 }
 @media (min-width: 768px) {
-  .btn--soft {
+  .btn__header {
     display: block;
   }
 }
 
-.btn--primary {
+.btn__header--clear {
   display: none;
 }
 @media (min-width: 1440px) {
-  .btn--primary {
+  .btn__header--clear {
+    display: block;
+  }
+}
+
+.btn__header--soft {
+  display: none;
+}
+@media (min-width: 768px) {
+  .btn__header--soft {
+    display: block;
+  }
+}
+
+.btn__header--primary {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .btn__header--primary {
     display: block;
   }
 }
@@ -2025,12 +2115,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .cta {
     flex-direction: row;
     justify-content: center;
     gap: 60px;
+    margin-bottom: 70px;
   }
 }
 .cta__content {

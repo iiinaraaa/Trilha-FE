@@ -2,32 +2,20 @@
 
 .header {
     display: flex;
-    justify-content: center;
     padding-top: 20px;
+    justify-content: center;
 
     @media (min-width: bp.$tablet) {
         justify-content: space-between;
-        padding-left: 48px;
-        padding-right: 48px;
-        padding-top: 20px;
+        padding: 20px 48px 30px 48px;
     }
 
     @media (min-width: bp.$desktop) {
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 20px;
+        padding: 20px 50px 60px 50px;
     }
 }
 
-.btn--clear {
-    display: none;
-
-    @media (min-width: bp.$desktop) {
-        display: block;
-    }
-}
-
-.btn--soft {
+.btn__header {
     display: none;
 
     @media (min-width: bp.$tablet) {
@@ -35,7 +23,23 @@
     }
 }
 
-.btn--primary {
+.btn__header--clear {
+    display: none;
+
+    @media (min-width: bp.$desktop) {
+        display: block;
+    }
+}
+
+.btn__header--soft {
+    display: none;
+
+    @media (min-width: bp.$tablet) {
+        display: block;
+    }
+}
+
+.btn__header--primary {
     display: none;
 
     @media (min-width: bp.$desktop) {

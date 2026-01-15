@@ -11,7 +11,7 @@
 
 .realStories__textContainerTitle {
     text-align: center;
-    width: 225px;
+    width: 327px;
     font-family: tp.$font-heading;
     font-weight: 600;
     font-size: tp.$size-displayM;
@@ -47,6 +47,7 @@
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    margin-bottom: 60px;
 
     @media (min-width: bp.$tablet) {
         gap: 20px;
@@ -56,6 +57,7 @@
         flex-direction: row;
         gap: 30px;
         justify-content: center;
+        margin-bottom: 70px;
     }
 
     &__card {
