@@ -2,7 +2,6 @@
 @use '../base/typography' as tp;
 @use '../base/breakpoints' as bp;
 
-
 .cardPlansBP__textContainer {
     display: flex;
     align-items: center;
@@ -36,7 +35,6 @@
         width: 680px;
     }
 }
-
 
 .cardPlansBP {
     display: flex;
@@ -84,14 +82,11 @@
     &__informations {
         padding-left: 30px;
         width: 273px;
-        // height: 161px; por isso aqui depois
-
-
+        
         @media (min-width: bp.$tablet) {
             width: 293px;
         }
         
-
         &-type {
             font-family: tp.$font-body;
             font-weight: 400;
@@ -100,8 +95,6 @@
             padding-top: 40px;
             padding-bottom: 6px;
         }
-
-        
 
         &-section {
             display: flex;
@@ -132,7 +125,6 @@
 
 
         }
-
     }
 
     &__benefits {
@@ -157,8 +149,6 @@
         display: flex;
         justify-content: center;
         padding-top: 16px;
-
-
 
         &-item {
             width: 255px;
