@@ -170,6 +170,7 @@
             font-size: tp.$size-bodyM;
             font-weight: 600;
             color: colors.$secondary-text;
+            cursor: pointer;
 
             @media (min-width: bp.$tablet) {
                 width: 620px;
@@ -182,7 +183,3 @@
         }
     }
 }
-
-
-
-// TODO arrumar a posicao das coisas

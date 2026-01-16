@@ -76,12 +76,15 @@
 - fazer o bloco todo do our metrics ✅
 - esse ta mais complicadinho entao vou deixar por ultimo pra add o texto ✅
 
-- fazer os botoes do header
-- alinhamento do header 
+- fazer os botoes do header ✅
+- alinhamento do header ✅
 
 - padding bottom nas coisas pra deixar bonitinho ✅
 
-- footer  tem que ficar colado la no final da pagina
+- footer  tem que ficar colado la no final da pagina 
+- e se eu por ele como background como fiz com as flores no meu portifolio?
+
+
 
 - social media icon do forms sumiu ✅
 

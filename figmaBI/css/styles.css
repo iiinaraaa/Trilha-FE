@@ -1669,6 +1669,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: #009379;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .cardPlans__button-item {
