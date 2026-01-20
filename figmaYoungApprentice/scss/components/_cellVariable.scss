@@ -1,0 +1,91 @@
+@use '../base/colors';
+@use '../base/typography' as tp;
+@use '../base/breakpoints' as bp;
+
+.cellVariable {
+    
+    position: relative;
+    max-width: 320px;
+    padding-top: 19.56px;
+    padding-bottom: 23.11px;
+    padding-left: 53.93px;
+    padding-right: 42.07px;
+
+    @media (min-width: bp.$desktop) {
+        max-width: 540px;
+        padding-top: 33px;
+        padding-bottom: 39px;
+        padding-left: 91px;
+        padding-right: 71px;
+    }
+
+    &__content {
+        width: 224px;
+        height: 224px;
+        background-color: white;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0px 0px 72px -9px rgba(129,129,129,0.28);
+        -webkit-box-shadow: 0px 0px 72px -9px rgba(129,129,129,0.28);
+        -moz-box-shadow: 0px 0px 72px -9px rgba(129,129,129,0.28);
+
+
+        @media (min-width: bp.$desktop) {
+            width: 378px;
+            height: 378px;
+        }
+        
+        &-image {
+            top: 27px;
+            left: 27px;
+            position: relative;
+            z-index: 2;
+            width: 174px;
+
+            @media (min-width: bp.$desktop) {
+                width: 307px;
+                height: 320.69px;
+                top: 30px;
+                left: 38px;
+            }
+        }
+    }
+
+    &__circle {
+        width: 112px;
+        height: 112px;
+        border: solid 18.7px #009379;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        top: 21.93px;
+        left: 0;
+
+        @media (min-width: bp.$desktop) {
+            width: 189px;
+            height: 188px;
+            border: solid 31.55px #009379;
+            top: 37px;
+            left: 24px;
+        }
+
+        &-second {
+            width: 63.41px;
+            height: 63.41px;
+            border: solid 18.7px #ff6250;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 2;
+            bottom: 23.11px;
+            right: 23.11px;
+
+            @media (min-width: bp.$desktop) {
+                width: 107px;
+                height: 107px;
+                border: solid 31.55px #ff6250;
+                bottom: 39px;
+                right: 39px;
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+@use '../base/breakpoints' as bp;
+
+.listLogos {
+    display: grid;
+    justify-items: center;
+    max-width: 375px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    border-top: solid 1px #d8d8d8;
+    border-bottom: solid 1px #d8d8d8;
+    padding-top: 46.92px;
+    padding-bottom: 49.04px;
+    margin-bottom: 50px;
+    
+    
+    @media (min-width: bp.$tablet) {
+        display: flex;
+        gap: 42px;
+        max-width: 616px;
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        gap: 153px;
+        max-width: 1170px;
+    }
+
+    &__image {
+        width: 70px;
+        height: auto;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .listLogos {
+//     border-top: solid 1px #d8d8d8;
+//     border-bottom: solid 1px #d8d8d8;
+
+//     @media (min-width: 768px) {
+//         width: 616px;
+//         border-top: solid 1px #d8d8d8;
+//         border-bottom: solid 1px #d8d8d8;
+//         display: flex;
+//         flex-direction: row;
+//     }
+
+    
+
+//     &__container {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         width: 375px;
+//         padding: 30px;
+
+    
+
+//         &__image {
+//             padding-top: 16.92px;
+//             padding-bottom: 16.92px;
+//             padding-right: 52.5px;
+
+//             @media (min) {
+                
+//             }
+            
+//         }
+
+        
+//     }
+
+    
+// }
+

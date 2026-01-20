@@ -1,0 +1,243 @@
+@use 'breakpoints' as bp;
+@use 'colors'; 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// font-family
+
+$font-heading: 'Poppins', sans-serif;
+$font-body: 'Mulish', sans-serif;
+
+// font size
+
+$size-display2XL: 90px;
+$size-displayXL: 67px;
+$size-displayL: 50px;
+$size-displayM: 38px;
+$size-displayS: 28px;
+$size-displayXS: 28px;
+
+$size-bodyXL: 28px;
+$size-bodyL: 21px;
+$size-bodyM: 16px;
+$size-bodyS: 14px;
+
+
+//line height
+
+$line-height-display2XL: 1.3;
+$line-height-displayXL: 1.3;
+$line-height-displayL: 1.3;
+$line-height-displayM: 1.3;
+$line-height-displayS: 1.3;
+$line-height-displayXS: 1.3;
+
+$line-height-bodyXL: 1.4;
+$line-height-bodyL: 1.5;
+$line-height-bodyM: 1.5;
+$line-height-bodyS: 1.6;
+
+
+
+//letter-spacing
+
+$letter-spacing-display2XL: -2.5;
+$letter-spacing-displayXL: -2.5;
+$letter-spacing-displayL: -2;
+$letter-spacing-displayM: -2;
+$letter-spacing-displayS: -2;
+$letter-spacing-displayXS: -1;
+
+$letter-spacing-bodyXL: 0;
+$letter-spacing-bodyL: 0;
+$letter-spacing-bodyM: 0;
+$letter-spacing-bodyS: 0;
+
+
+
+
+body {
+    font-family: $font-body;
+    font-size: $size-bodyM;
+    line-height: $line-height-bodyM;
+    letter-spacing: $letter-spacing-bodyM;
+    color: colors.$primary-text;
+}
+
+.text--body {
+    font-family: $font-body;
+    font-size: $size-bodyM;
+    line-height: $line-height-bodyM;
+    letter-spacing: $letter-spacing-bodyM;
+    color: colors.$primary-text;
+}
+
+.text--bodyL{
+    font-family: $font-body;
+    font-size: $size-bodyM;
+    line-height: $line-height-bodyM;
+    letter-spacing: $letter-spacing-bodyM;
+    color: colors.$primary-text;
+
+    @media (min-width: bp.$tablet) {
+        font-size: $size-bodyL;
+        line-height: $line-height-bodyL;
+        letter-spacing: $letter-spacing-bodyL;
+    }
+
+
+}
+
+
+//CREATE ENGAGING LANDING PAGES
+.text--h1 {
+    font-family: $font-heading;
+    font-size: $size-displayM;
+    line-height: $line-height-displayM;
+    letter-spacing: $letter-spacing-displayM;
+    color: colors.$primary-text;
+
+    @media (min-width: bp.$tablet) {
+        font-size: $size-displayXL;
+        line-height: $line-height-displayXL;
+        letter-spacing: $letter-spacing-displayXL;
+    }
+}
+
+
+//OUR METRICS STORY
+.text--h2 {
+    font-family: $font-heading;
+    font-size: $size-displayM;
+    line-height: $line-height-displayM;
+    letter-spacing: $letter-spacing-displayM;
+
+    //real stories from.. MOBILE  semibold
+    &--h2sm {
+        font-weight: 600;
+    }
+
+}
+
+
+.text--h3 {
+    font-family: $font-heading;
+    font-size: $size-displayS;
+    line-height: $line-height-displayS;
+    letter-spacing: $letter-spacing-displayS;
+
+    @media (min-width: bp.$tablet) {
+        font-size: $size-displayM;
+        line-height: $line-height-displayM;
+        letter-spacing: $letter-spacing-displayM;
+    }
+
+    @media (min-width: bp.$desktop) {
+        font-size: $size-displayL;
+        line-height: $line-height-displayL;
+        letter-spacing: $letter-spacing-displayL;
+    }
+}
+
+.text--h4 {
+    font-family: $font-heading;
+    font-size: $size-displayS;
+    line-height: $line-height-displayS;
+    letter-spacing: $letter-spacing-displayS;
+
+    @media (min-width: bp.$tablet) {
+        font-size: $size-displayXS;
+        line-height: $line-height-displayXS;
+        letter-spacing: $letter-spacing-displayXS;
+    }
+}
+
+.text--h5 {
+    font-family: $font-heading;
+    font-size: $size-displayXS;
+    line-height: $line-height-displayXS;
+    letter-spacing: $letter-spacing-displayXS;
+}
+
+
+
+.text__body--mobile {
+    font-family: $font-body;
+    font-size: $size-bodyS;
+
+    &--m {
+        font-size: $size-bodyM;
+    }
+
+    &--bold {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.text__body--tablet {
+    font-family: $font-body;
+    font-size: $size-bodyM;
+
+    &--primary { //creat engaging
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    &--secondary {
+        font-size: 16px;
+        line-height: 1.3;
+
+        &--bold {
+            font-weight: bold;
+        }
+    }
+
+    &--tertiary {
+        line-height: 1.6;
+    }
+}
+
+.text__body--desktop {
+    font-family: $font-body;
+    font-size: $size-bodyM;
+
+    &--bodyl {
+        font-size: $size-bodyL;
+    }
+
+    &--bodys {
+        font-size: $size-bodyS;
+    }
+
+    &--primary {
+        font-size: 16px;
+        line-height: 1.3;
+
+        &--bold {
+            font-weight: bold;
+        }
+    }
+
+    &--secondary {
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+    &--tertiary {
+        font-size: 16;
+        line-height: 1.6;
+    }
+
+    &--footer {
+        font-size: 14px;
+        line-height: 20;
+    }
+}
+
+
+
+
+

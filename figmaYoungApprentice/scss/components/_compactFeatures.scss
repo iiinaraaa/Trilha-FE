@@ -1,0 +1,49 @@
+@use '../base/colors';
+@use '../base/typography' as tp;
+@use '../base/breakpoints' as bp;
+
+.featuresCompact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 315px; 
+    margin: 0 auto;
+    //aparentemente pra isso funcionar ou precisa de display bock ou definir um max-width pra dai sim alinhar no meio!
+    
+    
+    
+    @media (min-width: bp.$tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 680px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        max-width: 570px;
+    }
+
+    &__card {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        width: 315px;
+        height: 90px;
+        border-radius: 20px;
+        border: solid 1px #e5f4f2;
+        box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.05);
+        
+        @media (min-width: bp.$tablet) {
+            width: 330px;
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 275px;
+        }
+
+        &-title {
+            font-family: tp.$font-body;
+            font-weight: 400;
+            font-size: tp.$size-bodyL;
+            padding-left: 20px;
+        }
+    }
+}

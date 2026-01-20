@@ -1,0 +1,88 @@
+@use '../base/breakpoints' as bp;
+@use '../base/colors';
+@use '../base/animations';
+@use '../base/typography' as tp;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: bp.$desktop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 115px;
+    }
+
+    &__textContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper {
+        text-align: center;
+        width: 315px;
+
+        @media (min-width: bp.$tablet) {
+            width: 680px;
+        }
+
+        @media (min-width: bp.$desktop) {
+            text-align: start;
+            width: 648px;
+        }
+    }
+
+    
+
+
+    .btn {
+        display: none;
+
+        &--borderHero {
+            @media (min-width: bp.$desktop) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+
+
+    &__buttonContainer {
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: bp.$desktop) {
+            justify-content: flex-start;
+            gap: 18px;
+            padding-top: 10px;
+        }
+    }
+
+    &__title {
+        font-family: tp.$font-heading;
+        font-weight: 700;
+        font-size: tp.$size-displayM;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+
+        @media (min-width: bp.$tablet) {
+            font-size: tp.$size-displayXL;
+        }
+    }
+
+        &-description {
+            font-family: tp.$font-body;
+            font-weight: 400;
+            font-size: tp.$size-bodyM;
+            margin-top: 0;
+            margin-bottom: 30px;
+
+            @media (min-width: bp.$tablet) {
+                font-size: tp.$size-bodyL;
+            }
+        }
+}

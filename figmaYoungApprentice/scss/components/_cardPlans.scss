@@ -1,0 +1,175 @@
+@use '../base/colors';
+@use '../base/typography' as tp;
+@use '../base/breakpoints' as bp;
+
+.cardPlansBP__textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardPlansBP__textContainerTitle {
+    font-family: tp.$font-heading;
+    font-weight: 600;
+    font-size: tp.$size-displayM;
+    width: 322px;
+    text-align: center;
+    margin: 0 0 12px 0;
+
+    @media (min-width: bp.$tablet) {
+        width: 680px;
+        font-weight: 700;
+    }
+}
+
+.cardPlansBP__textContainerDescription {
+    text-align: center;
+    width: 315px;
+    font-family: tp.$font-body;
+    font-weight: 400;
+    font-size: tp.$size-bodyM;
+    margin: 0 0 40px 0;
+
+    @media (min-width: bp.$tablet) {
+        width: 680px;
+    }
+}
+
+.cardPlansBP {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+
+    @media (min-width: bp.$tablet) {
+        gap: 20px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+}
+
+.cardPlans {
+    background-color: white;
+    width: 315px;
+    height: 459px;
+    border-radius: 20px;
+    border: solid 1px #f8f9ff;
+    box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+
+    @media (min-width: bp.$tablet) {
+        width: 680px;
+        height: 444px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        width: 370px;
+        height: 438px;
+    }
+
+    &--variable {
+        background-color: colors.$secondary-text;
+        color: white ;
+    }
+    
+    &__informations {
+        padding-left: 30px;
+        width: 273px;
+        
+        @media (min-width: bp.$tablet) {
+            width: 293px;
+        }
+        
+        &-type {
+            font-family: tp.$font-body;
+            font-weight: 400;
+            font-size: tp.$size-bodyL;
+            margin: 0px;
+            padding-top: 40px;
+            padding-bottom: 6px;
+        }
+
+        &-section {
+            display: flex;
+            gap: 12px;
+
+            &-value {
+                font-family: tp.$font-heading;
+                font-weight: 700;
+                font-size: tp.$size-displayL;
+                margin: 0px;
+                
+            }
+
+            &-month {
+                font-family: tp.$font-body;
+                font-size: tp.$size-bodyM;
+                font-weight: 700;
+                margin: 0px;
+                padding-top: 35px;
+            }
+        }
+
+        &-description {
+            font-weight: 400;
+            margin: 0px;
+            padding-bottom: 24px;
+            padding-top: 6px;
+
+
+        }
+    }
+
+    &__benefits {
+        padding-left: 30px;
+
+        &-item {
+            display: flex;
+            gap: 12px;
+            font-family: tp.$font-body;
+            font-weight: 700;
+            font-size: tp.$size-bodyM;
+                padding-bottom: 16px;
+        }
+
+        &-description {
+            margin: 0px;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding-top: 16px;
+
+        &-item {
+            width: 255px;
+            height: 60px;
+            border-radius: 20px;
+            background-color: #e5f4f2;
+            border: none;
+            font-family: tp.$font-heading;
+            font-size: tp.$size-bodyM;
+            font-weight: 600;
+            color: colors.$secondary-text;
+            cursor: pointer;
+
+            @media (min-width: bp.$tablet) {
+                width: 620px;
+                height: 60px;
+            }
+
+            @media (min-width: bp.$desktop) {
+                width: 310px;
+            }
+        }
+    }
+}

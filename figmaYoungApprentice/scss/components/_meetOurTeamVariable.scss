@@ -1,0 +1,85 @@
+@use '../base/colors';
+@use '../base/typography' as tp;
+@use '../base/breakpoints' as bp;
+
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+    @media (min-width: bp.$desktop) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__member {
+        background-color: white;
+        width: 315px;
+        height: 433px;
+        border: solid 1px #e5f4f2;
+        border-radius: 20px;
+
+        @media (min-width: bp.$tablet) {
+            width: 680px;
+            height: 381px;
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 370px;
+            height: 407px;
+        }
+        
+        &-image {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 16px;
+        }
+
+        &-info {
+            text-align: center;
+
+            &-name {
+                font-family: tp.$font-heading;
+                font-weight: 600;
+                font-size: tp.$size-bodyL;
+                margin: 0px;
+                padding-bottom: 6px;
+            }
+
+            &-title {
+                font-family: tp.$font-body;
+                font-weight: 400;
+                font-size: tp.$size-bodyM;
+                margin: 0px;
+            }
+
+            &-description {
+                font-family: tp.$font-body;
+                font-weight: 400;
+                font-size: tp.$size-bodyM;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin: 0px;
+                padding-top: 30px;
+            }
+        }
+
+        &-socials {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 40px;
+            
+            &-item {
+                font-family: tp.$font-heading;
+                font-weight: 700;
+                font-size: tp.$size-bodyS;
+                color: colors.$secondary-text;
+            }
+        }
+    }
+}

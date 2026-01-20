@@ -1,0 +1,55 @@
+@use "breakpoints" as bp;
+
+// bg colors
+
+$bg-primary: #F8F9FF;
+$bg-secondary: #F8D57E;
+$bg-tertiary: #E5F4F2;
+$bg-fourth: #F2BFAF;
+$bg-fifth: #FFFFFF;
+$bg-sixth: #2D2D2D;
+
+
+// button colors
+
+$btn-primary: #E5F4F2;
+$btn-secondary: #009379;
+$btn-tertiary: #FFFFFF;
+
+$btn-alert: $bg-secondary;
+
+
+// text colors
+
+$primary-text: #2D2D2D;
+$secondary-text: #009379;
+$tertiary-text: white;
+
+//icons features
+
+$icon-card-primary: #ffe0dc;
+$icon-card-secondary: #cce9e4;
+$icon-card-tertiary: #fef7e5;
+
+
+$icon-social: #e5f4f2;
+$icon-social-dark: #4e4d4d;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: $bg-primary;
+  
+  color: $primary-text;
+}

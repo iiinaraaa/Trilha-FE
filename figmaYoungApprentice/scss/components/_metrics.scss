@@ -1,0 +1,120 @@
+@use '../base/colors';
+@use '../base/typography' as tp;
+@use '../base/breakpoints' as bp;
+
+
+.metrics__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 315px; 
+    //se tira esse width esse buga tudo
+    margin: 0 auto;
+    align-items: flex-start;
+    gap: 20px;
+
+    
+    
+    @media (min-width: bp.$tablet) {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        width: 680px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        width: 1170px;
+    }
+
+    &__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__textTitle {
+        font-family: tp.$font-heading;
+        font-size: tp.$size-displayM;
+        font-weight: 700;
+        width: 315px;
+        line-height: 130%;
+        margin: 0;
+        padding-bottom: 20px;
+
+        @media (min-width: bp.$tablet) {
+            width: 486px;
+        }
+    }
+
+    &__textDescription {
+        font-size: tp.$size-bodyM;
+        font-family: tp.$font-body;
+        font-weight: 400;
+        line-height: 130%;
+        width: 315px;
+        margin: 0;
+        padding-bottom: 40px;
+
+        @media (min-width: bp.$tablet) {
+            width: 680px;
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 1170px;
+        }
+    }
+
+    &__card {
+        background-color: colors.$bg-fifth;
+        width: 147.5px;
+        height: 164px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 16px;
+        padding-left: 16px;
+        border-bottom: solid 4px #f2bfaf;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        
+        
+        @media (min-width: bp.$tablet) {
+            width: 155px;
+            height: 143px;
+
+            &--smaller {
+                height: 122px;
+            }
+        }
+
+        @media (min-width: bp.$desktop) {
+            width: 270px;
+            height: 171px;
+        }
+
+        &-title {
+            font-family: tp.$font-heading;
+            font-size: tp.$size-displayS;
+            font-weight: 600;
+            margin: 0px; 
+        }
+
+        &-content {
+            font-family: tp.$font-body;
+            font-size: tp.$size-bodyM;
+            font-weight: 400;
+            margin: 0px;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@use '../base/breakpoints' as bp;
+
+.header {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+
+    @media (min-width: bp.$tablet) {
+        justify-content: space-between;
+        padding: 20px 48px 30px 48px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        padding: 20px 50px 60px 50px;
+    }
+
+    &__logoValtechName {
+        width: 230px;
+
+        @media (min-width: bp.$tablet) {
+            width: 180px;
+        }
+    }
+}
+
+.btn__header {
+    display: none;
+
+    @media (min-width: bp.$tablet) {
+        display: block;
+    }
+}
+
+.btn__header--clear {
+    display: none;
+
+    @media (min-width: bp.$desktop) {
+        display: block;
+    }
+}
+
+.btn__header--soft {
+    display: none;
+
+    @media (min-width: bp.$tablet) {
+        display: block;
+    }
+}
+
+.btn__header--primary {
+    display: none;
+
+    @media (min-width: bp.$desktop) {
+        display: block;
+    }
+}
+
+
+
+
+

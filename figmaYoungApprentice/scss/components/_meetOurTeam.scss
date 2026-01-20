@@ -1,0 +1,106 @@
+@use '../base/colors';
+@use '../base/typography' as tp;
+@use '../components/icon';
+@use '../base/breakpoints' as bp;
+
+.MOT__textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.MOT__textContainerTitle {
+    font-family: tp.$font-heading;
+    font-weight: 600;
+    font-size: tp.$size-displayM;
+    margin: 0 0 15px 0;
+
+    @media (min-width: bp.$tablet) {
+        font-weight: 700;
+    }
+}
+
+.MOT__textContainerDescription {
+    width: 315px;
+    font-family: tp.$font-body;
+    font-size: tp.$size-bodyM;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    text-align: center;
+
+    @media (min-width: bp.$tablet) {
+        width: 680px;
+    }
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    @media (min-width: bp.$tablet) {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+.card__teamMember {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 315px;
+    
+    @media (min-width: bp.$tablet) {
+        width: 213px;
+    }
+
+    @media (min-width: bp.$desktop) {
+        width: 370px;
+    }
+
+    &-contentImage {
+        aspect-ratio: 315/278;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+
+        @media (min-width: bp.$tablet) {
+            aspect-ratio: 213 / 173;
+        }
+
+        @media (min-width: bp.$desktop){
+            aspect-ratio: 370 / 278;
+        }
+
+        &-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    &-text {
+        text-align: center;
+        border-bottom: solid 1px #d8d8d8;
+    }
+
+    &-title {
+        font-family: tp.$font-heading;
+        font-weight: 600;
+        font-size: tp.$size-bodyL;
+        margin-bottom: 6px;
+    }
+
+    &-content {
+        font-family: tp.$font-body;
+        font-weight: 400;
+        font-size: tp.$size-bodyM;
+        margin-top: 0px;
+    }
+} 
