@@ -2057,11 +2057,6 @@ body {
   text-decoration: none;
   color: #2b73fe;
 }
-@media (min-width: 1440px) {
-  .hero__description {
-    margin-bottom: 40px;
-  }
-}
 .hero__wrapper {
   text-align: center;
   width: 315px;
