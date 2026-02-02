@@ -47,6 +47,7 @@
             z-index: 5;
             top: -130px;
             left: 254px;
+            animation: bubbleStar 3s  ease-in-out infinite alternate;
 
             @media (min-width: bp.$desktop) {
                 width: 28.41px;
@@ -60,6 +61,7 @@
                 z-index: 5;
                 top: -68px;
                 left: 32px;
+                animation: bubbleStar 3s  ease-in-out infinite alternate;
 
                 @media (min-width: bp.$desktop) {
                     position: relative;
@@ -70,6 +72,26 @@
                     height: 28.41px;
                 }
                 
+            }
+
+            @keyframes bubbleStar {
+            from {
+                transform: rotate(-1deg);
+            }
+            to {
+                transform: rotate(1deg);
+            }
+        }
+
+
+        }
+
+        @keyframes bubbleStar {
+            from {
+                transform: rotate(-1deg);
+            }
+            to {
+                transform: rotate(1deg);
             }
         }
     }
@@ -83,6 +105,8 @@
         z-index: 1;
         top: 5px;
         left: 198px;
+        animation: bubble 15s linear infinite;
+        
 
         @media (min-width: bp.$desktop) {
             width: 146.56px;
@@ -96,11 +120,12 @@
             width: 61.16px;
             height: 61.16px;
             border: solid 22.44px #ff6250;
-            border-radius: 50%;
+            // border-radius: 50%;
             position: absolute;
             z-index: 2;
             top: 169px;
             left: -19px;
+            animation: bubble 5s linear alternate infinite;
 
             @media (min-width: bp.$desktop) {
                 width: 86px;
@@ -111,4 +136,20 @@
             }
         }
     }
+
+    @keyframes bubble {
+        from 
+        {
+            transform:  translateY(0);
+            transform-origin: center;
+        }
+
+
+        to 
+        {
+            transform: rotate(180deg) translateY(86px)
+        }
+    }
 }
+
+

@@ -1714,6 +1714,17 @@ body {
   z-index: 2;
   width: 174px;
 }
+.cellVariable__content-image--rotating {
+  animation: rotating 30s linear infinite;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 1440px) {
   .cellVariable__content-image {
     width: 307px;
@@ -1803,6 +1814,7 @@ body {
   z-index: 5;
   top: -130px;
   left: 254px;
+  animation: bubbleStar 3s ease-in-out infinite alternate;
 }
 @media (min-width: 1440px) {
   .cell__content-star {
@@ -1817,6 +1829,7 @@ body {
   z-index: 5;
   top: -68px;
   left: 32px;
+  animation: bubbleStar 3s ease-in-out infinite alternate;
 }
 @media (min-width: 1440px) {
   .cell__content-star-second {
@@ -1828,6 +1841,22 @@ body {
     height: 28.41px;
   }
 }
+@keyframes bubbleStar {
+  from {
+    transform: rotate(-1deg);
+  }
+  to {
+    transform: rotate(1deg);
+  }
+}
+@keyframes bubbleStar {
+  from {
+    transform: rotate(-1deg);
+  }
+  to {
+    transform: rotate(1deg);
+  }
+}
 .cell__circle {
   width: 104.22px;
   height: 104.22px;
@@ -1837,6 +1866,7 @@ body {
   z-index: 1;
   top: 5px;
   left: 198px;
+  animation: bubble 15s linear infinite;
 }
 @media (min-width: 1440px) {
   .cell__circle {
@@ -1851,11 +1881,11 @@ body {
   width: 61.16px;
   height: 61.16px;
   border: solid 22.44px #ff6250;
-  border-radius: 50%;
   position: absolute;
   z-index: 2;
   top: 169px;
   left: -19px;
+  animation: bubble 5s linear alternate infinite;
 }
 @media (min-width: 1440px) {
   .cell__circle-second {
@@ -1864,6 +1894,15 @@ body {
     border: solid 31.55px #ff6250;
     top: 249px;
     left: -19px;
+  }
+}
+@keyframes bubble {
+  from {
+    transform: translateY(0);
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(180deg) translateY(86px);
   }
 }
 
@@ -2054,7 +2093,7 @@ body {
 }
 .hero__wrapper {
   text-align: center;
-  width: 315px;
+  width: 326px;
 }
 @media (min-width: 768px) {
   .hero__wrapper {
@@ -2092,7 +2131,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 38px;
-  margin-top: 60px;
+  margin-top: 35px;
   margin-bottom: 20px;
   line-height: 1.3;
 }
@@ -2106,7 +2145,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   .hero-description {
