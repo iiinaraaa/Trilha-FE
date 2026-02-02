@@ -2050,9 +2050,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+.hero__description {
+  margin-bottom: 30px;
+}
 .hero__description--link {
   text-decoration: none;
   color: #2b73fe;
+}
+@media (min-width: 1440px) {
+  .hero__description {
+    margin-bottom: 40px;
+  }
 }
 .hero__wrapper {
   text-align: center;
@@ -2078,6 +2086,9 @@ body {
     flex-direction: row;
     align-items: center;
   }
+}
+.hero .btn--primaryHero {
+  display: flex;
 }
 .hero__buttonContainer {
   display: flex;

@@ -20,10 +20,20 @@
         flex-direction: column;
     }
 
-    &__description--link {
-        text-decoration: none;
-        color: #2b73fe;
+    &__description {
+        margin-bottom: 30px;
+        
+        &--link {
+           text-decoration: none;
+            color: #2b73fe; 
+        }
+
+        @media (min-width: bp.$desktop) {
+            margin-bottom: 40px;
+        }
     }
+
+    
 
     &__wrapper {
         text-align: center;
@@ -51,6 +61,11 @@
                 flex-direction: row;
                 align-items: center;
             }
+        }
+
+        &--primaryHero {
+            display: flex;
+
         }
     }
 
