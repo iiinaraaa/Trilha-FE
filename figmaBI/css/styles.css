@@ -2050,6 +2050,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+.hero__description--link {
+  text-decoration: none;
+  color: #2b73fe;
+}
 .hero__wrapper {
   text-align: center;
   width: 315px;

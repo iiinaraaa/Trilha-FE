@@ -20,6 +20,11 @@
         flex-direction: column;
     }
 
+    &__description--link {
+        text-decoration: none;
+        color: #2b73fe;
+    }
+
     &__wrapper {
         text-align: center;
         width: 315px;
@@ -80,6 +85,8 @@
             font-size: tp.$size-bodyM;
             margin-top: 0;
             margin-bottom: 30px;
+
+            
 
             @media (min-width: bp.$tablet) {
                 font-size: tp.$size-bodyL;
