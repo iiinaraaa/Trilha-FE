@@ -2047,6 +2047,11 @@ body {
     gap: 115px;
   }
 }
+@media (min-width: 1280px) {
+  .hero__title {
+    color: #0C0C0D;
+  }
+}
 .hero__textContainer {
   display: flex;
   flex-direction: column;
