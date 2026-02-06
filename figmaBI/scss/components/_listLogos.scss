@@ -29,6 +29,10 @@
     &__image {
         width: 70px;
         height: auto;
+
+        @media (min-width: bp.$desktop) {
+            width: 90px;
+        }
     }   
 }
 
