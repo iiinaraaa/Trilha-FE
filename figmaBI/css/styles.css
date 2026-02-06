@@ -1149,25 +1149,31 @@ body {
   border-bottom: solid 1px #d8d8d8;
   padding-top: 46.92px;
   padding-bottom: 49.04px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .listLogos {
     display: flex;
     gap: 40px;
     max-width: 616px;
-    margin-bottom: 50px;
+    margin-bottom: 140px;
   }
 }
 @media (min-width: 1280px) {
   .listLogos {
     gap: 126px;
     max-width: 1170px;
+    margin-bottom: 180px;
   }
 }
 .listLogos__image {
   width: 70px;
   height: auto;
+}
+@media (min-width: 1280px) {
+  .listLogos__image {
+    width: 90px;
+  }
 }
 
 .listRoundLogos {
