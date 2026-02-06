@@ -11,19 +11,20 @@
     border-bottom: solid 1px #d8d8d8;
     padding-top: 46.92px;
     padding-bottom: 49.04px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     
     
     @media (min-width: bp.$tablet) {
         display: flex;
         gap: 40px;
         max-width: 616px;
-        margin-bottom: 50px;
+        margin-bottom: 140px;
     }
 
     @media (min-width: bp.$desktop) {
         gap: 126px;
         max-width: 1170px;
+        margin-bottom: 180px;
     }
 
     &__image {
