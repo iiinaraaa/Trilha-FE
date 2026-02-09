@@ -56,12 +56,13 @@
 
     .btn {
         display: none;
+        
 
         &--borderHero {
             @media (min-width: bp.$desktop) {
                 display: flex;
                 flex-direction: row;
-                align-items: center;
+                align-items: center; 
             }
         }
 
@@ -80,6 +81,7 @@
             justify-content: flex-start;
             gap: 18px;
             padding-top: 10px;
+            margin-bottom: 80px;
         }
     }
 
