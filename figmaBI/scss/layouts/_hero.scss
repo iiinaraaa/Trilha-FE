@@ -50,12 +50,13 @@
 
     .btn {
         display: none;
+        
 
         &--borderHero {
             @media (min-width: bp.$desktop) {
                 display: flex;
                 flex-direction: row;
-                align-items: center;
+                align-items: center; 
             }
         }
 
