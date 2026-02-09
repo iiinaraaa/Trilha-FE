@@ -1170,11 +1170,6 @@ body {
   width: 70px;
   height: auto;
 }
-@media (min-width: 1280px) {
-  .listLogos__image {
-    width: 90px;
-  }
-}
 
 .listRoundLogos {
   display: flex;
