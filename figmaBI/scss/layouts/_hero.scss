@@ -15,6 +15,12 @@
         gap: 115px;
     }
 
+    &__title {
+        @media (min-width: bp.$desktop) {
+            color: #0C0C0D;
+        }
+    }
+
     &__textContainer {
         display: flex;
         flex-direction: column;
