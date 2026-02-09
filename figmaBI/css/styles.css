@@ -1983,18 +1983,18 @@ body {
 
 .header {
   display: flex;
-  padding-top: 20px;
+  padding-top: 40px;
   justify-content: center;
 }
 @media (min-width: 768px) {
   .header {
     justify-content: space-between;
-    padding: 20px 48px 30px 48px;
+    padding: 40px 50px 30px 50px;
   }
 }
 @media (min-width: 1280px) {
   .header {
-    padding: 20px 50px 60px 50px;
+    padding: 40px 50px 60px 50px;
   }
 }
 
