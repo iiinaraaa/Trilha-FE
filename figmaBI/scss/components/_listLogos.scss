@@ -16,7 +16,7 @@
     
     @media (min-width: bp.$tablet) {
         display: flex;
-        gap: 40px;
+        gap: 39.2px;
         max-width: 616px;
         margin-bottom: 140px;
     }
@@ -30,10 +30,6 @@
     &__image {
         width: 70px;
         height: auto;
-
-        @media (min-width: bp.$desktop) {
-            width: 90px;
-        }
     }   
 }
 
