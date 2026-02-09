@@ -1147,8 +1147,8 @@ body {
   margin: 0 auto;
   border-top: solid 1px #d8d8d8;
   border-bottom: solid 1px #d8d8d8;
-  padding-top: 46.92px;
-  padding-bottom: 49.04px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-bottom: 60px;
 }
 @media (min-width: 768px) {
@@ -1779,7 +1779,7 @@ body {
   height: 285.42px;
   background-color: #f2bfaf;
   border-radius: 50%;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 @media (min-width: 1280px) {
   .cell__content {
@@ -2096,6 +2096,7 @@ body {
     justify-content: flex-start;
     gap: 18px;
     padding-top: 10px;
+    margin-bottom: 80px;
   }
 }
 .hero__title {
