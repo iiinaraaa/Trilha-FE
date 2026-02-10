@@ -1161,7 +1161,7 @@ body {
 }
 @media (min-width: 1280px) {
   .listLogos {
-    gap: 126px;
+    gap: 149px;
     max-width: 1170px;
     margin-bottom: 180px;
   }
