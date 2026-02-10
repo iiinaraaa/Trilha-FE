@@ -2180,6 +2180,7 @@ body {
 @media (min-width: 1280px) {
   .cta__title {
     font-size: 50px;
+    width: 590px;
   }
 }
 .cta__description {
