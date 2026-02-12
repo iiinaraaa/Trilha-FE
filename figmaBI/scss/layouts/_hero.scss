@@ -15,6 +15,12 @@
         gap: 115px;
     }
 
+    &__title {
+        @media (min-width: bp.$desktop) {
+            color: #0C0C0D;
+        }
+    }
+
     &__textContainer {
         display: flex;
         flex-direction: column;
@@ -50,12 +56,13 @@
 
     .btn {
         display: none;
+        
 
         &--borderHero {
             @media (min-width: bp.$desktop) {
                 display: flex;
                 flex-direction: row;
-                align-items: center;
+                align-items: center; 
             }
         }
 
@@ -74,6 +81,7 @@
             justify-content: flex-start;
             gap: 18px;
             padding-top: 10px;
+            margin-bottom: 80px;
         }
     }
 
