@@ -691,6 +691,11 @@ body {
   background-color: white;
   border-radius: 20px;
   max-width: 315px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card__teamMember:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.112);
 }
 @media (min-width: 768px) {
   .card__teamMember {
@@ -980,6 +985,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.metrics__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.112);
 }
 @media (min-width: 768px) {
   .metrics__card {
@@ -1071,6 +1081,11 @@ body {
   border-radius: 20px;
   border: solid 1px #e5f4f2;
   box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.features__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.112);
 }
 .features__card--long {
   height: 444px;
@@ -1407,6 +1422,11 @@ body {
   flex-direction: column;
   align-items: center;
   box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.realStories__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.112);
 }
 .realStories__card-stars {
   display: flex;
@@ -1583,6 +1603,11 @@ body {
   border-radius: 20px;
   border: solid 1px #f8f9ff;
   box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cardPlans:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.112);
 }
 @media (min-width: 768px) {
   .cardPlans {

@@ -63,6 +63,12 @@
     border-radius: 20px;
     border: solid 1px #f8f9ff;
     box-shadow: 34.85px 29.63px 48.34px 0 rgba(51, 102, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.112);
+    }
 
     @media (min-width: bp.$tablet) {
         width: 680px;
