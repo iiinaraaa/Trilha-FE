@@ -1,5 +1,5 @@
 # setup
-- importar o reset ✅
+- importar o testDOIS ✅
 - criar as cores ✅
 - importar as google fonts ✅
 - criar var sass p breakpoints, tem que ter um arquivo p isso ✅
