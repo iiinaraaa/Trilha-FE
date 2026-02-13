@@ -42,11 +42,35 @@
         }
 
         &-star {
-            
             position: relative;
             z-index: 5;
             top: -246px;
             left: 254px;
+            animation: star 10s alternate ease-in-out infinite;
+
+            @keyframes star {
+                0% {
+                    transform: translateY(0px) translateX(0px);
+                }
+
+                25% {
+                    transform: translateY(-25px) translateX(10px);
+                }
+
+                50% {
+                    transform: translateY(-35px) translateX(-5px);
+                }
+
+                75% {
+                    transform: translateY(-15px) translateX(8px);
+                }
+
+                100% {
+                    transform: translateY(0px) translateX(0px);
+                }
+            }
+
+
 
             @media (min-width: bp.$desktop) {
                 top: -265px;
@@ -62,6 +86,29 @@
                 z-index: 5;
                 top: -168px;
                 left: 32px;
+                animation: starSecond 12s infinite ease-in-out;
+
+                @keyframes starSecond {
+                    0% {
+                        transform: translateY(0px) translateX(0px);
+                    }
+
+                    25% {
+                        transform: translateY(-25px) translateX(10px);
+                    }
+
+                    50% {
+                        transform: translateY(-35px) translateX(-5px);
+                    }
+
+                    75% {
+                        transform: translateY(-15px) translateX(8px);
+                    }
+
+                    100% {
+                        transform: translateY(0px) translateX(0px);
+                    }
+                }
 
                 @media (min-width: bp.$desktop) {
                     position: relative;
@@ -85,6 +132,32 @@
         z-index: 1;
         top: 5px;
         left: 198px;
+        animation: bubble 12s ease-in-out infinite;
+
+        //FROM - TO: TERRIVEL, com % fica liso!
+        //testei ambos e prefiro %%%%%%%%%
+
+        @keyframes bubble {
+            0% {
+                transform: translateY(0px) translateX(0px);
+            }
+
+            25% {
+                transform: translateY(-20px) translateX(10px);
+            }
+
+            50% {
+                transform: translateY(-25px) translateX(-5px);
+            }
+
+            75% {
+                transform: translateY(-20px) translateX(-12px);
+            }
+
+            100% {
+                transform: translateY(0px) translateX(0px);
+            }
+        }
 
         @media (min-width: bp.$desktop) {
             width: 146.56px;
@@ -103,6 +176,31 @@
             z-index: 2;
             top: 169px;
             left: -19px;
+            animation: bubbleSecond 15s alternate infinite;
+
+            @keyframes bubbleSecond {
+                0% {
+                    transform: translateY(0px) translateX(0px);
+                }
+
+                25% {
+                    transform: translateY(-15px) translateX(3px);
+                }
+
+                50% {
+                    transform: translateY(-25px) translateX(-5px);
+                }
+
+                75% {
+                    transform: translateY(-15px) translateX(8px);
+                }
+
+                100% {
+                    transform: translateY(0px) translateX(0px);
+                }
+            }
+
+
 
             @media (min-width: bp.$desktop) {
                 width: 86px;

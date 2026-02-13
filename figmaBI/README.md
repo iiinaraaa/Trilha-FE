@@ -1,5 +1,5 @@
 # setup
-- importar o reset ✅
+- importar o test ✅
 - criar as cores ✅
 - importar as google fonts ✅
 - criar var sass p breakpoints, tem que ter um arquivo p isso ✅
@@ -9,7 +9,6 @@
 - fazer um componente de imagem responsiva (ex do guanabara) ✅
 - criar um html com uma imagem e provar que ela eh responsiva (ex do guana) ✅
 - criar um html com grid provando que ela funciona ✅
-
 
 # atomos
 

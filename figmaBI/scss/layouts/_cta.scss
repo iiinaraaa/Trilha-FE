@@ -49,7 +49,7 @@
 
         @media (min-width: bp.$desktop) {
             font-size: tp.$size-displayL;
-            
+            width: 590px;
         }
     }
 
@@ -57,14 +57,10 @@
         font-family: tp.$font-body;
         font-size: tp.$size-bodyM;
         font-weight: 400;
+        margin-bottom: 40px;
 
         @media (min-width: bp.$desktop) {
             font-size: tp.$size-bodyL;
         }
     }
-
-    &__button {
-        margin-top: 17px;
-    }
-
 }
