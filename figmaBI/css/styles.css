@@ -2320,14 +2320,12 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 40px;
 }
 @media (min-width: 1280px) {
   .cta__description {
     font-size: 21px;
   }
-}
-.cta__button {
-  margin-top: 17px;
 }
 
 /*# sourceMappingURL=styles.css.map */
