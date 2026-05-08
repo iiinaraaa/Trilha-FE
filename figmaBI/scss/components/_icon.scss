@@ -3,7 +3,7 @@
 
 
 .icon__primary { //cigarro salmao
-    background-color: colors.$icon-card-primary;
+    background-color: rgba(255, 98, 80, 0.2);
     display: inline-block;
     
     padding: 20px;
@@ -11,11 +11,11 @@
     overflow: hidden;
 
     &--quadrado {
-        background-color: colors.$icon-card-secondary;
+        background-color: rgba(0, 147, 121, 0.2);
     }
 
     &--caixinha {
-        background-color: colors.$icon-card-tertiary;
+        background-color: rgba(248, 213, 126, 0.2);
     }
 
     &--confetti {

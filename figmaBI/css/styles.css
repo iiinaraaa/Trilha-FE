@@ -502,17 +502,17 @@ body {
 }
 
 .icon__primary {
-  background-color: #ffe0dc;
+  background-color: rgba(255, 98, 80, 0.2);
   display: inline-block;
   padding: 20px;
   border-radius: 20px;
   overflow: hidden;
 }
 .icon__primary--quadrado {
-  background-color: #cce9e4;
+  background-color: rgba(0, 147, 121, 0.2);
 }
 .icon__primary--caixinha {
-  background-color: #fef7e5;
+  background-color: rgba(248, 213, 126, 0.2);
 }
 .icon__primary--confetti {
   background-color: #fef7e5;
